@@ -40,13 +40,28 @@ namespace Glimpses_Clinic.Forms
             LoadTheme();
         }
 
-        private void loginbtn1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             Home obj = (Home)Application.OpenForms["Home"];
             obj.Hide();
-            Receptionist docform = new Receptionist();
-            docform.Show();
+            Receptionist respatient = new Receptionist();
+            respatient.Show();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Home obj = (Home)Application.OpenForms["Home"];
+            obj.Hide();
+            Patient patform = new Patient();
+            patform.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Home obj = (Home)Application.OpenForms["Home"];
+            //obj.Hide();
+            Doctor docform = new Doctor();
+            docform.Show();
         }
     }
 }

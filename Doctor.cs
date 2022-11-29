@@ -119,8 +119,8 @@ namespace Glimpses_Clinic
 
         private void medrecbtn_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            OpenChildPanel(new Forms.Register(), sender);
+            this.WindowState = FormWindowState.Normal;
+            OpenChildPanel(new Forms.ViewMR(), sender);
         }
 
         private void patbtn_Click(object sender, EventArgs e)
@@ -133,6 +133,16 @@ namespace Glimpses_Clinic
         {
             this.WindowState = FormWindowState.Normal;
             OpenChildPanel(new Forms.Order(), sender);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            OpenChildPanel(new Forms.EyeReport(), sender);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
         }
     }
 }
