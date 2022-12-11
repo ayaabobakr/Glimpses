@@ -34,6 +34,9 @@ namespace Glimpses_Clinic.Forms
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
@@ -42,16 +45,19 @@ namespace Glimpses_Clinic.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
             this.columnHeader1,
+            this.columnHeader6,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader7});
+            this.columnHeader2,
+            this.columnHeader5});
             this.listView1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.Color.Red;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 24);
+            this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1220, 554);
             this.listView1.TabIndex = 0;
@@ -66,9 +72,8 @@ namespace Glimpses_Clinic.Forms
             // 
             // columnHeader3
             // 
-            this.columnHeader3.DisplayIndex = 2;
             this.columnHeader3.Text = "Date";
-            this.columnHeader3.Width = 290;
+            this.columnHeader3.Width = 238;
             // 
             // columnHeader4
             // 
@@ -79,8 +84,23 @@ namespace Glimpses_Clinic.Forms
             // columnHeader7
             // 
             this.columnHeader7.DisplayIndex = 0;
-            this.columnHeader7.Text = "ID";
+            this.columnHeader7.Text = "National ID";
             this.columnHeader7.Width = 242;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Allergies";
+            this.columnHeader2.Width = 256;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Symptoms";
+            this.columnHeader5.Width = 316;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Gneder";
+            this.columnHeader6.Width = 171;
             // 
             // Appointments
             // 
@@ -102,5 +122,8 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

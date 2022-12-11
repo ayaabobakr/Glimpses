@@ -81,8 +81,6 @@ namespace Glimpses_Clinic.Forms
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label28 = new System.Windows.Forms.Label();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -93,6 +91,8 @@ namespace Glimpses_Clinic.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // textBox8
@@ -305,9 +305,9 @@ namespace Glimpses_Clinic.Forms
             this.label6.Location = new System.Drawing.Point(416, 115);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(231, 23);
+            this.label6.Size = new System.Drawing.Size(234, 23);
             this.label6.TabIndex = 32;
-            this.label6.Text = "With Best correction";
+            this.label6.Text = "With Best Correction";
             // 
             // label4
             // 
@@ -674,30 +674,6 @@ namespace Glimpses_Clinic.Forms
             this.checkBox4.Text = "There is no apparent visual field restriction.";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.checkBox3.Location = new System.Drawing.Point(321, 555);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(188, 27);
-            this.checkBox3.TabIndex = 76;
-            this.checkBox3.Text = "21to 30 degrees";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.checkBox2.Location = new System.Drawing.Point(529, 555);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(209, 27);
-            this.checkBox2.TabIndex = 75;
-            this.checkBox2.Text = "20 degrees or less";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -738,7 +714,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.radioButton3.Location = new System.Drawing.Point(529, 604);
+            this.radioButton3.Location = new System.Drawing.Point(551, 606);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(123, 27);
@@ -818,12 +794,40 @@ namespace Glimpses_Clinic.Forms
             this.label24.TabIndex = 100;
             this.label24.Text = "R";
             // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Verdana", 10.8F);
+            this.radioButton7.Location = new System.Drawing.Point(321, 557);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(194, 27);
+            this.radioButton7.TabIndex = 102;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "21 to 30 degrees";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Verdana", 10.8F);
+            this.radioButton8.Location = new System.Drawing.Point(551, 559);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(208, 27);
+            this.radioButton8.TabIndex = 101;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "20 degrees or less";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
             // EyeReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1523, 829);
+            this.Controls.Add(this.radioButton7);
+            this.Controls.Add(this.radioButton8);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label5);
@@ -848,8 +852,6 @@ namespace Glimpses_Clinic.Forms
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.radioButton4);
@@ -950,8 +952,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.RadioButton radioButton4;
@@ -962,5 +962,7 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
     }
 }

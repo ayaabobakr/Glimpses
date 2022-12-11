@@ -406,7 +406,7 @@ namespace Glimpses_Clinic.Forms
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(210, 43);
+            this.textBox1.Location = new System.Drawing.Point(202, 43);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(204, 22);

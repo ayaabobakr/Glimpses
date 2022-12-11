@@ -336,9 +336,9 @@ namespace Glimpses_Clinic.Forms
             this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(826, 725);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(578, 24);
+            this.label20.Size = new System.Drawing.Size(640, 24);
             this.label20.TabIndex = 36;
-            this.label20.Text = "Approximately how many hours do you spend on computer daily ?";
+            this.label20.Text = "Approximately how many hours do you spend on computer/phone daily ?";
             // 
             // label18
             // 
@@ -561,6 +561,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1680, 965);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox9);

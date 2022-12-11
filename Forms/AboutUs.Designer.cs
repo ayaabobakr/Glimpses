@@ -213,7 +213,7 @@ namespace Glimpses_Clinic.Forms
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 24);
             this.label10.TabIndex = 19;
-            this.label10.Text = "4pm - 7pm";
+            this.label10.Text = "3pm - 9pm";
             // 
             // label11
             // 
@@ -224,7 +224,7 @@ namespace Glimpses_Clinic.Forms
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(103, 24);
             this.label11.TabIndex = 18;
-            this.label11.Text = "2pm - 4pm";
+            this.label11.Text = "2pm - 8pm";
             // 
             // label5
             // 
