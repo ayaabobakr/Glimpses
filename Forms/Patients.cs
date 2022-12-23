@@ -30,6 +30,9 @@ namespace Glimpses_Clinic.Forms
             viewMRbtn.BackColor = ThemeColor.PrimaryColor;
             viewMRbtn.ForeColor = Color.White;
             viewMRbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+            deletebtn.BackColor = ThemeColor.PrimaryColor;
+            deletebtn.ForeColor = Color.White;
+            deletebtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
 
         }
 
@@ -69,6 +72,61 @@ namespace Glimpses_Clinic.Forms
             ViewMR p = new ViewMR();
             p.Show();
             
+        }
+
+        private void deletebtn_Click(object sender, EventArgs e)
+        {
+            var cashierId = listView1.FocusedItem.Text;
+
+            string query = "delete from Patient where NationalID=@id;";
+
+            using (SqlConnection con = new SqlConnection(conStr))
+            {
+                try
+                {
+                    con.Open();
+                    using (SqlTransaction trans = con.BeginTransaction())
+                    {
+
+                        using (SqlCommand com = new SqlCommand(query, con, trans))
+                        {
+
+                            com.Parameters.AddWithValue("@id", cashierId);
+
+                            var should_be_one = com.ExecuteNonQuery();
+
+                            if (should_be_one == 1)
+                            {
+
+                                trans.Commit();
+                                foreach (ListViewItem item in listView1.Items)
+                                    if (item.Selected)
+                                        listView1.Items.Remove(item);
+                            }
+                            else
+                            {
+
+                                trans.Rollback();
+
+                                throw new Exception("An attempt to delete multiple rows was detected");
+                            }
+
+                        }
+
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
+
+            }
+
         }
     }
 }

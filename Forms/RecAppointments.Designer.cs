@@ -45,10 +45,10 @@ namespace Glimpses_Clinic.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
             this.columnHeader1,
             this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader7});
+            this.columnHeader4});
             this.listView1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.Color.Red;
             this.listView1.FullRowSelect = true;
@@ -63,26 +63,22 @@ namespace Glimpses_Clinic.Forms
             // 
             // columnHeader1
             // 
-            this.columnHeader1.DisplayIndex = 1;
             this.columnHeader1.Text = "Name";
             this.columnHeader1.Width = 256;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.DisplayIndex = 2;
             this.columnHeader3.Text = "Date";
             this.columnHeader3.Width = 290;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.DisplayIndex = 3;
             this.columnHeader4.Text = "Time";
             this.columnHeader4.Width = 251;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.DisplayIndex = 0;
-            this.columnHeader7.Text = "ID";
+            this.columnHeader7.Text = "National ID";
             this.columnHeader7.Width = 150;
             // 
             // button1
@@ -115,6 +111,7 @@ namespace Glimpses_Clinic.Forms
             this.button2.Text = "Remove Appointment";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RecAppointments
             // 
