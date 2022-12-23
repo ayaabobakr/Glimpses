@@ -12,34 +12,36 @@ using System.Windows.Forms;
 
 namespace Glimpses_Clinic.Forms
 {
-    public partial class Patients : Form
+    public partial class ViewRecept : Form
     {
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
-
-        public Patients()
+        public ViewRecept()
         {
             InitializeComponent();
         }
-
         private void LoadTheme()
         {
             label1.ForeColor = ThemeColor.SecondaryColor;
             searchbtn.BackColor = ThemeColor.PrimaryColor;
             searchbtn.ForeColor = Color.White;
             searchbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
-            viewMRbtn.BackColor = ThemeColor.PrimaryColor;
-            viewMRbtn.ForeColor = Color.White;
-            viewMRbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+            addrecepbtn.BackColor = ThemeColor.PrimaryColor;
+            addrecepbtn.ForeColor = Color.White;
+            addrecepbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+
+        }
+        private void addrecepbtn_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void Patients_Load(object sender, EventArgs e)
+        private void ViewRecept_Load(object sender, EventArgs e)
         {
             LoadTheme();
             listView1.ForeColor = ThemeColor.SecondaryColor;
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
-            string sql = "Select * From Patient";
+            string sql = "Select * From Receptionist";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader rd;
             rd = cmd.ExecuteReader();
@@ -47,28 +49,20 @@ namespace Glimpses_Clinic.Forms
             while (rd.Read())
             {
                 int now = int.Parse(DateTime.Now.ToString("yyyy"));
-                int dob = int.Parse(rd.GetDateTime(5).ToString("yyyy"));
+                int dob = int.Parse(rd.GetDateTime(7).ToString("yyyy"));
                 int age = (now - dob);
                 ListViewItem lv = new ListViewItem(rd.GetInt32(0).ToString());
                 lv.SubItems.Add(rd.GetString(1).ToString());
-                lv.SubItems.Add(rd.GetString(2).ToString());
-                lv.SubItems.Add(rd.GetInt32(3).ToString());
-                lv.SubItems.Add(rd.GetString(4).ToString());
-                lv.SubItems.Add(rd.GetDateTime(5).ToString("dd/MM/yyyy"));
-                lv.SubItems.Add(age.ToString());
+                lv.SubItems.Add(rd.GetInt32(4).ToString());
+                lv.SubItems.Add(rd.GetString(5).ToString());
                 lv.SubItems.Add(rd.GetString(6).ToString());
+                lv.SubItems.Add(rd.GetDateTime(7).ToString("dd/MM/yyyy"));
+                lv.SubItems.Add(age.ToString());
                 listView1.Items.Add(lv);
             }
             rd.Close();
             cmd.Dispose();
             conn.Close();
-        }
-
-        private void viewMRbtn_Click(object sender, EventArgs e)
-        {
-            ViewMR p = new ViewMR();
-            p.Show();
-            
         }
     }
 }

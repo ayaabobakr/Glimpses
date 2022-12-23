@@ -132,17 +132,24 @@ namespace Glimpses_Clinic
         private void ordbtn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
-            OpenChildPanel(new Forms.Order(), sender);
+            OpenChildPanel(new Forms.VisualTest(), sender);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void eyerepbtn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             OpenChildPanel(new Forms.EyeReport(), sender);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void receptionistsbtn_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
+            OpenChildPanel(new Forms.ViewRecept(), sender);
+        }
+
+        private void Doctor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

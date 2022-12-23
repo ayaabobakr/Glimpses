@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,8 @@ namespace Glimpses_Clinic.Forms
 {
     public partial class Appointments : Form
     {
+        string conStr = ConfigurationManager.ConnectionStrings["db"].ToString(); 
+
         public Appointments()
         {
             InitializeComponent();
@@ -19,6 +23,31 @@ namespace Glimpses_Clinic.Forms
 
         private void Appointments_Load(object sender, EventArgs e)
         {
+            listView1.ForeColor = ThemeColor.SecondaryColor;
+            SqlConnection conn = new SqlConnection(conStr);
+            conn.Open();
+            string sql = "Select P.NationalID, P.Name, P.Gender, P.DateOfBirth, A.Date, A.Time " +
+                "From Patient as P, Appointment AS A;";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader rd;
+            rd = cmd.ExecuteReader();
+            listView1.Items.Clear();
+            while (rd.Read())
+            {
+                int now = int.Parse(DateTime.Now.ToString("yyyy"));
+                int dob = int.Parse(rd.GetDateTime(3).ToString("yyyy"));
+                int age = (now - dob);
+                ListViewItem lv = new ListViewItem(rd.GetInt32(0).ToString());
+                lv.SubItems.Add(rd.GetString(1).ToString());
+                lv.SubItems.Add(age.ToString());
+                lv.SubItems.Add(rd.GetString(2).ToString());
+                lv.SubItems.Add(rd.GetDateTime(4).ToString("dd/MM/yyyy"));
+                lv.SubItems.Add(rd.GetTimeSpan(5).ToString());
+                listView1.Items.Add(lv);
+            }
+            rd.Close();
+            cmd.Dispose();
+            conn.Close();
         }
 
     }

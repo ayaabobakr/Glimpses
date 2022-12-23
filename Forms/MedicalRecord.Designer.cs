@@ -29,153 +29,85 @@ namespace Glimpses_Clinic.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicalRecord));
+            this.famhistorytext = new System.Windows.Forms.RichTextBox();
+            this.eye_histtext = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.pain = new System.Windows.Forms.CheckBox();
+            this.watering = new System.Windows.Forms.CheckBox();
+            this.itching = new System.Windows.Forms.CheckBox();
+            this.floaters = new System.Windows.Forms.CheckBox();
+            this.redness = new System.Windows.Forms.CheckBox();
+            this.burning = new System.Windows.Forms.CheckBox();
+            this.discharge = new System.Windows.Forms.CheckBox();
+            this.dryness = new System.Windows.Forms.CheckBox();
+            this.soreness = new System.Windows.Forms.CheckBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox9 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox10 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.contactsno = new System.Windows.Forms.RadioButton();
+            this.contactsyes = new System.Windows.Forms.RadioButton();
+            this.glassesno = new System.Windows.Forms.RadioButton();
+            this.glassesyes = new System.Windows.Forms.RadioButton();
+            this.surgno = new System.Windows.Forms.RadioButton();
+            this.surgyes = new System.Windows.Forms.RadioButton();
+            this.surgerytext = new System.Windows.Forms.RichTextBox();
+            this.screentext = new System.Windows.Forms.RichTextBox();
+            this.submitMRbtn = new System.Windows.Forms.Button();
+            this.pressure = new System.Windows.Forms.CheckBox();
+            this.diabetes = new System.Windows.Forms.CheckBox();
+            this.sinus = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.allergies = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.sympcbox = new System.Windows.Forms.ComboBox();
+            this.submitbtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.nIDcbox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // richTextBox8
+            // famhistorytext
             // 
-            this.richTextBox8.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox8.Location = new System.Drawing.Point(20, 849);
-            this.richTextBox8.Name = "richTextBox8";
-            this.richTextBox8.Size = new System.Drawing.Size(612, 80);
-            this.richTextBox8.TabIndex = 47;
-            this.richTextBox8.Text = "";
+            this.famhistorytext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.famhistorytext.Location = new System.Drawing.Point(23, 306);
+            this.famhistorytext.Name = "famhistorytext";
+            this.famhistorytext.Size = new System.Drawing.Size(613, 145);
+            this.famhistorytext.TabIndex = 46;
+            this.famhistorytext.Text = "";
             // 
-            // richTextBox6
+            // eye_histtext
             // 
-            this.richTextBox6.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox6.Location = new System.Drawing.Point(21, 679);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(613, 80);
-            this.richTextBox6.TabIndex = 46;
-            this.richTextBox6.Text = "";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox5.Location = new System.Drawing.Point(21, 539);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(612, 68);
-            this.richTextBox5.TabIndex = 45;
-            this.richTextBox5.Text = "";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(315, 444);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(179, 24);
-            this.label12.TabIndex = 43;
-            this.label12.Text = "Last eye exam date ";
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox3.Location = new System.Drawing.Point(304, 215);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(330, 33);
-            this.richTextBox3.TabIndex = 42;
-            this.richTextBox3.Text = "";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(16, 177);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(310, 24);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "Have you experienced this before ?";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(18, 221);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 20);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "Can you provide more detalis ?";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(21, 350);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(614, 66);
-            this.richTextBox2.TabIndex = 37;
-            this.richTextBox2.Text = "";
+            this.eye_histtext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eye_histtext.Location = new System.Drawing.Point(22, 101);
+            this.eye_histtext.Name = "eye_histtext";
+            this.eye_histtext.Size = new System.Drawing.Size(614, 128);
+            this.eye_histtext.TabIndex = 37;
+            this.eye_histtext.Text = "";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(18, 315);
+            this.label9.Location = new System.Drawing.Point(19, 66);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(470, 20);
             this.label9.TabIndex = 36;
             this.label9.Text = "( Please list any ocular conditions you\'ve been dignosed with )   ";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(22, 68);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(612, 80);
-            this.richTextBox1.TabIndex = 35;
-            this.richTextBox1.Text = "";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 638);
+            this.label8.Location = new System.Drawing.Point(20, 265);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(170, 24);
             this.label8.TabIndex = 34;
@@ -185,156 +117,126 @@ namespace Glimpses_Clinic.Forms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 276);
+            this.label6.Location = new System.Drawing.Point(18, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 24);
             this.label6.TabIndex = 33;
             this.label6.Text = "Past eye history       ";
             // 
-            // label4
+            // pain
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 488);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 24);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "General medical history";
+            this.pain.AutoSize = true;
+            this.pain.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pain.Location = new System.Drawing.Point(1268, 449);
+            this.pain.Name = "pain";
+            this.pain.Size = new System.Drawing.Size(88, 24);
+            this.pain.TabIndex = 94;
+            this.pain.Text = "Eye Pain";
+            this.pain.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // watering
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 808);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(477, 24);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Current Prescription and Non-Prescription medications";
+            this.watering.AutoSize = true;
+            this.watering.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.watering.Location = new System.Drawing.Point(1039, 449);
+            this.watering.Name = "watering";
+            this.watering.Size = new System.Drawing.Size(158, 24);
+            this.watering.TabIndex = 93;
+            this.watering.Text = "Tearing / Watering";
+            this.watering.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // itching
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(352, 24);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Reason for visit or presenting complaint";
+            this.itching.AutoSize = true;
+            this.itching.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itching.Location = new System.Drawing.Point(830, 560);
+            this.itching.Name = "itching";
+            this.itching.Size = new System.Drawing.Size(78, 24);
+            this.itching.TabIndex = 92;
+            this.itching.Text = "Itching";
+            this.itching.UseVisualStyleBackColor = true;
             // 
-            // checkBox23
+            // floaters
             // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox23.Location = new System.Drawing.Point(1268, 504);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(88, 24);
-            this.checkBox23.TabIndex = 94;
-            this.checkBox23.Text = "Eye Pain";
-            this.checkBox23.UseVisualStyleBackColor = true;
+            this.floaters.AutoSize = true;
+            this.floaters.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.floaters.Location = new System.Drawing.Point(1268, 560);
+            this.floaters.Name = "floaters";
+            this.floaters.Size = new System.Drawing.Size(185, 24);
+            this.floaters.TabIndex = 91;
+            this.floaters.Text = "Flashes and/or Floaters";
+            this.floaters.UseVisualStyleBackColor = true;
             // 
-            // checkBox21
+            // redness
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox21.Location = new System.Drawing.Point(1039, 504);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(158, 24);
-            this.checkBox21.TabIndex = 93;
-            this.checkBox21.Text = "Tearing / Watering";
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.redness.AutoSize = true;
+            this.redness.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.redness.Location = new System.Drawing.Point(831, 449);
+            this.redness.Name = "redness";
+            this.redness.Size = new System.Drawing.Size(86, 24);
+            this.redness.TabIndex = 90;
+            this.redness.Text = "Redness";
+            this.redness.UseVisualStyleBackColor = true;
             // 
-            // checkBox22
+            // burning
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox22.Location = new System.Drawing.Point(830, 615);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(78, 24);
-            this.checkBox22.TabIndex = 92;
-            this.checkBox22.Text = "Itching";
-            this.checkBox22.UseVisualStyleBackColor = true;
+            this.burning.AutoSize = true;
+            this.burning.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.burning.Location = new System.Drawing.Point(830, 499);
+            this.burning.Name = "burning";
+            this.burning.Size = new System.Drawing.Size(85, 24);
+            this.burning.TabIndex = 89;
+            this.burning.Text = "Burning";
+            this.burning.UseVisualStyleBackColor = true;
             // 
-            // checkBox19
+            // discharge
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox19.Location = new System.Drawing.Point(1262, 615);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(185, 24);
-            this.checkBox19.TabIndex = 91;
-            this.checkBox19.Text = "Flashes and/or Floaters";
-            this.checkBox19.UseVisualStyleBackColor = true;
+            this.discharge.AutoSize = true;
+            this.discharge.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discharge.Location = new System.Drawing.Point(1039, 499);
+            this.discharge.Name = "discharge";
+            this.discharge.Size = new System.Drawing.Size(98, 24);
+            this.discharge.TabIndex = 88;
+            this.discharge.Text = "Discharge";
+            this.discharge.UseVisualStyleBackColor = true;
             // 
-            // checkBox20
+            // dryness
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox20.Location = new System.Drawing.Point(831, 504);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(86, 24);
-            this.checkBox20.TabIndex = 90;
-            this.checkBox20.Text = "Redness";
-            this.checkBox20.UseVisualStyleBackColor = true;
+            this.dryness.AutoSize = true;
+            this.dryness.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dryness.Location = new System.Drawing.Point(1039, 560);
+            this.dryness.Name = "dryness";
+            this.dryness.Size = new System.Drawing.Size(83, 24);
+            this.dryness.TabIndex = 87;
+            this.dryness.Text = "Dryness";
+            this.dryness.UseVisualStyleBackColor = true;
             // 
-            // checkBox18
+            // soreness
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox18.Location = new System.Drawing.Point(830, 554);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(85, 24);
-            this.checkBox18.TabIndex = 89;
-            this.checkBox18.Text = "Burning";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox16.Location = new System.Drawing.Point(1039, 554);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(98, 24);
-            this.checkBox16.TabIndex = 88;
-            this.checkBox16.Text = "Discharge";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.Location = new System.Drawing.Point(1039, 615);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(83, 24);
-            this.checkBox14.TabIndex = 87;
-            this.checkBox14.Text = "Dryness";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.Location = new System.Drawing.Point(1268, 554);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(117, 24);
-            this.checkBox12.TabIndex = 86;
-            this.checkBox12.Text = "Eye Soreness";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.soreness.AutoSize = true;
+            this.soreness.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soreness.Location = new System.Drawing.Point(1268, 499);
+            this.soreness.Name = "soreness";
+            this.soreness.Size = new System.Drawing.Size(117, 24);
+            this.soreness.TabIndex = 86;
+            this.soreness.Text = "Eye Soreness";
+            this.soreness.UseVisualStyleBackColor = true;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(826, 424);
+            this.label23.Location = new System.Drawing.Point(825, 326);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(468, 24);
+            this.label23.Size = new System.Drawing.Size(356, 24);
             this.label23.TabIndex = 85;
-            this.label23.Text = "Do you experience any of the following eye problem :";
+            this.label23.Text = "Do you experience any of the following :";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(826, 725);
+            this.label20.Location = new System.Drawing.Point(825, 614);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(640, 24);
             this.label20.TabIndex = 36;
@@ -350,35 +252,15 @@ namespace Glimpses_Clinic.Forms
             this.label18.TabIndex = 82;
             this.label18.Text = "Please list the surgeries you\'ve done.";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(827, 363);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 20);
-            this.label17.TabIndex = 80;
-            this.label17.Text = "What Brand ?";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(827, 221);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(203, 20);
-            this.label15.TabIndex = 75;
-            this.label15.Text = "How old is your current pair?";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(825, 294);
+            this.label14.Location = new System.Drawing.Point(828, 238);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(209, 24);
+            this.label14.Size = new System.Drawing.Size(257, 24);
             this.label14.TabIndex = 70;
-            this.label14.Text = "Do you wear Contacts ?";
+            this.label14.Text = "Do you wear Contact Lenses?";
             // 
             // label13
             // 
@@ -400,270 +282,340 @@ namespace Glimpses_Clinic.Forms
             this.label7.TabIndex = 66;
             this.label7.Text = "Have you ever had eny eye surgery or injury ?";
             // 
-            // radioButton1
+            // contactsno
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(377, 177);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(52, 24);
-            this.radioButton1.TabIndex = 95;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Yes";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.contactsno.AutoSize = true;
+            this.contactsno.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactsno.Location = new System.Drawing.Point(113, 13);
+            this.contactsno.Name = "contactsno";
+            this.contactsno.Size = new System.Drawing.Size(50, 24);
+            this.contactsno.TabIndex = 99;
+            this.contactsno.TabStop = true;
+            this.contactsno.Text = "No";
+            this.contactsno.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // contactsyes
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(477, 177);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(50, 24);
-            this.radioButton2.TabIndex = 96;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "No";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.contactsyes.AutoSize = true;
+            this.contactsyes.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactsyes.Location = new System.Drawing.Point(6, 13);
+            this.contactsyes.Name = "contactsyes";
+            this.contactsyes.Size = new System.Drawing.Size(52, 24);
+            this.contactsyes.TabIndex = 98;
+            this.contactsyes.TabStop = true;
+            this.contactsyes.Text = "Yes";
+            this.contactsyes.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // glassesno
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(555, 438);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(78, 30);
-            this.maskedTextBox1.TabIndex = 97;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.glassesno.AutoSize = true;
+            this.glassesno.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glassesno.Location = new System.Drawing.Point(110, 14);
+            this.glassesno.Name = "glassesno";
+            this.glassesno.Size = new System.Drawing.Size(50, 24);
+            this.glassesno.TabIndex = 101;
+            this.glassesno.TabStop = true;
+            this.glassesno.Text = "No";
+            this.glassesno.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // glassesyes
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(1372, 294);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(50, 24);
-            this.radioButton3.TabIndex = 99;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "No";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.glassesyes.AutoSize = true;
+            this.glassesyes.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glassesyes.Location = new System.Drawing.Point(3, 14);
+            this.glassesyes.Name = "glassesyes";
+            this.glassesyes.Size = new System.Drawing.Size(52, 24);
+            this.glassesyes.TabIndex = 100;
+            this.glassesyes.TabStop = true;
+            this.glassesyes.Text = "Yes";
+            this.glassesyes.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // surgno
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(1265, 294);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(52, 24);
-            this.radioButton4.TabIndex = 98;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Yes";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.surgno.AutoSize = true;
+            this.surgno.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surgno.Location = new System.Drawing.Point(1374, 32);
+            this.surgno.Name = "surgno";
+            this.surgno.Size = new System.Drawing.Size(50, 24);
+            this.surgno.TabIndex = 103;
+            this.surgno.TabStop = true;
+            this.surgno.Text = "No";
+            this.surgno.UseVisualStyleBackColor = true;
+            this.surgno.CheckedChanged += new System.EventHandler(this.surgno_CheckedChanged);
             // 
-            // radioButton5
+            // surgyes
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(1374, 160);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(50, 24);
-            this.radioButton5.TabIndex = 101;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "No";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.surgyes.AutoSize = true;
+            this.surgyes.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surgyes.Location = new System.Drawing.Point(1267, 32);
+            this.surgyes.Name = "surgyes";
+            this.surgyes.Size = new System.Drawing.Size(52, 24);
+            this.surgyes.TabIndex = 102;
+            this.surgyes.TabStop = true;
+            this.surgyes.Text = "Yes";
+            this.surgyes.UseVisualStyleBackColor = true;
+            this.surgyes.CheckedChanged += new System.EventHandler(this.surgyes_CheckedChanged);
             // 
-            // radioButton6
+            // surgerytext
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(1267, 160);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(52, 24);
-            this.radioButton6.TabIndex = 100;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Yes";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.surgerytext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surgerytext.Location = new System.Drawing.Point(1146, 85);
+            this.surgerytext.Name = "surgerytext";
+            this.surgerytext.Size = new System.Drawing.Size(360, 33);
+            this.surgerytext.TabIndex = 104;
+            this.surgerytext.Text = "";
             // 
-            // radioButton7
+            // screentext
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(1374, 32);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(50, 24);
-            this.radioButton7.TabIndex = 103;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "No";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.screentext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.screentext.Location = new System.Drawing.Point(829, 661);
+            this.screentext.MaxLength = 2;
+            this.screentext.Name = "screentext";
+            this.screentext.Size = new System.Drawing.Size(53, 33);
+            this.screentext.TabIndex = 106;
+            this.screentext.Text = "";
             // 
-            // radioButton8
+            // submitMRbtn
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(1267, 32);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(52, 24);
-            this.radioButton8.TabIndex = 102;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Yes";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.submitMRbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.submitMRbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitMRbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.submitMRbtn.Location = new System.Drawing.Point(1039, 741);
+            this.submitMRbtn.Name = "submitMRbtn";
+            this.submitMRbtn.Size = new System.Drawing.Size(186, 54);
+            this.submitMRbtn.TabIndex = 107;
+            this.submitMRbtn.Text = "Submit";
+            this.submitMRbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.submitMRbtn.UseVisualStyleBackColor = true;
             // 
-            // richTextBox4
+            // pressure
             // 
-            this.richTextBox4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox4.Location = new System.Drawing.Point(1146, 85);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(360, 33);
-            this.richTextBox4.TabIndex = 104;
-            this.richTextBox4.Text = "";
+            this.pressure.AutoSize = true;
+            this.pressure.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pressure.Location = new System.Drawing.Point(1268, 395);
+            this.pressure.Name = "pressure";
+            this.pressure.Size = new System.Drawing.Size(142, 24);
+            this.pressure.TabIndex = 115;
+            this.pressure.Text = "Pressure Disease";
+            this.pressure.UseVisualStyleBackColor = true;
             // 
-            // richTextBox7
+            // diabetes
             // 
-            this.richTextBox7.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox7.Location = new System.Drawing.Point(1146, 215);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(360, 33);
-            this.richTextBox7.TabIndex = 105;
-            this.richTextBox7.Text = "";
+            this.diabetes.AutoSize = true;
+            this.diabetes.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diabetes.Location = new System.Drawing.Point(1039, 395);
+            this.diabetes.Name = "diabetes";
+            this.diabetes.Size = new System.Drawing.Size(90, 24);
+            this.diabetes.TabIndex = 114;
+            this.diabetes.Text = "Diabetes";
+            this.diabetes.UseVisualStyleBackColor = true;
             // 
-            // richTextBox9
+            // sinus
             // 
-            this.richTextBox9.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox9.Location = new System.Drawing.Point(829, 768);
-            this.richTextBox9.MaxLength = 2;
-            this.richTextBox9.Name = "richTextBox9";
-            this.richTextBox9.Size = new System.Drawing.Size(53, 33);
-            this.richTextBox9.TabIndex = 106;
-            this.richTextBox9.Text = "";
+            this.sinus.AutoSize = true;
+            this.sinus.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sinus.Location = new System.Drawing.Point(831, 395);
+            this.sinus.Name = "sinus";
+            this.sinus.Size = new System.Drawing.Size(67, 24);
+            this.sinus.TabIndex = 113;
+            this.sinus.Text = "Sinus";
+            this.sinus.UseVisualStyleBackColor = true;
             // 
-            // richTextBox10
+            // label1
             // 
-            this.richTextBox10.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox10.Location = new System.Drawing.Point(1146, 350);
-            this.richTextBox10.Multiline = false;
-            this.richTextBox10.Name = "richTextBox10";
-            this.richTextBox10.Size = new System.Drawing.Size(360, 33);
-            this.richTextBox10.TabIndex = 81;
-            this.richTextBox10.Text = "";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(19, 487);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 24);
+            this.label1.TabIndex = 116;
+            this.label1.Text = "Allergies";
             // 
-            // button1
+            // allergies
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1039, 875);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 54);
-            this.button1.TabIndex = 107;
-            this.button1.Text = "Submit";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.allergies.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allergies.Location = new System.Drawing.Point(24, 524);
+            this.allergies.Name = "allergies";
+            this.allergies.Size = new System.Drawing.Size(263, 188);
+            this.allergies.TabIndex = 117;
+            this.allergies.Text = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(368, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 24);
+            this.label2.TabIndex = 118;
+            this.label2.Text = "Symptoms";
+            // 
+            // sympcbox
+            // 
+            this.sympcbox.FormattingEnabled = true;
+            this.sympcbox.Items.AddRange(new object[] {
+            "blurry",
+            "can\'t see long distances"});
+            this.sympcbox.Location = new System.Drawing.Point(372, 524);
+            this.sympcbox.Name = "sympcbox";
+            this.sympcbox.Size = new System.Drawing.Size(273, 24);
+            this.sympcbox.TabIndex = 119;
+            // 
+            // submitbtn
+            // 
+            this.submitbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.submitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.submitbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitbtn.Location = new System.Drawing.Point(1375, 656);
+            this.submitbtn.Name = "submitbtn";
+            this.submitbtn.Size = new System.Drawing.Size(134, 66);
+            this.submitbtn.TabIndex = 120;
+            this.submitbtn.Text = "Submit";
+            this.submitbtn.UseVisualStyleBackColor = true;
+            this.submitbtn.Click += new System.EventHandler(this.submitbtn_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.glassesyes);
+            this.panel2.Controls.Add(this.glassesno);
+            this.panel2.Location = new System.Drawing.Point(1255, 145);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(232, 51);
+            this.panel2.TabIndex = 163;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.contactsno);
+            this.panel1.Controls.Add(this.contactsyes);
+            this.panel1.Location = new System.Drawing.Point(1255, 211);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(232, 51);
+            this.panel1.TabIndex = 164;
+            // 
+            // nIDcbox
+            // 
+            this.nIDcbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nIDcbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.nIDcbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.nIDcbox.BackColor = System.Drawing.Color.White;
+            this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nIDcbox.FormattingEnabled = true;
+            this.nIDcbox.Location = new System.Drawing.Point(447, 23);
+            this.nIDcbox.Name = "nIDcbox";
+            this.nIDcbox.Size = new System.Drawing.Size(189, 28);
+            this.nIDcbox.TabIndex = 166;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(301, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 19);
+            this.label4.TabIndex = 165;
+            this.label4.Text = "National ID";
             // 
             // MedicalRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1680, 965);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox9);
-            this.Controls.Add(this.richTextBox7);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.checkBox23);
+            this.ClientSize = new System.Drawing.Size(1534, 734);
+            this.Controls.Add(this.nIDcbox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.submitbtn);
+            this.Controls.Add(this.sympcbox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.allergies);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pressure);
+            this.Controls.Add(this.diabetes);
+            this.Controls.Add(this.sinus);
+            this.Controls.Add(this.submitMRbtn);
+            this.Controls.Add(this.screentext);
+            this.Controls.Add(this.surgerytext);
+            this.Controls.Add(this.surgno);
+            this.Controls.Add(this.surgyes);
+            this.Controls.Add(this.pain);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.checkBox21);
-            this.Controls.Add(this.checkBox22);
-            this.Controls.Add(this.checkBox19);
-            this.Controls.Add(this.checkBox20);
-            this.Controls.Add(this.checkBox18);
-            this.Controls.Add(this.checkBox16);
-            this.Controls.Add(this.checkBox14);
-            this.Controls.Add(this.checkBox12);
+            this.Controls.Add(this.watering);
+            this.Controls.Add(this.itching);
+            this.Controls.Add(this.floaters);
+            this.Controls.Add(this.redness);
+            this.Controls.Add(this.burning);
+            this.Controls.Add(this.discharge);
+            this.Controls.Add(this.dryness);
+            this.Controls.Add(this.soreness);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.richTextBox10);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.richTextBox8);
-            this.Controls.Add(this.richTextBox6);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.famhistorytext);
+            this.Controls.Add(this.eye_histtext);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MedicalRecord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medical Profile";
             this.Load += new System.EventHandler(this.MedicalRecord_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox8;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox famhistorytext;
+        private System.Windows.Forms.RichTextBox eye_histtext;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox pain;
+        private System.Windows.Forms.CheckBox watering;
+        private System.Windows.Forms.CheckBox itching;
+        private System.Windows.Forms.CheckBox floaters;
+        private System.Windows.Forms.CheckBox redness;
+        private System.Windows.Forms.CheckBox burning;
+        private System.Windows.Forms.CheckBox discharge;
+        private System.Windows.Forms.CheckBox dryness;
+        private System.Windows.Forms.CheckBox soreness;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.RichTextBox richTextBox9;
-        private System.Windows.Forms.RichTextBox richTextBox10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton contactsno;
+        private System.Windows.Forms.RadioButton contactsyes;
+        private System.Windows.Forms.RadioButton glassesno;
+        private System.Windows.Forms.RadioButton glassesyes;
+        private System.Windows.Forms.RadioButton surgno;
+        private System.Windows.Forms.RadioButton surgyes;
+        private System.Windows.Forms.RichTextBox surgerytext;
+        private System.Windows.Forms.RichTextBox screentext;
+        private System.Windows.Forms.Button submitMRbtn;
+        private System.Windows.Forms.CheckBox pressure;
+        private System.Windows.Forms.CheckBox diabetes;
+        private System.Windows.Forms.CheckBox sinus;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox allergies;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox sympcbox;
+        private System.Windows.Forms.Button submitbtn;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox nIDcbox;
+        private System.Windows.Forms.Label label4;
     }
 }

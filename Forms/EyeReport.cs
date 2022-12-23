@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +14,14 @@ namespace Glimpses_Clinic.Forms
 {
     public partial class EyeReport : Form
     {
+        string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
+
         public EyeReport()
         {
             InitializeComponent();
+            
         }
+
 
         private void LoadTheme()
         {
@@ -40,6 +46,11 @@ namespace Glimpses_Clinic.Forms
                 label28.ForeColor = ThemeColor.SecondaryColor;
                 label31.ForeColor = ThemeColor.SecondaryColor;
                 label32.ForeColor = ThemeColor.SecondaryColor;
+                label8.ForeColor = ThemeColor.SecondaryColor;
+                label22.ForeColor = ThemeColor.SecondaryColor;
+                muscabnormal.ForeColor = ThemeColor.PrimaryColor;
+                muscnormal.ForeColor = ThemeColor.PrimaryColor;
+                label23.ForeColor = ThemeColor.SecondaryColor;
             }
 
             foreach (Control radios in this.Controls)
@@ -63,7 +74,253 @@ namespace Glimpses_Clinic.Forms
 
         private void EyeReport_Load(object sender, EventArgs e)
         {
+            softRtext.Visible = false;
+            softLtext.Visible = false;
+            soft.Visible = false;
+            toric.Visible = false;
+            abnormaltext.Visible = false;
+            label5.Visible = false;
+            label3.Visible = false;
             LoadTheme();
+            SqlConnection con = new SqlConnection(conStr);
+            con.Open();
+            string strCmd = "select NationalID from Patient";
+            SqlCommand cmd = new SqlCommand(strCmd, con);
+            SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            nIDcbox.DataSource = ds.Tables[0];
+            nIDcbox.ValueMember = "NationalID";
+            nIDcbox.Enabled = true;
+            this.nIDcbox.SelectedIndex = -1;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            
+
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VisualTest vform = new VisualTest();
+            vform.Show();
+        }
+
+        private void registerbtn_Click(object sender, EventArgs e)
+        {
+            if (Checkbox_checked() == false)
+            {
+                using (SqlConnection sqlcon = new SqlConnection(conStr))
+                {
+                    string insert = "INSERT INTO EyeReport (NationalID, Diagnosis, Muscle, IntraocularR, IntraocularL, Glasses, Contacts, SoftR, SoftL, Toric, " +
+                        "Prescription, Surgery, Followup, Without_Near_R, Without_Near_L, Without_Distance_R, Without_Distance_L, With_Near_R, With_Near_L, With_Distance_R, With_Distance_L) values (@ID, @diagnosis, @muscle, @intrR, " +
+                        "@intrL, @glasses, @contacts, @softr, @softl, @toric, @presc, @surgery, @followup, @Without_Near_R, @Without_Near_L, @Without_Distance_R, @Without_Distance_L, " +
+                       "@With_Near_R, @With_Near_L, @With_Distance_R, @With_Distance_L)";
+                    sqlcon.Open();
+                    SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                    int fid = 0;
+                    fid = int.Parse(nIDcbox.SelectedValue.ToString());
+
+                    cmd.Parameters.Add("@ID", SqlDbType.Int);
+                    cmd.Parameters["@ID"].Value = fid; 
+
+                    cmd.Parameters.Add("@diagnosis", SqlDbType.VarChar);
+                    cmd.Parameters["@diagnosis"].Value = diagnosistext.Text;
+
+                    if (muscabnormal.Checked)
+                    {
+                        cmd.Parameters.Add("@muscle", SqlDbType.VarChar);
+                        cmd.Parameters["@muscle"].Value = abnormaltext.Text;
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@muscle", DBNull.Value);
+                    }
+
+                    cmd.Parameters.Add("@intrR", SqlDbType.Float);
+                    cmd.Parameters["@intrR"].Value = intraR.Text;
+                    cmd.Parameters.Add("@intrL", SqlDbType.Float);
+                    cmd.Parameters["@intrL"].Value = intraL.Text;
+
+
+
+                    if (glassescb.Checked)
+                    {
+                        cmd.Parameters.Add("@glasses", SqlDbType.Bit);
+                        cmd.Parameters["@glasses"].Value = 1;
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add("@glasses", SqlDbType.Bit);
+                        cmd.Parameters["@glasses"].Value = 0;
+                    }
+
+
+                
+                    if (contbox.Checked)
+                    {
+                        cmd.Parameters.Add("@contacts", SqlDbType.Bit);
+                        cmd.Parameters["@contacts"].Value = 1;
+                        if (soft.Checked)
+                        {
+                            cmd.Parameters.Add("@softr", SqlDbType.Float);
+                            cmd.Parameters["@softr"].Value = softRtext.Text;
+                            cmd.Parameters.Add("@softl", SqlDbType.Float);
+                            cmd.Parameters["@softl"].Value = softLtext.Text;
+                            cmd.Parameters.Add("@toric", SqlDbType.Bit);
+                            cmd.Parameters["@toric"].Value = 0;
+                        }
+                        else
+                        {
+                            cmd.Parameters.Add("@toric", SqlDbType.Bit);
+                            cmd.Parameters["@toric"].Value = 1;
+                            cmd.Parameters.AddWithValue("@softr", DBNull.Value);
+                            cmd.Parameters.AddWithValue("@softl", DBNull.Value);
+                        }
+
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add("@contacts", SqlDbType.Bit);
+                        cmd.Parameters["@contacts"].Value = 0;
+                        cmd.Parameters.AddWithValue("@softr", DBNull.Value);
+                        cmd.Parameters.AddWithValue("@softl", DBNull.Value); 
+                        cmd.Parameters.Add("@toric", SqlDbType.Bit);
+                        cmd.Parameters["@toric"].Value = 0;
+                    }
+
+
+                    if (prescb.Checked)
+                    {
+                        cmd.Parameters.Add("@presc", SqlDbType.Bit);
+                        cmd.Parameters["@presc"].Value = 1;
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add("@presc", SqlDbType.Bit);
+                        cmd.Parameters["@presc"].Value = 0;
+                    }
+
+
+                    if (surgerycb.Checked)
+                    {
+                        cmd.Parameters.Add("@surgery", SqlDbType.Bit);
+                        cmd.Parameters["@surgery"].Value = 1;
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add("@surgery", SqlDbType.Bit);
+                        cmd.Parameters["@surgery"].Value = 0;
+                    }
+
+
+                    if (fupcb.Checked)
+                    {
+                        cmd.Parameters.Add("@followup", SqlDbType.Bit);
+                        cmd.Parameters["@followup"].Value = 1;
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add("@followup", SqlDbType.Bit);
+                        cmd.Parameters["@followup"].Value = 0;
+                    }
+
+                    cmd.Parameters.Add("@With_Distance_L", SqlDbType.Float);
+                    cmd.Parameters["@With_Distance_L"].Value = With_Distance_L.Text;
+
+                    cmd.Parameters.Add("@With_Distance_R", SqlDbType.Float);
+                    cmd.Parameters["@With_Distance_R"].Value = With_Distance_R.Text;
+
+                    cmd.Parameters.Add("@With_Near_L", SqlDbType.Float);
+                    cmd.Parameters["@With_Near_L"].Value = With_Near_L.Text;
+
+                    cmd.Parameters.Add("@With_Near_R", SqlDbType.Float);
+                    cmd.Parameters["@With_Near_R"].Value = With_Near_R.Text;
+
+                    cmd.Parameters.Add("@Without_Distance_L", SqlDbType.Float);
+                    cmd.Parameters["@Without_Distance_L"].Value = Without_Distance_L.Text;
+
+                    cmd.Parameters.Add("@Without_Distance_R", SqlDbType.Float);
+                    cmd.Parameters["@Without_Distance_R"].Value = Without_Distance_R.Text;
+
+                    cmd.Parameters.Add("@Without_Near_L", SqlDbType.Float);
+                    cmd.Parameters["@Without_Near_L"].Value = Without_Near_L.Text;
+
+                    cmd.Parameters.Add("@Without_Near_R", SqlDbType.Float);
+                    cmd.Parameters["@Without_Near_R"].Value = Without_Near_R.Text;
+
+                
+                    cmd.ExecuteNonQuery();
+                    sqlcon.Close();
+
+
+                }
+            }
+        }
+
+        private void prescb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (prescb.Checked)
+            {
+                Prescription pr = new Prescription();
+                pr.Show();
+
+            }
+        }
+        private bool Checkbox_checked()
+        {
+            if (Without_Distance_R.Text == null || Without_Distance_L.Text == null || Without_Near_R.Text == null || Without_Near_L.Text == null ||
+                diagnosistext.Text == null || intraR.Text == null || intraL.Text == null)
+            {
+                MessageBox.Show("Report is Incomplete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return true;
+            }
+            return false;
+                
+
+        }
+
+        private void muscabnormal_CheckedChanged(object sender, EventArgs e)
+        {
+            if (muscabnormal.Checked)
+                abnormaltext.Visible = true;
+        }
+
+        private void muscnormal_CheckedChanged(object sender, EventArgs e)
+        {
+            abnormaltext.Visible = false;
+        }
+
+        private void contbox_CheckedChanged(object sender, EventArgs e)
+        {
+            soft.Visible = true;
+            toric.Visible = true;
+            if (!contbox.Checked)
+            {
+                soft.Visible = false;
+                toric.Visible = false;
+                softRtext.Visible = false;
+                softLtext.Visible = false;
+                label5.Visible = false;
+                label3.Visible = false;
+            }
+        }
+
+        private void soft_CheckedChanged(object sender, EventArgs e)
+        {
+            softRtext.Visible = true;
+            softLtext.Visible = true;
+            label5.Visible = true;
+            label3.Visible = true;
+        }
+
+        private void toric_CheckedChanged(object sender, EventArgs e)
+        {
+            softRtext.Visible = false;
+            softLtext.Visible = false;
+            label5.Visible = false;
+            label3.Visible = false;
+        }
+
     }
+
 }

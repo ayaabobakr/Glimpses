@@ -30,6 +30,7 @@ namespace Glimpses_Clinic.Forms
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -64,8 +65,15 @@ namespace Glimpses_Clinic.Forms
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pwtext = new System.Windows.Forms.TextBox();
+            this.usertext = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +97,18 @@ namespace Glimpses_Clinic.Forms
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(366, 660);
             this.panel4.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(228, 218);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 26);
+            this.label7.TabIndex = 62;
+            this.label7.Text = "ID";
             // 
             // label3
             // 
@@ -434,22 +454,10 @@ namespace Glimpses_Clinic.Forms
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label14.Location = new System.Drawing.Point(288, 378);
+            this.label14.Location = new System.Drawing.Point(555, 378);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(1300, 2);
             this.label14.TabIndex = 74;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(228, 218);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 26);
-            this.label7.TabIndex = 62;
-            this.label7.Text = "ID";
             // 
             // dateTimePicker1
             // 
@@ -459,12 +467,114 @@ namespace Glimpses_Clinic.Forms
             this.dateTimePicker1.Size = new System.Drawing.Size(353, 31);
             this.dateTimePicker1.TabIndex = 75;
             // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label8.Location = new System.Drawing.Point(1584, 359);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(144, 22);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "Forgot password?";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::Glimpses_Clinic.Properties.Resources.icons8_front_desk_48;
+            this.button3.Location = new System.Drawing.Point(1448, 418);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(191, 85);
+            this.button3.TabIndex = 84;
+            this.button3.Text = "Receptionist ";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = global::Glimpses_Clinic.Properties.Resources.icons8_doctor_47;
+            this.button5.Location = new System.Drawing.Point(1166, 418);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(191, 85);
+            this.button5.TabIndex = 83;
+            this.button5.Text = "Doctor";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(1067, -6);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(210, 31);
+            this.label19.TabIndex = 82;
+            this.label19.Text = "ACCOUNT LOGIN";
+            // 
+            // pwtext
+            // 
+            this.pwtext.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pwtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pwtext.Location = new System.Drawing.Point(1073, 301);
+            this.pwtext.MaxLength = 25;
+            this.pwtext.Name = "pwtext";
+            this.pwtext.Size = new System.Drawing.Size(647, 34);
+            this.pwtext.TabIndex = 81;
+            this.pwtext.UseSystemPasswordChar = true;
+            // 
+            // usertext
+            // 
+            this.usertext.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.usertext.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usertext.Location = new System.Drawing.Point(1073, 165);
+            this.usertext.MaxLength = 25;
+            this.usertext.Name = "usertext";
+            this.usertext.Size = new System.Drawing.Size(647, 34);
+            this.usertext.TabIndex = 80;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(1255, 217);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(123, 31);
+            this.label21.TabIndex = 79;
+            this.label21.Text = "Password";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(1067, 106);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(128, 31);
+            this.label22.TabIndex = 78;
+            this.label22.Text = "Username";
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1248, 660);
+            this.ClientSize = new System.Drawing.Size(1783, 660);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.pwtext);
+            this.Controls.Add(this.usertext);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button4);
@@ -540,5 +650,13 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox pwtext;
+        private System.Windows.Forms.TextBox usertext;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
     }
 }

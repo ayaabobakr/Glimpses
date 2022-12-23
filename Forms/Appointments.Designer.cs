@@ -29,14 +29,14 @@ namespace Glimpses_Clinic.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Appointments));
             this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.c1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.c2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.c4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.c5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.c6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.c3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
@@ -45,13 +45,12 @@ namespace Glimpses_Clinic.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader1,
-            this.columnHeader6,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader2,
-            this.columnHeader5});
+            this.c1,
+            this.c2,
+            this.c3,
+            this.c4,
+            this.c5,
+            this.c6});
             this.listView1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.Color.Red;
             this.listView1.FullRowSelect = true;
@@ -64,43 +63,35 @@ namespace Glimpses_Clinic.Forms
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
+            // c1
             // 
-            this.columnHeader1.DisplayIndex = 1;
-            this.columnHeader1.Text = "Name";
-            this.columnHeader1.Width = 381;
+            this.c1.Text = "National ID";
+            this.c1.Width = 242;
             // 
-            // columnHeader3
+            // c2
             // 
-            this.columnHeader3.Text = "Date";
-            this.columnHeader3.Width = 238;
+            this.c2.Text = "Name";
+            this.c2.Width = 197;
             // 
-            // columnHeader4
+            // c4
             // 
-            this.columnHeader4.DisplayIndex = 3;
-            this.columnHeader4.Text = "Time";
-            this.columnHeader4.Width = 251;
+            this.c4.Text = "Gender";
+            this.c4.Width = 247;
             // 
-            // columnHeader7
+            // c5
             // 
-            this.columnHeader7.DisplayIndex = 0;
-            this.columnHeader7.Text = "National ID";
-            this.columnHeader7.Width = 242;
+            this.c5.Text = "Date";
+            this.c5.Width = 169;
             // 
-            // columnHeader2
+            // c6
             // 
-            this.columnHeader2.Text = "Allergies";
-            this.columnHeader2.Width = 256;
+            this.c6.Text = "Time";
+            this.c6.Width = 251;
             // 
-            // columnHeader5
+            // c3
             // 
-            this.columnHeader5.Text = "Symptoms";
-            this.columnHeader5.Width = 316;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Gneder";
-            this.columnHeader6.Width = 171;
+            this.c3.Text = "Age";
+            this.c3.Width = 144;
             // 
             // Appointments
             // 
@@ -108,6 +99,7 @@ namespace Glimpses_Clinic.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1244, 590);
             this.Controls.Add(this.listView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Appointments";
             this.Text = "Appointments";
             this.Load += new System.EventHandler(this.Appointments_Load);
@@ -118,12 +110,11 @@ namespace Glimpses_Clinic.Forms
         #endregion
 
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader c2;
+        private System.Windows.Forms.ColumnHeader c5;
+        private System.Windows.Forms.ColumnHeader c6;
+        private System.Windows.Forms.ColumnHeader c1;
+        private System.Windows.Forms.ColumnHeader c4;
+        private System.Windows.Forms.ColumnHeader c3;
     }
 }

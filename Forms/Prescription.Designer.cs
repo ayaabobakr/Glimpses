@@ -29,17 +29,19 @@ namespace Glimpses_Clinic.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prescription));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.dayrb = new System.Windows.Forms.RadioButton();
+            this.weekrb = new System.Windows.Forms.RadioButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Submitbtn = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.nIDcbox = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -54,19 +56,6 @@ namespace Glimpses_Clinic.Forms
             this.label1.Size = new System.Drawing.Size(344, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Medical Prescription Form";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(71, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Patient";
             // 
             // label3
             // 
@@ -88,50 +77,41 @@ namespace Glimpses_Clinic.Forms
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(72, 421);
+            this.label4.Location = new System.Drawing.Point(33, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Take";
             // 
-            // textBox1
+            // dayrb
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(152, 420);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 26);
-            this.textBox1.TabIndex = 5;
+            this.dayrb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dayrb.AutoSize = true;
+            this.dayrb.BackColor = System.Drawing.Color.Transparent;
+            this.dayrb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayrb.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dayrb.Location = new System.Drawing.Point(523, 210);
+            this.dayrb.Name = "dayrb";
+            this.dayrb.Size = new System.Drawing.Size(62, 23);
+            this.dayrb.TabIndex = 6;
+            this.dayrb.TabStop = true;
+            this.dayrb.Text = "Day";
+            this.dayrb.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // weekrb
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.radioButton1.Location = new System.Drawing.Point(523, 421);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(62, 23);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Day";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.radioButton2.Location = new System.Drawing.Point(648, 421);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 23);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Week";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.weekrb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.weekrb.AutoSize = true;
+            this.weekrb.BackColor = System.Drawing.Color.Transparent;
+            this.weekrb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weekrb.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.weekrb.Location = new System.Drawing.Point(648, 210);
+            this.weekrb.Name = "weekrb";
+            this.weekrb.Size = new System.Drawing.Size(76, 23);
+            this.weekrb.TabIndex = 7;
+            this.weekrb.TabStop = true;
+            this.weekrb.Text = "Week";
+            this.weekrb.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker1
             // 
@@ -145,11 +125,11 @@ namespace Glimpses_Clinic.Forms
             // 
             this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(76, 208);
+            this.textBox13.Location = new System.Drawing.Point(37, 273);
             this.textBox13.MaxLength = 100;
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(648, 178);
+            this.textBox13.Size = new System.Drawing.Size(687, 178);
             this.textBox13.TabIndex = 61;
             // 
             // label5
@@ -159,26 +139,62 @@ namespace Glimpses_Clinic.Forms
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(389, 421);
+            this.label5.Location = new System.Drawing.Point(389, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 19);
             this.label5.TabIndex = 62;
             this.label5.Text = "times per";
             // 
-            // button2
+            // Submitbtn
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Glimpses_Clinic.Properties.Resources.icons8_appointment_50__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(569, 479);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 63);
-            this.button2.TabIndex = 73;
-            this.button2.Text = "Submit";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Submitbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Submitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Submitbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submitbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_appointment_50__1_;
+            this.Submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Submitbtn.Location = new System.Drawing.Point(542, 479);
+            this.Submitbtn.Name = "Submitbtn";
+            this.Submitbtn.Size = new System.Drawing.Size(182, 83);
+            this.Submitbtn.TabIndex = 73;
+            this.Submitbtn.Text = "Submit";
+            this.Submitbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Submitbtn.UseVisualStyleBackColor = true;
+            this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(33, 154);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 19);
+            this.label8.TabIndex = 125;
+            this.label8.Text = "National ID";
+            // 
+            // nIDcbox
+            // 
+            this.nIDcbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.nIDcbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.nIDcbox.BackColor = System.Drawing.Color.White;
+            this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nIDcbox.FormattingEnabled = true;
+            this.nIDcbox.Location = new System.Drawing.Point(148, 148);
+            this.nIDcbox.Name = "nIDcbox";
+            this.nIDcbox.Size = new System.Drawing.Size(220, 31);
+            this.nIDcbox.TabIndex = 126;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.BackColor = System.Drawing.Color.White;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(148, 206);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(220, 31);
+            this.comboBox1.TabIndex = 127;
             // 
             // Prescription
             // 
@@ -186,17 +202,20 @@ namespace Glimpses_Clinic.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(782, 574);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.nIDcbox);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.weekrb);
+            this.Controls.Add(this.dayrb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Prescription";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -210,15 +229,16 @@ namespace Glimpses_Clinic.Forms
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton dayrb;
+        private System.Windows.Forms.RadioButton weekrb;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Submitbtn;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox nIDcbox;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -104,17 +104,12 @@ namespace Glimpses_Clinic
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-            OpenChildPanel(new Forms.LogIn(), sender);
+            OpenChildPanel(new Login(), sender);
         }
 
         private void registerbtn_Click(object sender, EventArgs e)
         {
             OpenChildPanel(new Forms.Register(), sender);
-        }
-
-        private void aboutbtn_Click(object sender, EventArgs e)
-        {
-            OpenChildPanel(new Forms.AboutUs(), sender);
         }
 
         private void closebtn_Click(object sender, EventArgs e)
@@ -126,5 +121,9 @@ namespace Glimpses_Clinic
             Reset();
         }
 
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

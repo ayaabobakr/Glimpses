@@ -29,22 +29,24 @@ namespace Glimpses_Clinic
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Doctor));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.receptionistsbtn = new System.Windows.Forms.Button();
+            this.eyerepbtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.medrecbtn = new System.Windows.Forms.Button();
-            this.ordbtn = new System.Windows.Forms.Button();
             this.patbtn = new System.Windows.Forms.Button();
             this.appointbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.closebtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,10 +55,9 @@ namespace Glimpses_Clinic
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(65)))));
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.receptionistsbtn);
+            this.panel1.Controls.Add(this.eyerepbtn);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.medrecbtn);
-            this.panel1.Controls.Add(this.ordbtn);
             this.panel1.Controls.Add(this.patbtn);
             this.panel1.Controls.Add(this.appointbtn);
             this.panel1.Controls.Add(this.panel2);
@@ -66,25 +67,45 @@ namespace Glimpses_Clinic
             this.panel1.Size = new System.Drawing.Size(256, 740);
             this.panel1.TabIndex = 2;
             // 
-            // button2
+            // receptionistsbtn
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = global::Glimpses_Clinic.Properties.Resources.icons8_eye_unchecked_50;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 479);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(256, 94);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Eye Report";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.receptionistsbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.receptionistsbtn.FlatAppearance.BorderSize = 0;
+            this.receptionistsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.receptionistsbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receptionistsbtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.receptionistsbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_receptionist_64;
+            this.receptionistsbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.receptionistsbtn.Location = new System.Drawing.Point(0, 385);
+            this.receptionistsbtn.Name = "receptionistsbtn";
+            this.receptionistsbtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.receptionistsbtn.Size = new System.Drawing.Size(256, 94);
+            this.receptionistsbtn.TabIndex = 8;
+            this.receptionistsbtn.Text = "Receptionists";
+            this.receptionistsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.receptionistsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.receptionistsbtn.UseVisualStyleBackColor = true;
+            this.receptionistsbtn.Click += new System.EventHandler(this.receptionistsbtn_Click);
+            // 
+            // eyerepbtn
+            // 
+            this.eyerepbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.eyerepbtn.FlatAppearance.BorderSize = 0;
+            this.eyerepbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eyerepbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eyerepbtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.eyerepbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_eye_unchecked_50;
+            this.eyerepbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.eyerepbtn.Location = new System.Drawing.Point(0, 291);
+            this.eyerepbtn.Name = "eyerepbtn";
+            this.eyerepbtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.eyerepbtn.Size = new System.Drawing.Size(256, 94);
+            this.eyerepbtn.TabIndex = 7;
+            this.eyerepbtn.Text = "Eyesight Report";
+            this.eyerepbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.eyerepbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.eyerepbtn.UseVisualStyleBackColor = true;
+            this.eyerepbtn.Click += new System.EventHandler(this.eyerepbtn_Click);
             // 
             // button1
             // 
@@ -104,47 +125,6 @@ namespace Glimpses_Clinic
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // medrecbtn
-            // 
-            this.medrecbtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.medrecbtn.FlatAppearance.BorderSize = 0;
-            this.medrecbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.medrecbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medrecbtn.ForeColor = System.Drawing.Color.Gainsboro;
-            this.medrecbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_medical_file_49;
-            this.medrecbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.medrecbtn.Location = new System.Drawing.Point(0, 385);
-            this.medrecbtn.Name = "medrecbtn";
-            this.medrecbtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.medrecbtn.Size = new System.Drawing.Size(256, 94);
-            this.medrecbtn.TabIndex = 4;
-            this.medrecbtn.Text = "Medical Records";
-            this.medrecbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.medrecbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.medrecbtn.UseVisualStyleBackColor = true;
-            this.medrecbtn.Click += new System.EventHandler(this.medrecbtn_Click);
-            // 
-            // ordbtn
-            // 
-            this.ordbtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ordbtn.FlatAppearance.BorderSize = 0;
-            this.ordbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ordbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ordbtn.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ordbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_eye_glasses_50;
-            this.ordbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordbtn.Location = new System.Drawing.Point(0, 291);
-            this.ordbtn.Name = "ordbtn";
-            this.ordbtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.ordbtn.Size = new System.Drawing.Size(256, 94);
-            this.ordbtn.TabIndex = 3;
-            this.ordbtn.Text = " Orders";
-            this.ordbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ordbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ordbtn.UseVisualStyleBackColor = true;
-            this.ordbtn.Click += new System.EventHandler(this.ordbtn_Click);
             // 
             // patbtn
             // 
@@ -189,11 +169,35 @@ namespace Glimpses_Clinic
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(35)))), ((int)(((byte)(58)))));
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 103);
             this.panel2.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Glimpses_Clinic.Properties.Resources.icons8_uchiha_eyes_48;
+            this.pictureBox2.Location = new System.Drawing.Point(31, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(101, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(136, 36);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Glimpses";
             // 
             // panel3
             // 
@@ -223,19 +227,17 @@ namespace Glimpses_Clinic
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(584, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 31);
+            this.label1.Size = new System.Drawing.Size(107, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Doctor";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.ForeColor = System.Drawing.Color.White;
@@ -243,30 +245,6 @@ namespace Glimpses_Clinic
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1262, 637);
             this.panel4.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Bold Italic Art", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(114)))), ((int)(((byte)(180)))));
-            this.label3.Location = new System.Drawing.Point(4, 283);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(354, 50);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Glimpses Eye Clinic";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Bold Italic Art", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(53)))), ((int)(((byte)(127)))));
-            this.label2.Location = new System.Drawing.Point(4, 197);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 41);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Welcome To";
             // 
             // pictureBox1
             // 
@@ -287,14 +265,19 @@ namespace Glimpses_Clinic
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Doctor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doctor";
+            this.Load += new System.EventHandler(this.Doctor_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -303,8 +286,6 @@ namespace Glimpses_Clinic
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button medrecbtn;
-        private System.Windows.Forms.Button ordbtn;
         private System.Windows.Forms.Button patbtn;
         private System.Windows.Forms.Button appointbtn;
         private System.Windows.Forms.Panel panel2;
@@ -312,10 +293,11 @@ namespace Glimpses_Clinic
         private System.Windows.Forms.Button closebtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button eyerepbtn;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button receptionistsbtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

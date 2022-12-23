@@ -30,10 +30,11 @@ namespace Glimpses_Clinic
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.aboutbtn = new System.Windows.Forms.Button();
             this.registerbtn = new System.Windows.Forms.Button();
             this.loginbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.closebtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,6 +44,8 @@ namespace Glimpses_Clinic
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,7 +54,6 @@ namespace Glimpses_Clinic
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(65)))));
-            this.panel1.Controls.Add(this.aboutbtn);
             this.panel1.Controls.Add(this.registerbtn);
             this.panel1.Controls.Add(this.loginbtn);
             this.panel1.Controls.Add(this.panel2);
@@ -60,26 +62,6 @@ namespace Glimpses_Clinic
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 787);
             this.panel1.TabIndex = 2;
-            // 
-            // aboutbtn
-            // 
-            this.aboutbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.aboutbtn.FlatAppearance.BorderSize = 0;
-            this.aboutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aboutbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aboutbtn.ForeColor = System.Drawing.Color.Gainsboro;
-            this.aboutbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_information_48;
-            this.aboutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aboutbtn.Location = new System.Drawing.Point(0, 693);
-            this.aboutbtn.Name = "aboutbtn";
-            this.aboutbtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.aboutbtn.Size = new System.Drawing.Size(220, 94);
-            this.aboutbtn.TabIndex = 3;
-            this.aboutbtn.Text = "  About Us";
-            this.aboutbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aboutbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.aboutbtn.UseVisualStyleBackColor = true;
-            this.aboutbtn.Click += new System.EventHandler(this.aboutbtn_Click);
             // 
             // registerbtn
             // 
@@ -124,11 +106,35 @@ namespace Glimpses_Clinic
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(35)))), ((int)(((byte)(58)))));
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 115);
             this.panel2.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Glimpses_Clinic.Properties.Resources.icons8_uchiha_eyes_48;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(77, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 36);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Glimpses";
             // 
             // panel3
             // 
@@ -240,7 +246,11 @@ namespace Glimpses_Clinic
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -253,7 +263,6 @@ namespace Glimpses_Clinic
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button aboutbtn;
         private System.Windows.Forms.Button registerbtn;
         private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.Panel panel2;
@@ -265,6 +274,8 @@ namespace Glimpses_Clinic
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
