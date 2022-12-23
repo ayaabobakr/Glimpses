@@ -107,12 +107,6 @@
     <Compile Include="Forms\Prescription.Designer.cs">
       <DependentUpon>Prescription.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Profile.Designer.cs">
-      <DependentUpon>Profile.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\RecAppointments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,12 +124,6 @@
     </Compile>
     <Compile Include="Forms\ViewMR.Designer.cs">
       <DependentUpon>ViewMR.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\ViewPrescription.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ViewPrescription.Designer.cs">
-      <DependentUpon>ViewPrescription.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -182,9 +170,6 @@
     <EmbeddedResource Include="Forms\Prescription.resx">
       <DependentUpon>Prescription.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Profile.resx">
-      <DependentUpon>Profile.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RecAppointments.resx">
       <DependentUpon>RecAppointments.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,9 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewMR.resx">
       <DependentUpon>ViewMR.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ViewPrescription.resx">
-      <DependentUpon>ViewPrescription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
