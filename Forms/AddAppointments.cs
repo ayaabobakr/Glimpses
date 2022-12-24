@@ -78,88 +78,128 @@ namespace Glimpses_Clinic.Forms
             button1230.Visible = true;
             button2.Visible = true;
             button230.Visible = true;
+
+            string theDate = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-                foreach (Control btns in this.Controls)
+                string date = "SELECT Date from Appointment where Date = PARSE('" + theDate + "' as date);" + "'";
+                SqlCommand cmdt = new SqlCommand(date, sqlcon);
+                try
                 {
-                    if (btns.GetType() == typeof(Button))
+                    sqlcon.Open();
+                    object idfind = cmdt.ExecuteScalar();
+                    if (idfind == null)
                     {
-                        Button btn = (Button)btns;
-                        String t = btn.Text.ToString();
-                        MessageBox.Show(t, "Try Again");
-                        var date = DateTime.ParseExact(t, "HH:mm:ss", CultureInfo.CurrentCulture);
-                        string time = "SELECT Time from Appointment where Time = "+ date + "'";
-                        sqlcon.Open();
-                        SqlCommand cmdt = new SqlCommand(time, sqlcon);
-                        object idfind = cmdt.ExecuteScalar();
-                        if (idfind == null)
-                        {
-                            MessageBox.Show("Invalid user credentials!", "Try Again");
-                        }
-                        else
-                        {
-                            btn.Enabled = false;
-                        }
-                        sqlcon.Close();
+                        MessageBox.Show("Invalid user credentials!", "Error");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid user credentials!", "done");
                     }
                 }
-                
+                catch
+                {
+                    MessageBox.Show("Unhandled exception!", "Error");
+                }
+                finally
+                {
+                    sqlcon.Close();
+                }
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             //using (SqlConnection sqlcon = new SqlConnection(conStr))
             //{
-            //    string date = "Select Date from Appointment where Date = " + monthCalendar1.SelectionRange.Start.ToShortDateString() + "'"; ;
-            //    //string time = "SELECT Time from Appointment where Time = @time";
-            //    sqlcon.Open();
-            //    SqlCommand cmdd = new SqlCommand(date, sqlcon);
-            //    //SqlCommand cmdt = new SqlCommand(time, sqlcon);
-            //    //cmdt.Parameters.Add("@time", "123");
-            //    //SqlDataReader red = cmdt.ExecuteReader();
-            //    object idfind = cmdd.ExecuteScalar();
-            //    if (idfind == null)
-            //    {
-            //        string data = "Insert into Appointment values(@ID, @date, @time, @bill)";
-            //        SqlCommand cmddata = new SqlCommand(data, sqlcon);
-            //        int fid = 0;
-            //        fid = int.Parse(nIDcbox.SelectedValue.ToString());
+            //    string time = "SELECT Time from Appointment where Time = "+ btn.Text +";" + "'";
 
-            //        cmddata.Parameters.Add("@ID", SqlDbType.Int);
-            //        cmddata.Parameters["@ID"].Value = fid;
-            //        cmddata.Parameters.Add("@date", SqlDbType.Date);
-            //        cmddata.Parameters["@date"].Value = monthCalendar1.SelectionRange.Start.ToShortDateString();
-            //        cmddata.Parameters.Add("@time", SqlDbType.Time);
-            //        cmddata.Parameters["@time"].Value = button1;
-            //    }
-            //    else
-            //    {
-            //        if (!string.IsNullOrEmpty(Convert.ToString(idfind)))
-            //        {
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Invalid user credentials!", "Try Again");
-            //        }
-            //    }
+                //    SqlCommand cmdt = new SqlCommand(time, sqlcon);
+                //    try
+                //    {
+                //        sqlcon.Open();
+                //        object idfind = cmdt.ExecuteScalar();
+                //        if (idfind == null)
+                //        {
+                //            MessageBox.Show("Invalid user credentials!", "Error");
+                //        }
+                //        else
+                //        {
+                //            if (!string.IsNullOrEmpty(Convert.ToString(idfind)))
+                //            {
+                //                btn.Enabled = false;
+                //            }
+                //            else
+                //            {
+                //                MessageBox.Show("Invalid user credentials!", "Try Again");
+                //            }
+                //        }
+                //    }catch (Exception ex)
+                //    {
+                //        MessageBox.Show("Unhandled exception!", "Error");
+                //    }
+                //    finally
+                //    {
+                //        sqlcon.Close();
+                //    }
 
-            //    sqlcon.Close();
 
-            //}
+
+
+
+
+                //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //using (SqlConnection sqlcon = new SqlConnection(conStr))
+                //{
+                //    string date = "Select Date from Appointment where Date = " + monthCalendar1.SelectionRange.Start.ToShortDateString() + "'"; ;
+                //    //string time = "SELECT Time from Appointment where Time = @time";
+                //    sqlcon.Open();
+                //    SqlCommand cmdd = new SqlCommand(date, sqlcon);
+                //    //SqlCommand cmdt = new SqlCommand(time, sqlcon);
+                //    //cmdt.Parameters.Add("@time", "123");
+                //    //SqlDataReader red = cmdt.ExecuteReader();
+                //    object idfind = cmdd.ExecuteScalar();
+                //    if (idfind == null)
+                //    {
+                //        string data = "Insert into Appointment values(@ID, @date, @time, @bill)";
+                //        SqlCommand cmddata = new SqlCommand(data, sqlcon);
+                //        int fid = 0;
+                //        fid = int.Parse(nIDcbox.SelectedValue.ToString());
+
+                //        cmddata.Parameters.Add("@ID", SqlDbType.Int);
+                //        cmddata.Parameters["@ID"].Value = fid;
+                //        cmddata.Parameters.Add("@date", SqlDbType.Date);
+                //        cmddata.Parameters["@date"].Value = monthCalendar1.SelectionRange.Start.ToShortDateString();
+                //        cmddata.Parameters.Add("@time", SqlDbType.Time);
+                //        cmddata.Parameters["@time"].Value = button1;
+                //    }
+                //    else
+                //    {
+                //        if (!string.IsNullOrEmpty(Convert.ToString(idfind)))
+                //        {
+                //        }
+                //        else
+                //        {
+                //            MessageBox.Show("Invalid user credentials!", "Try Again");
+                //        }
+                //    }
+
+                //    sqlcon.Close();
+
+                //}
         }
     }
 }

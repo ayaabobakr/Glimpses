@@ -350,9 +350,9 @@ namespace Glimpses_Clinic.Forms
             this.contbox.Location = new System.Drawing.Point(912, 493);
             this.contbox.Margin = new System.Windows.Forms.Padding(4);
             this.contbox.Name = "contbox";
-            this.contbox.Size = new System.Drawing.Size(114, 27);
+            this.contbox.Size = new System.Drawing.Size(176, 27);
             this.contbox.TabIndex = 90;
-            this.contbox.Text = "Contacts";
+            this.contbox.Text = "Contact Lenses";
             this.contbox.UseVisualStyleBackColor = true;
             this.contbox.CheckedChanged += new System.EventHandler(this.contbox_CheckedChanged);
             // 
@@ -568,7 +568,7 @@ namespace Glimpses_Clinic.Forms
             this.soft.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.soft.AutoSize = true;
             this.soft.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.soft.Location = new System.Drawing.Point(1056, 494);
+            this.soft.Location = new System.Drawing.Point(1151, 491);
             this.soft.Margin = new System.Windows.Forms.Padding(4);
             this.soft.Name = "soft";
             this.soft.Size = new System.Drawing.Size(70, 27);
@@ -583,7 +583,7 @@ namespace Glimpses_Clinic.Forms
             this.toric.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.toric.AutoSize = true;
             this.toric.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.toric.Location = new System.Drawing.Point(1056, 568);
+            this.toric.Location = new System.Drawing.Point(1151, 575);
             this.toric.Margin = new System.Windows.Forms.Padding(4);
             this.toric.Name = "toric";
             this.toric.Size = new System.Drawing.Size(77, 27);

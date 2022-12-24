@@ -27,7 +27,7 @@ namespace Glimpses_Clinic.Forms
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
             string sql = "Select P.NationalID, P.Name, P.Gender, P.DateOfBirth, A.Date, A.Time " +
-                "From Patient as P, Appointment AS A;";
+                "From Patient as P, Appointment AS A where A.NationalID=P.NationalID order by A.Date, A.Time;";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader rd;
             rd = cmd.ExecuteReader();
@@ -42,7 +42,7 @@ namespace Glimpses_Clinic.Forms
                 lv.SubItems.Add(age.ToString());
                 lv.SubItems.Add(rd.GetString(2).ToString());
                 lv.SubItems.Add(rd.GetDateTime(4).ToString("dd/MM/yyyy"));
-                lv.SubItems.Add(rd.GetTimeSpan(5).ToString());
+                lv.SubItems.Add(rd.GetString(5).ToString());
                 listView1.Items.Add(lv);
             }
             rd.Close();

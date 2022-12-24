@@ -62,7 +62,7 @@ namespace Glimpses_Clinic.Forms
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.symptomstext = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.diseasetext = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.nIDcbox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -460,17 +460,17 @@ namespace Glimpses_Clinic.Forms
             this.symptomstext.TabIndex = 155;
             this.symptomstext.Text = "";
             // 
-            // richTextBox2
+            // diseasetext
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.White;
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(377, 660);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(336, 50);
-            this.richTextBox2.TabIndex = 157;
-            this.richTextBox2.Text = "";
+            this.diseasetext.BackColor = System.Drawing.Color.White;
+            this.diseasetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.diseasetext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diseasetext.Location = new System.Drawing.Point(377, 660);
+            this.diseasetext.Name = "diseasetext";
+            this.diseasetext.ReadOnly = true;
+            this.diseasetext.Size = new System.Drawing.Size(336, 50);
+            this.diseasetext.TabIndex = 157;
+            this.diseasetext.Text = "";
             // 
             // label3
             // 
@@ -560,7 +560,7 @@ namespace Glimpses_Clinic.Forms
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.nIDcbox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.diseasetext);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.symptomstext);
             this.Controls.Add(this.label2);
@@ -640,7 +640,7 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox symptomstext;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox diseasetext;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox nIDcbox;
         private System.Windows.Forms.Label label4;

@@ -82,8 +82,9 @@ namespace Glimpses_Clinic.Forms
             this.searchbtn.Name = "searchbtn";
             this.searchbtn.Size = new System.Drawing.Size(115, 35);
             this.searchbtn.TabIndex = 39;
-            this.searchbtn.Text = "Search";
+            this.searchbtn.Text = "Delete";
             this.searchbtn.UseVisualStyleBackColor = true;
+            this.searchbtn.Click += new System.EventHandler(this.searchbtn_Click);
             // 
             // textBox1
             // 
@@ -92,6 +93,7 @@ namespace Glimpses_Clinic.Forms
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(240, 22);
             this.textBox1.TabIndex = 38;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 

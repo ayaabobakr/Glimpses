@@ -118,7 +118,7 @@ namespace Glimpses_Clinic.Forms
             this.button230.Name = "button230";
             this.button230.Size = new System.Drawing.Size(116, 67);
             this.button230.TabIndex = 6;
-            this.button230.Text = "2:30:00";
+            this.button230.Text = "2:30";
             this.button230.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button230.UseVisualStyleBackColor = false;
             // 
@@ -134,7 +134,7 @@ namespace Glimpses_Clinic.Forms
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 67);
             this.button2.TabIndex = 7;
-            this.button2.Text = "2:00:00";
+            this.button2.Text = "2:00";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -150,7 +150,7 @@ namespace Glimpses_Clinic.Forms
             this.button130.Name = "button130";
             this.button130.Size = new System.Drawing.Size(116, 67);
             this.button130.TabIndex = 8;
-            this.button130.Text = "1:30:00";
+            this.button130.Text = "1:30";
             this.button130.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button130.UseVisualStyleBackColor = false;
             // 
@@ -166,7 +166,7 @@ namespace Glimpses_Clinic.Forms
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 67);
             this.button1.TabIndex = 9;
-            this.button1.Text = "1:00:00";
+            this.button1.Text = "1:00";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -182,7 +182,7 @@ namespace Glimpses_Clinic.Forms
             this.button1230.Name = "button1230";
             this.button1230.Size = new System.Drawing.Size(116, 67);
             this.button1230.TabIndex = 10;
-            this.button1230.Text = "12:30:00";
+            this.button1230.Text = "12:30";
             this.button1230.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1230.UseVisualStyleBackColor = false;
             // 
@@ -198,7 +198,7 @@ namespace Glimpses_Clinic.Forms
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(116, 67);
             this.button12.TabIndex = 11;
-            this.button12.Text = "12:00:00";
+            this.button12.Text = "12:00";
             this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);

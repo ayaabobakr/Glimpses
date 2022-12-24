@@ -89,7 +89,7 @@ namespace Glimpses_Clinic.Forms
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
                 string insert = "INSERT INTO MR values (@ID, @Eye_History, @Family_History, @Allergies, " +
-                    "@Symptoms, @Surgery, @Surgery_list, @Glasses, @Contacts, @Screentime, @Sinus, @Diabetes, " +
+                    "@Pat_Symptoms, @Symptoms, @Surgery, @Surgery_list, @Glasses, @Contacts, @Screentime, @Sinus, @Diabetes, " +
                     "@Pressure, @Redness, @Tearing, @Eyepain, @Burning, @Discharge, @Soreness, @Itching, @Dryness, @Flashes)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
@@ -106,6 +106,9 @@ namespace Glimpses_Clinic.Forms
 
                 cmd.Parameters.Add("@Allergies", SqlDbType.VarChar);
                 cmd.Parameters["@Allergies"].Value = allergies.Text;
+
+                cmd.Parameters.Add("@Pat_Symptoms", SqlDbType.VarChar);
+                cmd.Parameters["@Pat_Symptoms"].Value = psymptext.Text;
 
                 cmd.Parameters.Add("@Symptoms", SqlDbType.VarChar);
                 cmd.Parameters["@Symptoms"].Value = sympcbox.SelectedItem;

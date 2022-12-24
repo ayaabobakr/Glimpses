@@ -71,6 +71,7 @@ namespace Glimpses_Clinic.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.nIDcbox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.psymptext = new System.Windows.Forms.RichTextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +81,7 @@ namespace Glimpses_Clinic.Forms
             this.famhistorytext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.famhistorytext.Location = new System.Drawing.Point(23, 306);
             this.famhistorytext.Name = "famhistorytext";
-            this.famhistorytext.Size = new System.Drawing.Size(613, 145);
+            this.famhistorytext.Size = new System.Drawing.Size(622, 145);
             this.famhistorytext.TabIndex = 46;
             this.famhistorytext.Text = "";
             // 
@@ -89,7 +90,7 @@ namespace Glimpses_Clinic.Forms
             this.eye_histtext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eye_histtext.Location = new System.Drawing.Point(22, 101);
             this.eye_histtext.Name = "eye_histtext";
-            this.eye_histtext.Size = new System.Drawing.Size(614, 128);
+            this.eye_histtext.Size = new System.Drawing.Size(623, 128);
             this.eye_histtext.TabIndex = 37;
             this.eye_histtext.Text = "";
             // 
@@ -452,13 +453,23 @@ namespace Glimpses_Clinic.Forms
             // 
             // sympcbox
             // 
+            this.sympcbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sympcbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sympcbox.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F);
             this.sympcbox.FormattingEnabled = true;
             this.sympcbox.Items.AddRange(new object[] {
-            "blurry",
-            "can\'t see long distances"});
-            this.sympcbox.Location = new System.Drawing.Point(372, 524);
+            "Blurred or distorted vision",
+            "Eyestrain or discomfort",
+            "Headaches",
+            "Difficulty with night vision",
+            "Squinting",
+            "Vision loss or blindness",
+            "Low vision",
+            "Sensitivity to light",
+            "The round opening at the center of the iris look more like a keyhole or teardrop"});
+            this.sympcbox.Location = new System.Drawing.Point(372, 674);
             this.sympcbox.Name = "sympcbox";
-            this.sympcbox.Size = new System.Drawing.Size(273, 24);
+            this.sympcbox.Size = new System.Drawing.Size(273, 31);
             this.sympcbox.TabIndex = 119;
             // 
             // submitbtn
@@ -500,7 +511,7 @@ namespace Glimpses_Clinic.Forms
             this.nIDcbox.BackColor = System.Drawing.Color.White;
             this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nIDcbox.FormattingEnabled = true;
-            this.nIDcbox.Location = new System.Drawing.Point(447, 23);
+            this.nIDcbox.Location = new System.Drawing.Point(456, 23);
             this.nIDcbox.Name = "nIDcbox";
             this.nIDcbox.Size = new System.Drawing.Size(189, 28);
             this.nIDcbox.TabIndex = 166;
@@ -510,11 +521,20 @@ namespace Glimpses_Clinic.Forms
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(301, 27);
+            this.label4.Location = new System.Drawing.Point(333, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 19);
             this.label4.TabIndex = 165;
             this.label4.Text = "National ID";
+            // 
+            // psymptext
+            // 
+            this.psymptext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.psymptext.Location = new System.Drawing.Point(372, 524);
+            this.psymptext.Name = "psymptext";
+            this.psymptext.Size = new System.Drawing.Size(273, 131);
+            this.psymptext.TabIndex = 167;
+            this.psymptext.Text = "";
             // 
             // MedicalRecord
             // 
@@ -522,6 +542,7 @@ namespace Glimpses_Clinic.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1534, 734);
+            this.Controls.Add(this.psymptext);
             this.Controls.Add(this.nIDcbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -617,5 +638,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox nIDcbox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RichTextBox psymptext;
     }
 }

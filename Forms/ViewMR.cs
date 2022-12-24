@@ -62,7 +62,7 @@ namespace Glimpses_Clinic.Forms
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
 
-            string sql = "Select [NationalID],[Eye_History],[Family_History],[Allergies],[Symptoms],[Surgery],[Surgery_list]," +
+            string sql = "Select [NationalID],[Eye_History],[Family_History],[Allergies],[Pat_Symptoms],[Surgery],[Surgery_list]," +
                 "[Glasses],[Contacts],[Screentime],[Sinus],[Diabetes],[Pressure],[Redness],[Tearing],[Eyepain],[Burning]" +
                 ",[Discharge],[Soreness],[Itching],[Dryness],[Flashes] From MR where NationalID = @id;";
             SqlCommand cmd = new SqlCommand(sql, conn);
@@ -77,6 +77,17 @@ namespace Glimpses_Clinic.Forms
                 famhistorytext.Text = da.GetValue(2).ToString();
                 allergies.Text = da.GetValue(3).ToString();
                 symptomstext.Text = da.GetValue(4).ToString();
+                var list = new string[] {"Blurred or distorted vision","Eyestrain or discomfort","Headaches",
+                    "Difficulty with night vision","Squinting"};
+                if (list.Contains(da.GetValue(4).ToString()))
+                {
+                    diseasetext.Text = "Astigmatism";
+                }
+                else
+                {
+                    diseasetext.Text = "Coloboma";
+                }
+
                 if (da.GetBoolean(5) == true)
                 {
                     surgyes.Checked = true;
