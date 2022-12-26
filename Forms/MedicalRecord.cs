@@ -288,6 +288,7 @@ namespace Glimpses_Clinic.Forms
 
 
             }
+            MessageBox.Show("Saved!");
         }
 
         private void surgno_CheckedChanged(object sender, EventArgs e)

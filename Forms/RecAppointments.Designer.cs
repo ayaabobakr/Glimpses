@@ -31,12 +31,13 @@ namespace Glimpses_Clinic.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecAppointments));
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
@@ -45,6 +46,7 @@ namespace Glimpses_Clinic.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2,
             this.columnHeader7,
             this.columnHeader1,
             this.columnHeader3,
@@ -61,25 +63,25 @@ namespace Glimpses_Clinic.Forms
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "National ID";
+            this.columnHeader7.Width = 170;
+            // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Name";
-            this.columnHeader1.Width = 256;
+            this.columnHeader1.Width = 248;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Date";
-            this.columnHeader3.Width = 290;
+            this.columnHeader3.Width = 198;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Time";
-            this.columnHeader4.Width = 251;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "National ID";
-            this.columnHeader7.Width = 150;
+            this.columnHeader4.Width = 334;
             // 
             // button1
             // 
@@ -113,6 +115,11 @@ namespace Glimpses_Clinic.Forms
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Number";
+            this.columnHeader2.Width = 93;
+            // 
             // RecAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,5 +146,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
     }
 }

@@ -100,6 +100,8 @@ namespace Glimpses_Clinic.Forms
                 cmd.ExecuteNonQuery();
                 sqlcon.Close();
             }
+            MessageBox.Show("Prescription Saved!");
+            this.Close();
         }
     }
 }

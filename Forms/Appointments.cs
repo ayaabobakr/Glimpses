@@ -41,7 +41,7 @@ namespace Glimpses_Clinic.Forms
                 lv.SubItems.Add(rd.GetString(1).ToString());
                 lv.SubItems.Add(age.ToString());
                 lv.SubItems.Add(rd.GetString(2).ToString());
-                lv.SubItems.Add(rd.GetDateTime(4).ToString("dd/MM/yyyy"));
+                lv.SubItems.Add(rd.GetString(4).ToString());
                 lv.SubItems.Add(rd.GetString(5).ToString());
                 listView1.Items.Add(lv);
             }

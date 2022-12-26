@@ -33,7 +33,6 @@ namespace Glimpses_Clinic.Forms
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkbtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button230 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@ namespace Glimpses_Clinic.Forms
             this.button1230 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.nIDcbox = new System.Windows.Forms.ComboBox();
+            this.checkbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -49,7 +49,7 @@ namespace Glimpses_Clinic.Forms
             this.monthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.monthCalendar1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monthCalendar1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.monthCalendar1.Location = new System.Drawing.Point(274, 221);
+            this.monthCalendar1.Location = new System.Drawing.Point(108, 215);
             this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.MinDate = new System.DateTime(2022, 11, 26, 0, 0, 0, 0);
             this.monthCalendar1.Name = "monthCalendar1";
@@ -63,7 +63,7 @@ namespace Glimpses_Clinic.Forms
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(269, 63);
+            this.label1.Location = new System.Drawing.Point(103, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 27);
             this.label1.TabIndex = 1;
@@ -74,33 +74,18 @@ namespace Glimpses_Clinic.Forms
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(269, 160);
+            this.label2.Location = new System.Drawing.Point(103, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "Date";
-            // 
-            // checkbtn
-            // 
-            this.checkbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_checkmark_25;
-            this.checkbtn.Location = new System.Drawing.Point(324, 482);
-            this.checkbtn.Name = "checkbtn";
-            this.checkbtn.Size = new System.Drawing.Size(143, 67);
-            this.checkbtn.TabIndex = 3;
-            this.checkbtn.Text = "  Check";
-            this.checkbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkbtn.UseVisualStyleBackColor = true;
-            this.checkbtn.Click += new System.EventHandler(this.checkbtn_Click);
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(956, 64);
+            this.label3.Location = new System.Drawing.Point(710, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 27);
             this.label3.TabIndex = 5;
@@ -114,13 +99,14 @@ namespace Glimpses_Clinic.Forms
             this.button230.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button230.ForeColor = System.Drawing.Color.White;
             this.button230.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button230.Location = new System.Drawing.Point(1017, 385);
+            this.button230.Location = new System.Drawing.Point(764, 447);
             this.button230.Name = "button230";
             this.button230.Size = new System.Drawing.Size(116, 67);
             this.button230.TabIndex = 6;
             this.button230.Text = "2:30";
             this.button230.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button230.UseVisualStyleBackColor = false;
+            this.button230.Click += new System.EventHandler(this.button230_Click);
             // 
             // button2
             // 
@@ -130,13 +116,14 @@ namespace Glimpses_Clinic.Forms
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(854, 385);
+            this.button2.Location = new System.Drawing.Point(601, 447);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 67);
             this.button2.TabIndex = 7;
             this.button2.Text = "2:00";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button130
             // 
@@ -146,13 +133,14 @@ namespace Glimpses_Clinic.Forms
             this.button130.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button130.ForeColor = System.Drawing.Color.White;
             this.button130.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button130.Location = new System.Drawing.Point(1017, 251);
+            this.button130.Location = new System.Drawing.Point(764, 313);
             this.button130.Name = "button130";
             this.button130.Size = new System.Drawing.Size(116, 67);
             this.button130.TabIndex = 8;
             this.button130.Text = "1:30";
             this.button130.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button130.UseVisualStyleBackColor = false;
+            this.button130.Click += new System.EventHandler(this.button130_Click);
             // 
             // button1
             // 
@@ -162,13 +150,14 @@ namespace Glimpses_Clinic.Forms
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(854, 251);
+            this.button1.Location = new System.Drawing.Point(601, 313);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 67);
             this.button1.TabIndex = 9;
             this.button1.Text = "1:00";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1230
             // 
@@ -178,13 +167,14 @@ namespace Glimpses_Clinic.Forms
             this.button1230.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1230.ForeColor = System.Drawing.Color.White;
             this.button1230.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1230.Location = new System.Drawing.Point(1017, 120);
+            this.button1230.Location = new System.Drawing.Point(764, 182);
             this.button1230.Name = "button1230";
             this.button1230.Size = new System.Drawing.Size(116, 67);
             this.button1230.TabIndex = 10;
             this.button1230.Text = "12:30";
             this.button1230.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1230.UseVisualStyleBackColor = false;
+            this.button1230.Click += new System.EventHandler(this.button1230_Click);
             // 
             // button12
             // 
@@ -194,7 +184,7 @@ namespace Glimpses_Clinic.Forms
             this.button12.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(854, 120);
+            this.button12.Location = new System.Drawing.Point(601, 182);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(116, 67);
             this.button12.TabIndex = 11;
@@ -210,17 +200,32 @@ namespace Glimpses_Clinic.Forms
             this.nIDcbox.BackColor = System.Drawing.Color.White;
             this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nIDcbox.FormattingEnabled = true;
-            this.nIDcbox.Location = new System.Drawing.Point(403, 59);
+            this.nIDcbox.Location = new System.Drawing.Point(251, 53);
             this.nIDcbox.Name = "nIDcbox";
             this.nIDcbox.Size = new System.Drawing.Size(220, 31);
             this.nIDcbox.TabIndex = 125;
+            // 
+            // checkbtn
+            // 
+            this.checkbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.checkbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_checkmark_25;
+            this.checkbtn.Location = new System.Drawing.Point(158, 476);
+            this.checkbtn.Name = "checkbtn";
+            this.checkbtn.Size = new System.Drawing.Size(143, 67);
+            this.checkbtn.TabIndex = 3;
+            this.checkbtn.Text = "  Check";
+            this.checkbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkbtn.UseVisualStyleBackColor = true;
+            this.checkbtn.Click += new System.EventHandler(this.checkbtn_Click);
             // 
             // AddAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1288, 645);
+            this.ClientSize = new System.Drawing.Size(956, 632);
             this.Controls.Add(this.nIDcbox);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button1230);
@@ -236,6 +241,7 @@ namespace Glimpses_Clinic.Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AddAppointments";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointments";
             this.Load += new System.EventHandler(this.AddAppointments_Load);
             this.ResumeLayout(false);
@@ -248,7 +254,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button checkbtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button230;
         private System.Windows.Forms.Button button2;
@@ -257,5 +262,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Button button1230;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.ComboBox nIDcbox;
+        private System.Windows.Forms.Button checkbtn;
     }
 }

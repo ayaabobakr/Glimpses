@@ -80,6 +80,7 @@ namespace Glimpses_Clinic.Forms
 
 
             }
+            MessageBox.Show("Patient Registered!");
         }
 
         private void MRbtn_Click(object sender, EventArgs e)

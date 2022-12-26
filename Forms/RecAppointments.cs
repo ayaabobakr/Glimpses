@@ -42,7 +42,7 @@ namespace Glimpses_Clinic.Forms
             listView1.ForeColor = ThemeColor.SecondaryColor;
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
-            string sql = "Select a.NationalID, p.Name, a.Date, a.Time  From Appointment a Inner Join Patient p ON a.NationalID = p.NationalID;";
+            string sql = "Select a.ID, a.NationalID, p.Name, a.Date, a.Time  From Appointment a Inner Join Patient p ON a.NationalID = p.NationalID order by a.Date, a.Time;;";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader rd;
             rd = cmd.ExecuteReader();
@@ -50,9 +50,10 @@ namespace Glimpses_Clinic.Forms
             while (rd.Read())
             {
                 ListViewItem lv = new ListViewItem(rd.GetInt32(0).ToString());
-                lv.SubItems.Add(rd.GetString(1).ToString());
-                lv.SubItems.Add(rd.GetDateTime(2).ToString("yyyy-MM-dd"));
+                lv.SubItems.Add(rd.GetInt32(1).ToString());
+                lv.SubItems.Add(rd.GetString(2).ToString());
                 lv.SubItems.Add(rd.GetString(3).ToString());
+                lv.SubItems.Add(rd.GetString(4).ToString());
                 listView1.Items.Add(lv);
             }
             rd.Close();
@@ -64,7 +65,7 @@ namespace Glimpses_Clinic.Forms
         {
             var cashierId = listView1.FocusedItem.Text;
 
-            string query = "delete from Appointment where NationalID=@id;";
+            string query = "delete from Appointment where ID=@id;";
 
             using (SqlConnection con = new SqlConnection(conStr))
             {
@@ -113,5 +114,6 @@ namespace Glimpses_Clinic.Forms
 
             }
         }
+
     }
 }

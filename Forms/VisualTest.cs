@@ -121,9 +121,9 @@ namespace Glimpses_Clinic.Forms
                 cmd.Parameters["@IPD_near"].Value = IPD_near.Text;
                 cmd.ExecuteNonQuery();
 
-
-
             }
+            MessageBox.Show("Test Saved!");
+            this.Close();
         }
     }
 }

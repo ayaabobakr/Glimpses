@@ -61,13 +61,216 @@ namespace Glimpses_Clinic.Forms
             button1230.Visible = false;
             button2.Visible = false;
             button230.Visible = false;
-            
+
 
         }
-
+        public static string theDate;
         private void button12_Click(object sender, EventArgs e)
         {
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
+            {
+                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                sqlcon.Open();
+                SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                int fid = 0;
+                fid = int.Parse(nIDcbox.SelectedValue.ToString());
+                cmd.Parameters.Add("@ID", SqlDbType.Int);
+                cmd.Parameters["@ID"].Value = fid;
+
+                cmd.Parameters.Add("@Date", SqlDbType.VarChar);
+                cmd.Parameters["@Date"].Value = theDate;
+
+
+                cmd.Parameters.Add("@Time", SqlDbType.VarChar);
+                cmd.Parameters["@Time"].Value = button12.Text;
+
+                cmd.Parameters.Add("@Bill", SqlDbType.Float);
+                cmd.Parameters["@Bill"].Value = 200;
+
+                cmd.ExecuteNonQuery();
+                sqlcon.Close();
+            }
+            MessageBox.Show("Appointment Reserved!");
+            this.Close();
+        } 
+
+
+        public void Date(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
+            {
+                sqlcon.Open();
+                foreach (Control btns in this.Controls)
+                {
+                    if (btns.GetType() == typeof(Button))
+                    {
+                        Button btn = (Button)btns;
+                        btn.Enabled = true;
+                        string time = "SELECT Time, Date from Appointment where Time = '" + btn.Text + "' and Date = '" + theDate + "';";
+                        SqlCommand cmdt = new SqlCommand(time, sqlcon);
+                        SqlDataReader readert = cmdt.ExecuteReader();
+                        if (readert.HasRows)
+                        {
+                            btn.Enabled = false;
+                        }
+                        readert.Close();
+                        readert.Dispose();
+                    }
+                }sqlcon.Close();
+            }
             
+
+
+        }
+        private void button1230_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
+            {
+
+                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                sqlcon.Open();
+                SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                int fid = 0;
+                fid = int.Parse(nIDcbox.SelectedValue.ToString());
+                cmd.Parameters.Add("@ID", SqlDbType.Int);
+                cmd.Parameters["@ID"].Value = fid;
+
+                cmd.Parameters.Add("@Date", SqlDbType.VarChar);
+                cmd.Parameters["@Date"].Value = theDate;
+
+
+                cmd.Parameters.Add("@Time", SqlDbType.VarChar);
+                cmd.Parameters["@Time"].Value = button1230.Text;
+
+                cmd.Parameters.Add("@Bill", SqlDbType.Float);
+                cmd.Parameters["@Bill"].Value = 200;
+
+                cmd.ExecuteNonQuery();
+                sqlcon.Close();
+            }
+            MessageBox.Show("Appointment Reserved!");
+            this.Close();
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
+            {
+
+                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                sqlcon.Open();
+                SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                int fid = 0;
+                fid = int.Parse(nIDcbox.SelectedValue.ToString());
+                cmd.Parameters.Add("@ID", SqlDbType.Int);
+                cmd.Parameters["@ID"].Value = fid;
+
+                cmd.Parameters.Add("@Date", SqlDbType.VarChar);
+                cmd.Parameters["@Date"].Value = theDate;
+
+
+                cmd.Parameters.Add("@Time", SqlDbType.VarChar);
+                cmd.Parameters["@Time"].Value = button1.Text;
+
+                cmd.Parameters.Add("@Bill", SqlDbType.Float);
+                cmd.Parameters["@Bill"].Value = 200;
+
+                cmd.ExecuteNonQuery();
+                sqlcon.Close();
+            }
+            MessageBox.Show("Appointment Reserved!");
+            this.Close();
+        }
+
+        private void button130_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
+            {
+
+                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                sqlcon.Open();
+                SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                int fid = 0;
+                fid = int.Parse(nIDcbox.SelectedValue.ToString());
+                cmd.Parameters.Add("@ID", SqlDbType.Int);
+                cmd.Parameters["@ID"].Value = fid;
+
+                cmd.Parameters.Add("@Date", SqlDbType.VarChar);
+                cmd.Parameters["@Date"].Value = theDate;
+
+
+                cmd.Parameters.Add("@Time", SqlDbType.VarChar);
+                cmd.Parameters["@Time"].Value = button130.Text;
+
+                cmd.Parameters.Add("@Bill", SqlDbType.Float);
+                cmd.Parameters["@Bill"].Value = 200;
+
+                cmd.ExecuteNonQuery();
+                sqlcon.Close();
+            }
+            MessageBox.Show("Appointment Reserved!");
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
+            {
+
+                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                sqlcon.Open();
+                SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                int fid = 0;
+                fid = int.Parse(nIDcbox.SelectedValue.ToString());
+                cmd.Parameters.Add("@ID", SqlDbType.Int);
+                cmd.Parameters["@ID"].Value = fid;
+
+                cmd.Parameters.Add("@Date", SqlDbType.VarChar);
+                cmd.Parameters["@Date"].Value = theDate;
+
+
+                cmd.Parameters.Add("@Time", SqlDbType.VarChar);
+                cmd.Parameters["@Time"].Value = button2.Text;
+
+                cmd.Parameters.Add("@Bill", SqlDbType.Float);
+                cmd.Parameters["@Bill"].Value = 200;
+
+                cmd.ExecuteNonQuery();
+                sqlcon.Close();
+            }
+            MessageBox.Show("Appointment Reserved!");
+            this.Close();
+        }
+
+        private void button230_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
+            {
+
+                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                sqlcon.Open();
+                SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                int fid = 0;
+                fid = int.Parse(nIDcbox.SelectedValue.ToString());
+                cmd.Parameters.Add("@ID", SqlDbType.Int);
+                cmd.Parameters["@ID"].Value = fid;
+
+                cmd.Parameters.Add("@Date", SqlDbType.VarChar);
+                cmd.Parameters["@Date"].Value = theDate;
+
+
+                cmd.Parameters.Add("@Time", SqlDbType.VarChar);
+                cmd.Parameters["@Time"].Value = button230.Text;
+
+                cmd.Parameters.Add("@Bill", SqlDbType.Float);
+                cmd.Parameters["@Bill"].Value = 200;
+
+                cmd.ExecuteNonQuery();
+                sqlcon.Close();
+            }
+            MessageBox.Show("Appointment Reserved!");
+            this.Close();
         }
 
         private void checkbtn_Click(object sender, EventArgs e)
@@ -79,127 +282,24 @@ namespace Glimpses_Clinic.Forms
             button2.Visible = true;
             button230.Visible = true;
 
-            string theDate = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
+            theDate = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-                string date = "SELECT Date from Appointment where Date = PARSE('" + theDate + "' as date);" + "'";
-                SqlCommand cmdt = new SqlCommand(date, sqlcon);
-                try
+                sqlcon.Open();
+                string date = "SELECT Date from Appointment where Date = '" + theDate + "';";
+                SqlCommand cmdd = new SqlCommand(date, sqlcon);
+                SqlDataReader reader = cmdd.ExecuteReader();
+                if (reader.HasRows)
                 {
-                    sqlcon.Open();
-                    object idfind = cmdt.ExecuteScalar();
-                    if (idfind == null)
-                    {
-                        MessageBox.Show("Invalid user credentials!", "Error");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid user credentials!", "done");
-                    }
+                    reader.Close();
+                    reader.Dispose();
+                    Date(sender, e);
                 }
-                catch
-                {
-                    MessageBox.Show("Unhandled exception!", "Error");
-                }
-                finally
-                {
-                    sqlcon.Close();
-                }
+                reader.Close();
+                reader.Dispose();
+                sqlcon.Close();
+
             }
-            //using (SqlConnection sqlcon = new SqlConnection(conStr))
-            //{
-            //    string time = "SELECT Time from Appointment where Time = "+ btn.Text +";" + "'";
-
-                //    SqlCommand cmdt = new SqlCommand(time, sqlcon);
-                //    try
-                //    {
-                //        sqlcon.Open();
-                //        object idfind = cmdt.ExecuteScalar();
-                //        if (idfind == null)
-                //        {
-                //            MessageBox.Show("Invalid user credentials!", "Error");
-                //        }
-                //        else
-                //        {
-                //            if (!string.IsNullOrEmpty(Convert.ToString(idfind)))
-                //            {
-                //                btn.Enabled = false;
-                //            }
-                //            else
-                //            {
-                //                MessageBox.Show("Invalid user credentials!", "Try Again");
-                //            }
-                //        }
-                //    }catch (Exception ex)
-                //    {
-                //        MessageBox.Show("Unhandled exception!", "Error");
-                //    }
-                //    finally
-                //    {
-                //        sqlcon.Close();
-                //    }
-
-
-
-
-
-
-                //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                //using (SqlConnection sqlcon = new SqlConnection(conStr))
-                //{
-                //    string date = "Select Date from Appointment where Date = " + monthCalendar1.SelectionRange.Start.ToShortDateString() + "'"; ;
-                //    //string time = "SELECT Time from Appointment where Time = @time";
-                //    sqlcon.Open();
-                //    SqlCommand cmdd = new SqlCommand(date, sqlcon);
-                //    //SqlCommand cmdt = new SqlCommand(time, sqlcon);
-                //    //cmdt.Parameters.Add("@time", "123");
-                //    //SqlDataReader red = cmdt.ExecuteReader();
-                //    object idfind = cmdd.ExecuteScalar();
-                //    if (idfind == null)
-                //    {
-                //        string data = "Insert into Appointment values(@ID, @date, @time, @bill)";
-                //        SqlCommand cmddata = new SqlCommand(data, sqlcon);
-                //        int fid = 0;
-                //        fid = int.Parse(nIDcbox.SelectedValue.ToString());
-
-                //        cmddata.Parameters.Add("@ID", SqlDbType.Int);
-                //        cmddata.Parameters["@ID"].Value = fid;
-                //        cmddata.Parameters.Add("@date", SqlDbType.Date);
-                //        cmddata.Parameters["@date"].Value = monthCalendar1.SelectionRange.Start.ToShortDateString();
-                //        cmddata.Parameters.Add("@time", SqlDbType.Time);
-                //        cmddata.Parameters["@time"].Value = button1;
-                //    }
-                //    else
-                //    {
-                //        if (!string.IsNullOrEmpty(Convert.ToString(idfind)))
-                //        {
-                //        }
-                //        else
-                //        {
-                //            MessageBox.Show("Invalid user credentials!", "Try Again");
-                //        }
-                //    }
-
-                //    sqlcon.Close();
-
-                //}
         }
     }
 }
