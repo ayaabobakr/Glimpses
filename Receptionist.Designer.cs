@@ -204,12 +204,12 @@ namespace Glimpses_Clinic
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources._28158550_oculist_3;
-            this.pictureBox1.Location = new System.Drawing.Point(437, 76);
+            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources.Screenshot__911_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(828, 492);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.Size = new System.Drawing.Size(1268, 641);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // Receptionist
@@ -250,8 +250,8 @@ namespace Glimpses_Clinic
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button registerbtn;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -34,6 +34,12 @@ namespace Glimpses_Clinic.Forms
             label7.ForeColor = ThemeColor.SecondaryColor;
             label8.ForeColor = ThemeColor.SecondaryColor;
             label9.ForeColor = ThemeColor.PrimaryColor;
+            surgyes.ForeColor = ThemeColor.PrimaryColor;
+            surgno.ForeColor = ThemeColor.PrimaryColor;
+            glassesno.ForeColor = ThemeColor.PrimaryColor;
+            glassesyes.ForeColor = ThemeColor.PrimaryColor;
+            contactsno.ForeColor = ThemeColor.PrimaryColor;
+            contactsyes.ForeColor = ThemeColor.PrimaryColor;
             label20.ForeColor = ThemeColor.SecondaryColor;
             label23.ForeColor = ThemeColor.SecondaryColor;
             label2.ForeColor = ThemeColor.SecondaryColor;
@@ -45,15 +51,6 @@ namespace Glimpses_Clinic.Forms
                 {
                     CheckBox c = (CheckBox)checks;
                     c.ForeColor = ThemeColor.PrimaryColor;
-                }
-            }
-
-            foreach (Control radio in this.Controls)
-            {
-                if (radio.GetType() == typeof(RadioButton))
-                {
-                    RadioButton r = (RadioButton)radio;
-                    r.ForeColor = ThemeColor.PrimaryColor;
                 }
             }
         }
@@ -127,6 +124,7 @@ namespace Glimpses_Clinic.Forms
                 {
                     cmd.Parameters.Add("@Surgery", SqlDbType.Bit);
                     cmd.Parameters["@Surgery"].Value = 0;
+                    cmd.Parameters.AddWithValue("@Surgery_list", DBNull.Value);
                 }
 
                 if (glassesyes.Checked)
@@ -289,6 +287,7 @@ namespace Glimpses_Clinic.Forms
 
             }
             MessageBox.Show("Saved!");
+            this.Close();
         }
 
         private void surgno_CheckedChanged(object sender, EventArgs e)

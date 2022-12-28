@@ -742,7 +742,7 @@ namespace Glimpses_Clinic.Forms
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EyeReport";
-            this.Text = "EyeReport";
+            this.Text = "Eye Sight Report";
             this.Load += new System.EventHandler(this.EyeReport_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

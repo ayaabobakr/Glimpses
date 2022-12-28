@@ -248,11 +248,11 @@ namespace Glimpses_Clinic
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources._28158550_oculist_3;
-            this.pictureBox1.Location = new System.Drawing.Point(431, 72);
+            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources.Screenshot__911_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(828, 492);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(1262, 637);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
