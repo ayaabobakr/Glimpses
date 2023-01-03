@@ -29,6 +29,7 @@ namespace Glimpses_Clinic.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicalRecord));
             this.famhistorytext = new System.Windows.Forms.RichTextBox();
             this.eye_histtext = new System.Windows.Forms.RichTextBox();
@@ -54,10 +55,7 @@ namespace Glimpses_Clinic.Forms
             this.contactsyes = new System.Windows.Forms.RadioButton();
             this.glassesno = new System.Windows.Forms.RadioButton();
             this.glassesyes = new System.Windows.Forms.RadioButton();
-            this.surgno = new System.Windows.Forms.RadioButton();
-            this.surgyes = new System.Windows.Forms.RadioButton();
             this.surgerytext = new System.Windows.Forms.RichTextBox();
-            this.screentext = new System.Windows.Forms.RichTextBox();
             this.submitMRbtn = new System.Windows.Forms.Button();
             this.pressure = new System.Windows.Forms.CheckBox();
             this.diabetes = new System.Windows.Forms.CheckBox();
@@ -72,8 +70,27 @@ namespace Glimpses_Clinic.Forms
             this.nIDcbox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.psymptext = new System.Windows.Forms.RichTextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.screentext = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.surgyes = new System.Windows.Forms.RadioButton();
+            this.surgno = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // famhistorytext
@@ -331,32 +348,6 @@ namespace Glimpses_Clinic.Forms
             this.glassesyes.Text = "Yes";
             this.glassesyes.UseVisualStyleBackColor = true;
             // 
-            // surgno
-            // 
-            this.surgno.AutoSize = true;
-            this.surgno.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.surgno.Location = new System.Drawing.Point(1374, 32);
-            this.surgno.Name = "surgno";
-            this.surgno.Size = new System.Drawing.Size(50, 24);
-            this.surgno.TabIndex = 103;
-            this.surgno.TabStop = true;
-            this.surgno.Text = "No";
-            this.surgno.UseVisualStyleBackColor = true;
-            this.surgno.CheckedChanged += new System.EventHandler(this.surgno_CheckedChanged);
-            // 
-            // surgyes
-            // 
-            this.surgyes.AutoSize = true;
-            this.surgyes.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.surgyes.Location = new System.Drawing.Point(1267, 32);
-            this.surgyes.Name = "surgyes";
-            this.surgyes.Size = new System.Drawing.Size(52, 24);
-            this.surgyes.TabIndex = 102;
-            this.surgyes.TabStop = true;
-            this.surgyes.Text = "Yes";
-            this.surgyes.UseVisualStyleBackColor = true;
-            this.surgyes.CheckedChanged += new System.EventHandler(this.surgyes_CheckedChanged);
-            // 
             // surgerytext
             // 
             this.surgerytext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,16 +356,6 @@ namespace Glimpses_Clinic.Forms
             this.surgerytext.Size = new System.Drawing.Size(360, 33);
             this.surgerytext.TabIndex = 104;
             this.surgerytext.Text = "";
-            // 
-            // screentext
-            // 
-            this.screentext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.screentext.Location = new System.Drawing.Point(829, 661);
-            this.screentext.MaxLength = 2;
-            this.screentext.Name = "screentext";
-            this.screentext.Size = new System.Drawing.Size(53, 33);
-            this.screentext.TabIndex = 106;
-            this.screentext.Text = "";
             // 
             // submitMRbtn
             // 
@@ -536,12 +517,86 @@ namespace Glimpses_Clinic.Forms
             this.psymptext.TabIndex = 167;
             this.psymptext.Text = "";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
+            // errorProvider4
+            // 
+            this.errorProvider4.ContainerControl = this;
+            // 
+            // errorProvider7
+            // 
+            this.errorProvider7.ContainerControl = this;
+            // 
+            // errorProvider5
+            // 
+            this.errorProvider5.ContainerControl = this;
+            // 
+            // errorProvider6
+            // 
+            this.errorProvider6.ContainerControl = this;
+            // 
+            // screentext
+            // 
+            this.screentext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.screentext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.screentext.Location = new System.Drawing.Point(829, 656);
+            this.screentext.Name = "screentext";
+            this.screentext.Size = new System.Drawing.Size(69, 30);
+            this.screentext.TabIndex = 168;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.surgyes);
+            this.panel3.Controls.Add(this.surgno);
+            this.panel3.Location = new System.Drawing.Point(1268, 23);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(232, 51);
+            this.panel3.TabIndex = 169;
+            // 
+            // surgyes
+            // 
+            this.surgyes.AutoSize = true;
+            this.surgyes.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surgyes.Location = new System.Drawing.Point(3, 14);
+            this.surgyes.Name = "surgyes";
+            this.surgyes.Size = new System.Drawing.Size(52, 24);
+            this.surgyes.TabIndex = 100;
+            this.surgyes.TabStop = true;
+            this.surgyes.Text = "Yes";
+            this.surgyes.UseVisualStyleBackColor = true;
+            this.surgyes.CheckedChanged += new System.EventHandler(this.surgyes_CheckedChanged_1);
+            // 
+            // surgno
+            // 
+            this.surgno.AutoSize = true;
+            this.surgno.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surgno.Location = new System.Drawing.Point(110, 14);
+            this.surgno.Name = "surgno";
+            this.surgno.Size = new System.Drawing.Size(50, 24);
+            this.surgno.TabIndex = 101;
+            this.surgno.TabStop = true;
+            this.surgno.Text = "No";
+            this.surgno.UseVisualStyleBackColor = true;
+            this.surgno.CheckedChanged += new System.EventHandler(this.surgno_CheckedChanged_1);
+            // 
             // MedicalRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1534, 734);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.screentext);
             this.Controls.Add(this.psymptext);
             this.Controls.Add(this.nIDcbox);
             this.Controls.Add(this.label4);
@@ -556,10 +611,7 @@ namespace Glimpses_Clinic.Forms
             this.Controls.Add(this.diabetes);
             this.Controls.Add(this.sinus);
             this.Controls.Add(this.submitMRbtn);
-            this.Controls.Add(this.screentext);
             this.Controls.Add(this.surgerytext);
-            this.Controls.Add(this.surgno);
-            this.Controls.Add(this.surgyes);
             this.Controls.Add(this.pain);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.watering);
@@ -591,6 +643,15 @@ namespace Glimpses_Clinic.Forms
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -621,10 +682,7 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.RadioButton contactsyes;
         private System.Windows.Forms.RadioButton glassesno;
         private System.Windows.Forms.RadioButton glassesyes;
-        private System.Windows.Forms.RadioButton surgno;
-        private System.Windows.Forms.RadioButton surgyes;
         private System.Windows.Forms.RichTextBox surgerytext;
-        private System.Windows.Forms.RichTextBox screentext;
         private System.Windows.Forms.Button submitMRbtn;
         private System.Windows.Forms.CheckBox pressure;
         private System.Windows.Forms.CheckBox diabetes;
@@ -639,5 +697,16 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.ComboBox nIDcbox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox psymptext;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.ErrorProvider errorProvider4;
+        private System.Windows.Forms.ErrorProvider errorProvider7;
+        private System.Windows.Forms.ErrorProvider errorProvider5;
+        private System.Windows.Forms.ErrorProvider errorProvider6;
+        private System.Windows.Forms.TextBox screentext;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.RadioButton surgyes;
+        private System.Windows.Forms.RadioButton surgno;
     }
 }

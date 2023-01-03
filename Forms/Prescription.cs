@@ -63,8 +63,51 @@ namespace Glimpses_Clinic.Forms
 
         }
 
+
+        ErrorProvider errorProvider = new ErrorProvider();
         private void Submitbtn_Click(object sender, EventArgs e)
         {
+            Utilities.error(this, errorProvider);
+            if (nIDcbox.SelectedItem == null)
+            {
+                nIDcbox.Focus();
+                errorProvider.SetError(nIDcbox, "Must Select!");
+                return;
+            }
+
+            if (comboBox1.SelectedItem == null)
+            {
+                comboBox1.Focus();
+                errorProvider.SetError(comboBox1, "Must Select!");
+                return;
+            }
+
+            if (!dayrb.Checked && !weekrb.Checked)
+            {
+                label5.Focus();
+                errorProvider.SetError(label5, "Must Select!");
+                return;
+            }
+
+            if (textBox13.Text == string.Empty)
+            {
+                textBox13.Focus();
+                errorProvider.SetError(textBox13, "Can't be empty");
+                return;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
                 string insert = "INSERT INTO Prescription (NationalID, Date, Prescription, Medicine, Per" +
@@ -72,14 +115,13 @@ namespace Glimpses_Clinic.Forms
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
                 EyeReport er = new EyeReport();
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
 
-                cmd.Parameters.Add("@NationalID", SqlDbType.Int);
-                cmd.Parameters["@NationalID"].Value = fid;
+                cmd.Parameters.Add("@NationalID", SqlDbType.VarChar);
+                cmd.Parameters["@NationalID"].Value = nIDcbox.SelectedValue.ToString();
 
+                DateTime thisDay = DateTime.Today;
                 cmd.Parameters.Add("@Date", SqlDbType.Date);
-                cmd.Parameters["@Date"].Value = dateTimePicker1.Value;
+                cmd.Parameters["@Date"].Value = thisDay.ToString();
 
                 cmd.Parameters.Add("@Prescription", SqlDbType.VarChar);
                 cmd.Parameters["@Prescription"].Value = textBox13.Text;

@@ -66,9 +66,7 @@ namespace Glimpses_Clinic.Forms
                 "[Glasses],[Contacts],[Screentime],[Sinus],[Diabetes],[Pressure],[Redness],[Tearing],[Eyepain],[Burning]" +
                 ",[Discharge],[Soreness],[Itching],[Dryness],[Flashes] From MR where NationalID = @id;";
             SqlCommand cmd = new SqlCommand(sql, conn);
-            int fid = 0;
-            fid = int.Parse(nIDcbox.SelectedValue.ToString());
-            cmd.Parameters.AddWithValue("@id", fid);
+            cmd.Parameters.AddWithValue("@id", nIDcbox.SelectedValue.ToString());
 
             SqlDataReader da = cmd.ExecuteReader();
             while (da.Read())

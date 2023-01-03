@@ -72,10 +72,8 @@ namespace Glimpses_Clinic.Forms
                 string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
-                cmd.Parameters.Add("@ID", SqlDbType.Int);
-                cmd.Parameters["@ID"].Value = fid;
+                cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@Date", SqlDbType.VarChar);
                 cmd.Parameters["@Date"].Value = theDate;
@@ -130,10 +128,8 @@ namespace Glimpses_Clinic.Forms
                 string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
-                cmd.Parameters.Add("@ID", SqlDbType.Int);
-                cmd.Parameters["@ID"].Value = fid;
+                cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@Date", SqlDbType.VarChar);
                 cmd.Parameters["@Date"].Value = theDate;
@@ -161,10 +157,8 @@ namespace Glimpses_Clinic.Forms
                 string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
-                cmd.Parameters.Add("@ID", SqlDbType.Int);
-                cmd.Parameters["@ID"].Value = fid;
+                cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@Date", SqlDbType.VarChar);
                 cmd.Parameters["@Date"].Value = theDate;
@@ -191,10 +185,8 @@ namespace Glimpses_Clinic.Forms
                 string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
-                cmd.Parameters.Add("@ID", SqlDbType.Int);
-                cmd.Parameters["@ID"].Value = fid;
+                cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@Date", SqlDbType.VarChar);
                 cmd.Parameters["@Date"].Value = theDate;
@@ -221,10 +213,8 @@ namespace Glimpses_Clinic.Forms
                 string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
-                cmd.Parameters.Add("@ID", SqlDbType.Int);
-                cmd.Parameters["@ID"].Value = fid;
+                cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@Date", SqlDbType.VarChar);
                 cmd.Parameters["@Date"].Value = theDate;
@@ -251,10 +241,8 @@ namespace Glimpses_Clinic.Forms
                 string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
-                cmd.Parameters.Add("@ID", SqlDbType.Int);
-                cmd.Parameters["@ID"].Value = fid;
+                cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@Date", SqlDbType.VarChar);
                 cmd.Parameters["@Date"].Value = theDate;

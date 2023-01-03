@@ -50,7 +50,7 @@ namespace Glimpses_Clinic.Forms
             while (rd.Read())
             {
                 ListViewItem lv = new ListViewItem(rd.GetInt32(0).ToString());
-                lv.SubItems.Add(rd.GetInt32(1).ToString());
+                lv.SubItems.Add(rd.GetString(1).ToString());
                 lv.SubItems.Add(rd.GetString(2).ToString());
                 lv.SubItems.Add(rd.GetString(3).ToString());
                 lv.SubItems.Add(rd.GetString(4).ToString());

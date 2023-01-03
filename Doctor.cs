@@ -73,7 +73,7 @@ namespace Glimpses_Clinic
             }
         }
 
-        private void OpenChildPanel(Form childForm, object btnSender)
+        public void OpenChildPanel(Form childForm, object btnSender)
         {
             if (activateForm != null)
             {
@@ -147,10 +147,6 @@ namespace Glimpses_Clinic
             OpenChildPanel(new Forms.ViewRecept(), sender);
         }
 
-        private void Doctor_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

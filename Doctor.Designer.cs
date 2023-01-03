@@ -270,7 +270,6 @@ namespace Glimpses_Clinic
             this.Name = "Doctor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doctor";
-            this.Load += new System.EventHandler(this.Doctor_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

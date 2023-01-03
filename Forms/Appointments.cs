@@ -37,7 +37,7 @@ namespace Glimpses_Clinic.Forms
                 int now = int.Parse(DateTime.Now.ToString("yyyy"));
                 int dob = int.Parse(rd.GetDateTime(3).ToString("yyyy"));
                 int age = (now - dob);
-                ListViewItem lv = new ListViewItem(rd.GetInt32(0).ToString());
+                ListViewItem lv = new ListViewItem(rd.GetString(0).ToString());
                 lv.SubItems.Add(rd.GetString(1).ToString());
                 lv.SubItems.Add(age.ToString());
                 lv.SubItems.Add(rd.GetString(2).ToString());

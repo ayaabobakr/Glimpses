@@ -14,7 +14,6 @@ namespace Glimpses_Clinic.Forms
 {
     public partial class MedicalRecord : Form
     {
-
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
         public MedicalRecord()
         {
@@ -61,7 +60,7 @@ namespace Glimpses_Clinic.Forms
             label18.Visible = false;
             SqlConnection con = new SqlConnection(conStr);
             con.Open();
-            string strCmd = "select NationalID from Patient";
+            string strCmd = "select NationalID from Patient t1 where not exists(select 1 from MR t2 where t2.NationalID = t1.NationalID) ";
             SqlCommand cmd = new SqlCommand(strCmd, con);
             SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
             DataSet ds = new DataSet();
@@ -75,14 +74,69 @@ namespace Glimpses_Clinic.Forms
         }
 
 
-        private void surgyes_CheckedChanged(object sender, EventArgs e)
-        {
-            surgerytext.Visible = true;
-            label18.Visible = true;
-        }
-
+        ErrorProvider errorProvider = new ErrorProvider();
         private void submitbtn_Click(object sender, EventArgs e)
         {
+            Utilities.error(this, errorProvider);
+            if (nIDcbox.SelectedItem == null)
+            {
+                nIDcbox.Focus();
+                errorProvider.SetError(nIDcbox, "Must Select!");
+                return;
+            }
+            if (psymptext.Text == string.Empty)
+            {
+                psymptext.Focus();
+                errorProvider.SetError(psymptext, "Can't be empty");
+                return;
+            }
+            if (sympcbox.SelectedItem == null)
+            {
+                errorProvider.SetError(sympcbox, "Must Select!");
+                return;
+            }
+            
+            if (!surgno.Checked && !surgyes.Checked)
+            {
+                errorProvider.SetError(panel3, "Must Select!");
+                return;
+            }
+
+            if (surgyes.Checked)
+            {
+                if (surgerytext.Text == string.Empty)
+                {
+                    surgerytext.Focus();
+                    errorProvider.SetError(surgerytext, "Can't be empty");
+                    return;
+                }
+            }
+            if (!glassesno.Checked && !glassesyes.Checked)
+            {
+                errorProvider.SetError(panel2, "Must Select!");
+                return;
+            }
+            if (!contactsno.Checked && !contactsyes.Checked)
+            {
+                errorProvider.SetError(panel1, "Must Select!");
+                return;
+            }
+
+            if (screentext.Text == string.Empty)
+            {
+                screentext.Focus();
+                errorProvider.SetError(screentext, "Can't be empty");
+                return;
+            }
+
+            int text = int.Parse(screentext.Text);
+            if (text < 0 || text > 24)
+            {
+                screentext.Focus();
+                errorProvider.SetError(screentext, "Invalid number of hours");
+                return;
+            }
+
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
                 string insert = "INSERT INTO MR values (@ID, @Eye_History, @Family_History, @Allergies, " +
@@ -90,10 +144,8 @@ namespace Glimpses_Clinic.Forms
                     "@Pressure, @Redness, @Tearing, @Eyepain, @Burning, @Discharge, @Soreness, @Itching, @Dryness, @Flashes)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
-                cmd.Parameters.Add("@ID", SqlDbType.Int);
-                cmd.Parameters["@ID"].Value = fid;
+                cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@Eye_History", SqlDbType.VarChar);
                 cmd.Parameters["@Eye_History"].Value = eye_histtext.Text;
@@ -290,10 +342,18 @@ namespace Glimpses_Clinic.Forms
             this.Close();
         }
 
-        private void surgno_CheckedChanged(object sender, EventArgs e)
+
+        private void surgyes_CheckedChanged_1(object sender, EventArgs e)
+        {
+            surgerytext.Visible = true;
+            label18.Visible = true;
+        }
+
+        private void surgno_CheckedChanged_1(object sender, EventArgs e)
         {
             surgerytext.Visible = false;
             label18.Visible = false;
         }
+
     }
 }

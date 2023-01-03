@@ -292,7 +292,7 @@ namespace Glimpses_Clinic.Forms
             this.muscabnormal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.muscabnormal.AutoSize = true;
             this.muscabnormal.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.muscabnormal.Location = new System.Drawing.Point(466, 19);
+            this.muscabnormal.Location = new System.Drawing.Point(423, 19);
             this.muscabnormal.Margin = new System.Windows.Forms.Padding(4);
             this.muscabnormal.Name = "muscabnormal";
             this.muscabnormal.Size = new System.Drawing.Size(123, 27);
@@ -307,7 +307,7 @@ namespace Glimpses_Clinic.Forms
             this.muscnormal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.muscnormal.AutoSize = true;
             this.muscnormal.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.muscnormal.Location = new System.Drawing.Point(327, 19);
+            this.muscnormal.Location = new System.Drawing.Point(284, 19);
             this.muscnormal.Margin = new System.Windows.Forms.Padding(4);
             this.muscnormal.Name = "muscnormal";
             this.muscnormal.Size = new System.Drawing.Size(100, 27);
@@ -556,7 +556,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.abnormaltext.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.abnormaltext.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.abnormaltext.Location = new System.Drawing.Point(466, 54);
+            this.abnormaltext.Location = new System.Drawing.Point(423, 54);
             this.abnormaltext.Margin = new System.Windows.Forms.Padding(4);
             this.abnormaltext.Multiline = true;
             this.abnormaltext.Name = "abnormaltext";
@@ -597,7 +597,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.softRtext.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.softRtext.Font = new System.Drawing.Font("Verdana", 10.8F);
-            this.softRtext.Location = new System.Drawing.Point(1173, 526);
+            this.softRtext.Location = new System.Drawing.Point(1180, 527);
             this.softRtext.Margin = new System.Windows.Forms.Padding(4);
             this.softRtext.Name = "softRtext";
             this.softRtext.Size = new System.Drawing.Size(132, 29);

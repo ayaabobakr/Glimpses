@@ -48,7 +48,7 @@ namespace Glimpses_Clinic.Forms
             LoadTheme();
             SqlConnection con = new SqlConnection(conStr);
             con.Open();
-            string strCmd = "select NationalID from Patient";
+            string strCmd = "select NationalID from Patient t1 where not exists(select 1 from VFT t2 where t2.NationalID = t1.NationalID)";
             SqlCommand cmd = new SqlCommand(strCmd, con);
             SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
             DataSet ds = new DataSet();
@@ -61,8 +61,149 @@ namespace Glimpses_Clinic.Forms
             con.Close();
         }
 
+
+        ErrorProvider errorProvider = new ErrorProvider();
         private void button2_Click(object sender, EventArgs e)
         {
+            Utilities.error(this, errorProvider);
+
+            if (nIDcbox.SelectedItem == null)
+            {
+                nIDcbox.Focus();
+                errorProvider.SetError(nIDcbox, "Must Select!");
+                return;
+            }
+
+
+            if ((SPH_L_dist.Text == string.Empty) || (SPH_L_near.Text == string.Empty) ||
+                (SPH_R_dist.Text == string.Empty) || (SPH_R_near.Text == string.Empty) ||
+                (CYL_L_dist.Text == string.Empty) || (CYL_L_near.Text == string.Empty) ||
+                (CYL_R_dist.Text == string.Empty) || (CYL_R_near.Text == string.Empty) ||
+                (IPD_dist.Text == string.Empty) || (IPD_near.Text == string.Empty) ||
+                (AXIS_L_dist.Text == string.Empty) || (AXIS_L_near.Text == string.Empty) ||
+                (AXIS_R_dist.Text == string.Empty) || (AXIS_R_near.Text == string.Empty))
+            {
+                label10.Focus();
+                errorProvider.SetError(label10, "Please complete the empty fields");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(SPH_L_dist.Text, "^(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                SPH_L_dist.Focus();
+                errorProvider.SetError(SPH_L_dist, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(SPH_R_near.Text, "^(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                SPH_R_near.Focus();
+                errorProvider.SetError(SPH_R_near, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(SPH_R_dist.Text, "^(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                SPH_R_dist.Focus();
+                errorProvider.SetError(SPH_R_dist, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(SPH_L_near.Text, "^(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                SPH_L_near.Focus();
+                errorProvider.SetError(SPH_L_near, "Invalid Input");
+                return;
+            }
+
+
+
+
+
+
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(AXIS_L_dist.Text, "^(180|140|150|90|[1-9]?[1-9])$"))
+            {
+                AXIS_L_dist.Focus();
+                errorProvider.SetError(AXIS_L_dist, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(AXIS_L_near.Text, "^(180|140|150|90|[1-9]?[1-9])$"))
+            {
+                AXIS_L_near.Focus();
+                errorProvider.SetError(AXIS_L_near, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(AXIS_R_dist.Text, "^(180|140|150|90|[1-9]?[1-9])$"))
+            {
+                AXIS_R_dist.Focus();
+                errorProvider.SetError(AXIS_R_dist, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(AXIS_R_near.Text, "^(180|140|150|90|[1-9]?[1-9])$"))
+            {
+                AXIS_R_near.Focus();
+                errorProvider.SetError(AXIS_R_near, "Invalid Input");
+                return;
+            }
+
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(CYL_L_dist.Text, "^(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                CYL_L_dist.Focus();
+                errorProvider.SetError(CYL_L_dist, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(CYL_L_near.Text, "(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                CYL_L_near.Focus();
+                errorProvider.SetError(CYL_L_near, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(CYL_R_dist.Text, "(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                CYL_R_dist.Focus();
+                errorProvider.SetError(CYL_R_dist, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(CYL_R_near.Text, "(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                CYL_R_near.Focus();
+                errorProvider.SetError(CYL_R_near, "Invalid Input");
+                return;
+            }
+
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(IPD_dist.Text, "^(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                IPD_dist.Focus();
+                errorProvider.SetError(IPD_dist, "Invalid Input");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(IPD_near.Text, "^(5[0-9]|6[0-9]|7[0-5])"))
+            {
+                IPD_near.Focus();
+                errorProvider.SetError(IPD_near, "Invalid Input");
+                return;
+            }
+
+
+
+
+
+
+
+
+
+
+
             string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
@@ -72,11 +213,9 @@ namespace Glimpses_Clinic.Forms
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
                 EyeReport er = new EyeReport();
-                int fid = 0;
-                fid = int.Parse(nIDcbox.SelectedValue.ToString());
 
-                cmd.Parameters.Add("@nationalID", SqlDbType.Int);
-                cmd.Parameters["@nationalID"].Value = fid;
+                cmd.Parameters.Add("@nationalID", SqlDbType.VarChar);
+                cmd.Parameters["@nationalID"].Value = nIDcbox.SelectedValue.ToString();
 
                 cmd.Parameters.Add("@SPH_R_dist", SqlDbType.Float);
                 cmd.Parameters["@SPH_R_dist"].Value = SPH_R_dist.Text;

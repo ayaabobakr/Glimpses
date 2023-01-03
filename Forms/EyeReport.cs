@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel.DataAnnotations;
 
 namespace Glimpses_Clinic.Forms
 {
@@ -84,7 +85,7 @@ namespace Glimpses_Clinic.Forms
             LoadTheme();
             SqlConnection con = new SqlConnection(conStr);
             con.Open();
-            string strCmd = "select NationalID from Patient";
+            string strCmd = "select NationalID from Patient t1 where not exists(select 1 from EyeReport t2 where t2.NationalID = t1.NationalID)";
             SqlCommand cmd = new SqlCommand(strCmd, con);
             SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
             DataSet ds = new DataSet();
@@ -105,11 +106,81 @@ namespace Glimpses_Clinic.Forms
             vform.Show();
         }
 
+
+        ErrorProvider errorProvider = new ErrorProvider();
         private void registerbtn_Click(object sender, EventArgs e)
         {
-            if (Checkbox_checked() == false)
+            Utilities.error(this, errorProvider);
+            if (nIDcbox.SelectedItem == null)
             {
-                using (SqlConnection sqlcon = new SqlConnection(conStr))
+                nIDcbox.Focus();
+                errorProvider.SetError(nIDcbox, "Must Select!");
+                return;
+            }
+
+            if ((Without_Distance_L.Text == string.Empty)|| (Without_Distance_R.Text == string.Empty)||
+                (Without_Near_L.Text == string.Empty)|| (Without_Near_R.Text == string.Empty)||
+                (With_Distance_L.Text == string.Empty)|| (With_Distance_R.Text == string.Empty)||
+                (With_Near_L.Text == string.Empty)|| (With_Near_R.Text == string.Empty))
+            {
+                label1.Focus();
+                errorProvider.SetError(label1, "Please complete the empty fields");
+                return;
+            }
+
+
+            if (diagnosistext.Text == string.Empty)
+            {
+                diagnosistext.Focus();
+                errorProvider.SetError(diagnosistext, "Can't be empty");
+                return;
+            }
+
+            if (!muscnormal.Checked && !muscabnormal.Checked)
+            {
+                errorProvider.SetError(panel1, "Must Select!");
+                return;
+            }
+
+            if (muscabnormal.Checked)
+            {
+                if (abnormaltext.Text == string.Empty)
+                {
+                    abnormaltext.Focus();
+                    errorProvider.SetError(abnormaltext, "Can't be empty");
+                    return;
+                }
+            }
+
+            if ((intraL.Text == string.Empty) || (intraR.Text == string.Empty))
+            {
+                label23.Focus();
+                errorProvider.SetError(label23, "Please complete the empty fields");
+                return;
+            }
+
+            if (contbox.Checked)
+            {
+                if (!soft.Checked && !toric.Checked)
+                {
+                    errorProvider.SetError(contbox, "Must Select!");
+                    return;
+                }
+
+                if (soft.Checked)
+                {
+                    if ((softLtext.Text == string.Empty)|| (softRtext.Text == string.Empty))
+                    {
+                        contbox.Focus();
+                        errorProvider.SetError(contbox, "Please complete the empty fields");
+                        return;
+                    }
+                }
+            }
+
+
+
+            using (SqlConnection sqlcon = new SqlConnection(conStr))
                 {
                     string insert = "INSERT INTO EyeReport (NationalID, Diagnosis, Muscle, IntraocularR, IntraocularL, Glasses, Contacts, SoftR, SoftL, Toric, " +
                         "Prescription, Surgery, Followup, Without_Near_R, Without_Near_L, Without_Distance_R, Without_Distance_L, With_Near_R, With_Near_L, With_Distance_R, With_Distance_L) values (@ID, @diagnosis, @muscle, @intrR, " +
@@ -117,11 +188,9 @@ namespace Glimpses_Clinic.Forms
                        "@With_Near_R, @With_Near_L, @With_Distance_R, @With_Distance_L)";
                     sqlcon.Open();
                     SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                    int fid = 0;
-                    fid = int.Parse(nIDcbox.SelectedValue.ToString());
 
-                    cmd.Parameters.Add("@ID", SqlDbType.Int);
-                    cmd.Parameters["@ID"].Value = fid; 
+                    cmd.Parameters.Add("@ID", SqlDbType.VarChar);
+                    cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString(); 
 
                     cmd.Parameters.Add("@diagnosis", SqlDbType.VarChar);
                     cmd.Parameters["@diagnosis"].Value = diagnosistext.Text;
@@ -253,8 +322,9 @@ namespace Glimpses_Clinic.Forms
                     sqlcon.Close();
 
 
-                }
             }
+            MessageBox.Show("Saved!");
+            Utilities.ClearAllControls(this);
         }
 
         private void prescb_CheckedChanged(object sender, EventArgs e)
@@ -265,18 +335,6 @@ namespace Glimpses_Clinic.Forms
                 pr.Show();
 
             }
-        }
-        private bool Checkbox_checked()
-        {
-            if (Without_Distance_R.Text == null || Without_Distance_L.Text == null || Without_Near_R.Text == null || Without_Near_L.Text == null ||
-                diagnosistext.Text == null || intraR.Text == null || intraL.Text == null)
-            {
-                MessageBox.Show("Report is Incomplete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return true;
-            }
-            return false;
-                
-
         }
 
         private void muscabnormal_CheckedChanged(object sender, EventArgs e)
@@ -303,6 +361,7 @@ namespace Glimpses_Clinic.Forms
                 label5.Visible = false;
                 label3.Visible = false;
             }
+
         }
 
         private void soft_CheckedChanged(object sender, EventArgs e)
@@ -321,6 +380,9 @@ namespace Glimpses_Clinic.Forms
             label3.Visible = false;
         }
 
+
     }
 
+
 }
+

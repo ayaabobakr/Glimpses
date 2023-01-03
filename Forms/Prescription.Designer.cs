@@ -31,11 +31,9 @@ namespace Glimpses_Clinic.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prescription));
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dayrb = new System.Windows.Forms.RadioButton();
             this.weekrb = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Submitbtn = new System.Windows.Forms.Button();
@@ -56,19 +54,6 @@ namespace Glimpses_Clinic.Forms
             this.label1.Size = new System.Drawing.Size(344, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Medical Prescription Form";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(402, 152);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Date";
             // 
             // label4
             // 
@@ -112,14 +97,6 @@ namespace Glimpses_Clinic.Forms
             this.weekrb.TabStop = true;
             this.weekrb.Text = "Week";
             this.weekrb.UseVisualStyleBackColor = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(475, 154);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(249, 22);
-            this.dateTimePicker1.TabIndex = 8;
             // 
             // textBox13
             // 
@@ -193,55 +170,30 @@ namespace Glimpses_Clinic.Forms
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Acetazolamide",
-            "",
             "Acetylcysteine",
-            "",
             "Aciclovir eye ointment",
-            "",
             "Antazoline",
-            "",
             "Otrivine-antistin",
-            "",
             "Xylometazoline",
-            "",
             "Lopidine",
-            "",
             "Apraclonidine",
-            "",
             "Virgan",
-            "",
             "Salagen",
-            "",
             "Pilocarpine tablets",
-            "",
             "Optilast",
-            "",
             "Azelastine",
-            "",
             "Azyter",
-            "",
             "Azithromycin",
-            "",
             "Lutein",
-            "",
             "Natacyn",
-            "",
             "Ciprofloxacin",
-            "",
             "Timolol",
-            "",
             "Latanoprost",
-            "",
             "Exocin",
-            "",
             "Ofloxacin",
-            "",
             "Opatanol",
-            "",
             "Olopatadine",
-            "",
             "Liquifilm tears",
-            "",
             "Sno tears"});
             this.comboBox1.Location = new System.Drawing.Point(148, 206);
             this.comboBox1.Name = "comboBox1";
@@ -260,11 +212,9 @@ namespace Glimpses_Clinic.Forms
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.weekrb);
             this.Controls.Add(this.dayrb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -281,11 +231,9 @@ namespace Glimpses_Clinic.Forms
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton dayrb;
         private System.Windows.Forms.RadioButton weekrb;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Submitbtn;

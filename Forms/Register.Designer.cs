@@ -94,10 +94,11 @@ namespace Glimpses_Clinic.Forms
             // 
             this.DOB.CalendarFont = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DOB.Location = new System.Drawing.Point(188, 308);
+            this.DOB.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.DOB.Name = "DOB";
             this.DOB.Size = new System.Drawing.Size(272, 22);
             this.DOB.TabIndex = 52;
-            this.DOB.Value = new System.DateTime(2022, 12, 11, 23, 31, 7, 0);
+            this.DOB.Value = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             // 
             // registerbtn
             // 
