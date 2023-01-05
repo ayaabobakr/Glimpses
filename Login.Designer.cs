@@ -35,10 +35,10 @@ namespace Glimpses_Clinic
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.loginlabel = new System.Windows.Forms.Label();
+            this.rolebox = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.rolebox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -111,6 +111,20 @@ namespace Glimpses_Clinic
             this.loginlabel.TabIndex = 93;
             this.loginlabel.Text = "ACCOUNT LOGIN";
             // 
+            // rolebox
+            // 
+            this.rolebox.BackColor = System.Drawing.Color.White;
+            this.rolebox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.rolebox.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rolebox.FormattingEnabled = true;
+            this.rolebox.Items.AddRange(new object[] {
+            "Doctor",
+            "Receptionist"});
+            this.rolebox.Location = new System.Drawing.Point(154, 439);
+            this.rolebox.Name = "rolebox";
+            this.rolebox.Size = new System.Drawing.Size(177, 31);
+            this.rolebox.TabIndex = 102;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -125,7 +139,7 @@ namespace Glimpses_Clinic
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources.icons8_customer_30;
+            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources.icons8_customer_301;
             this.pictureBox1.Location = new System.Drawing.Point(42, 260);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);
@@ -145,20 +159,6 @@ namespace Glimpses_Clinic
             this.button1.Size = new System.Drawing.Size(177, 102);
             this.button1.TabIndex = 92;
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // rolebox
-            // 
-            this.rolebox.BackColor = System.Drawing.Color.White;
-            this.rolebox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.rolebox.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rolebox.FormattingEnabled = true;
-            this.rolebox.Items.AddRange(new object[] {
-            "Doctor",
-            "Receptionist"});
-            this.rolebox.Location = new System.Drawing.Point(154, 439);
-            this.rolebox.Name = "rolebox";
-            this.rolebox.Size = new System.Drawing.Size(177, 31);
-            this.rolebox.TabIndex = 102;
             // 
             // Login
             // 

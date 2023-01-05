@@ -36,10 +36,10 @@ namespace Glimpses_Clinic.Forms
             this.weekrb = new System.Windows.Forms.RadioButton();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.Submitbtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.nIDcbox = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Submitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -122,22 +122,6 @@ namespace Glimpses_Clinic.Forms
             this.label5.TabIndex = 62;
             this.label5.Text = "times per";
             // 
-            // Submitbtn
-            // 
-            this.Submitbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Submitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Submitbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submitbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_appointment_50__1_;
-            this.Submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Submitbtn.Location = new System.Drawing.Point(542, 479);
-            this.Submitbtn.Name = "Submitbtn";
-            this.Submitbtn.Size = new System.Drawing.Size(182, 83);
-            this.Submitbtn.TabIndex = 73;
-            this.Submitbtn.Text = "Submit";
-            this.Submitbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Submitbtn.UseVisualStyleBackColor = true;
-            this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
-            // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -199,6 +183,22 @@ namespace Glimpses_Clinic.Forms
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(220, 31);
             this.comboBox1.TabIndex = 127;
+            // 
+            // Submitbtn
+            // 
+            this.Submitbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Submitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Submitbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submitbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_checkmark_25;
+            this.Submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Submitbtn.Location = new System.Drawing.Point(608, 469);
+            this.Submitbtn.Name = "Submitbtn";
+            this.Submitbtn.Size = new System.Drawing.Size(116, 62);
+            this.Submitbtn.TabIndex = 73;
+            this.Submitbtn.Text = "Submit";
+            this.Submitbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Submitbtn.UseVisualStyleBackColor = true;
+            this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
             // 
             // Prescription
             // 

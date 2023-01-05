@@ -208,6 +208,7 @@ namespace Glimpses_Clinic.Forms
             // checkbtn
             // 
             this.checkbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkbtn.BackColor = System.Drawing.Color.DimGray;
             this.checkbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.checkbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_checkmark_25;
@@ -217,7 +218,7 @@ namespace Glimpses_Clinic.Forms
             this.checkbtn.TabIndex = 3;
             this.checkbtn.Text = "  Check";
             this.checkbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkbtn.UseVisualStyleBackColor = true;
+            this.checkbtn.UseVisualStyleBackColor = false;
             this.checkbtn.Click += new System.EventHandler(this.checkbtn_Click);
             // 
             // AddAppointments

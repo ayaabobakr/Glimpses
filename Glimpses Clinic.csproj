@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,10 +35,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Patagames.Ocr, Version=4.5.2.472, Culture=neutral, PublicKeyToken=be14d8e1fe46e570, processorArchitecture=MSIL">
+      <HintPath>packages\Tesseract.Net.SDK.4.5.411\lib\net472\Patagames.Ocr.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +61,12 @@
     </Compile>
     <Compile Include="Doctor.Designer.cs">
       <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OCR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OCR.Designer.cs">
+      <DependentUpon>OCR.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ViewRecept.cs">
       <SubType>Form</SubType>
@@ -128,6 +142,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Receptionist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +157,9 @@
     <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="Doctor.resx">
       <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OCR.resx">
+      <DependentUpon>OCR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewRecept.resx">
       <DependentUpon>ViewRecept.cs</DependentUpon>
@@ -178,16 +200,11 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Receptionist.resx">
       <DependentUpon>Receptionist.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -197,192 +214,109 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="tessdata\configs\config.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\eng.traineddata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\equ.traineddata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\osd.traineddata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\pdf.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\pdf.ttx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-login-50 %281%29.png" />
+    <None Include="Resources\icons8-checkmark-25.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-add-user-male-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-information-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-xbox-x-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-close-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-close-24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-appointment-60.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-medical-file-49.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-patient-50 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-eye-glasses-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-appointment-67.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-name-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-treatment-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-waste-50 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-hand-with-a-pill-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngtree-blue-hospital-medical-western-medicine-poster-background-backgroundmedical-backgrounddoctor-backgroundhospital-image_63770.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\14b7b5d9e8adbf85704d9a98acbe510a.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17f384a84a84dffbac4bcddcae743edb.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngtree-simple-wind-medical-background-cross-image_66658.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\14b7b5d9e8adbf85704d9a98acbe510a1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\abstract-geometric-medical-cross-shape-medicine-and-science-concept-background-medicine-medical-health-cross-healthcare-decoration-for-flyers-poster-web-banner-and-card-illustration-vector.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17f384a84a84dffbac4bcddcae743edb1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-document-writer-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-search-49.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-waste-50 %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-hand-with-a-pill-50 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-appointment-50.png" />
+    <None Include="Resources\icons8-prescription-50.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-appointment-50 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-appointment-501.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-checkmark-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-checkmark-25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-appointment-40.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-document-writer-45.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-front-desk-25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-front-desk-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-person-47.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-doctor-47.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-log-out-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-eye-unchecked-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Cute eyeball character cartoon illustration set.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\26766199_2011.i607.007.P.m004.c20.ophthalmology flat set.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\28158550_oculist_3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot %28911%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-phone-25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-envelope-25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-whatsapp-25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-clock-25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-purchase-order-23.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-purchase-order-47.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot %28965%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot %28965%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot %28964%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot %28964%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-uchiha-eyes-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-uchiha-eyes-481.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-uchiha-eyes-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-customer-30.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-lock-30.png" />
+    <None Include="Resources\icons8-waste-50 %282%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot %28967%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-receptionist-50.png" />
+    <None Include="Resources\Screenshot %28964%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %28965%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-uchiha-eyes-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-appointment-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-appointment-67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-patient-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-unchecked-50.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-receptionist-64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-general-ocr-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %28911%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-appointment-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-document-writer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-appointment-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-uchiha-eyes-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %281060%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets" Condition="Exists('packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets'))" />
+  </Target>
 </Project>

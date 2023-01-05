@@ -147,6 +147,11 @@ namespace Glimpses_Clinic
             OpenChildPanel(new Forms.ViewRecept(), sender);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            OpenChildPanel(new Forms.OCR(), sender);
+        }
     }
 }
 

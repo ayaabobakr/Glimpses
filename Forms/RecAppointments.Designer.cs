@@ -31,13 +31,13 @@ namespace Glimpses_Clinic.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecAppointments));
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
@@ -63,6 +63,11 @@ namespace Glimpses_Clinic.Forms
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Number";
+            this.columnHeader2.Width = 93;
+            // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "National ID";
@@ -86,6 +91,7 @@ namespace Glimpses_Clinic.Forms
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::Glimpses_Clinic.Properties.Resources.icons8_appointment_50__1_;
@@ -96,15 +102,16 @@ namespace Glimpses_Clinic.Forms
             this.button1.TabIndex = 14;
             this.button1.Text = "Add Appointment";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button2.BackColor = System.Drawing.Color.DimGray;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Glimpses_Clinic.Properties.Resources.icons8_appointment_501;
+            this.button2.Image = global::Glimpses_Clinic.Properties.Resources.icons8_appointment_50;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(980, 362);
             this.button2.Name = "button2";
@@ -112,13 +119,8 @@ namespace Glimpses_Clinic.Forms
             this.button2.TabIndex = 13;
             this.button2.Text = "Remove Appointment";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Number";
-            this.columnHeader2.Width = 93;
             // 
             // RecAppointments
             // 

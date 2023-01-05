@@ -118,187 +118,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-waste-50 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-waste-50 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-receptionist-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-receptionist-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-appointment-501" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-appointment-501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-person-47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-person-47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="14b7b5d9e8adbf85704d9a98acbe510a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14b7b5d9e8adbf85704d9a98acbe510a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-eye-glasses-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye-glasses-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-uchiha-eyes-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-uchiha-eyes-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-close-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-close-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-uchiha-eyes-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-uchiha-eyes-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="28158550_oculist_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\28158550_oculist_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-eye-unchecked-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye-unchecked-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-front-desk-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-front-desk-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-checkmark-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-checkmark-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot (965)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot (965)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-purchase-order-23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-purchase-order-23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-hand-with-a-pill-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-hand-with-a-pill-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-phone-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-phone-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-envelope-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-envelope-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-checkmark-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-checkmark-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-search-49" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-search-49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-name-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-name-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-document-writer-45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-document-writer-45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abstract-geometric-medical-cross-shape-medicine-and-science-concept-background-medicine-medical-health-cross-healthcare-decoration-for-flyers-poster-web-banner-and-card-illustration-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstract-geometric-medical-cross-shape-medicine-and-science-concept-background-medicine-medical-health-cross-healthcare-decoration-for-flyers-poster-web-banner-and-card-illustration-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-appointment-67" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-appointment-67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-clock-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-clock-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-hand-with-a-pill-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-hand-with-a-pill-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-appointment-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-appointment-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-login-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-login-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-front-desk-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-front-desk-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cute eyeball character cartoon illustration set" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cute eyeball character cartoon illustration set.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="26766199_2011.i607.007.P.m004.c20.ophthalmology flat set" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\26766199_2011.i607.007.P.m004.c20.ophthalmology flat set.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-appointment-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-appointment-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="14b7b5d9e8adbf85704d9a98acbe510a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14b7b5d9e8adbf85704d9a98acbe510a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="17f384a84a84dffbac4bcddcae743edb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\17f384a84a84dffbac4bcddcae743edb.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-document-writer-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-document-writer-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot (965)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot (965).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-appointment-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-appointment-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-appointment-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-appointment-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-uchiha-eyes-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-uchiha-eyes-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-purchase-order-47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-purchase-order-47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-whatsapp-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-whatsapp-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot (964)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot (964).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-information-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-information-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-appointment-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-appointment-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-patient-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-patient-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-blue-hospital-medical-western-medicine-poster-background-backgroundmedical-backgrounddoctor-backgroundhospital-image_63770" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-blue-hospital-medical-western-medicine-poster-background-backgroundmedical-backgrounddoctor-backgroundhospital-image_63770.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-waste-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-waste-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-log-out-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-log-out-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-add-user-male-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-add-user-male-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="17f384a84a84dffbac4bcddcae743edb1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\17f384a84a84dffbac4bcddcae743edb1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot (964)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot (964)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-close-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-close-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot (911)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot (911).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-simple-wind-medical-background-cross-image_66658" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-simple-wind-medical-background-cross-image_66658.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-doctor-47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-doctor-47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-xbox-x-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-xbox-x-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-lock-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-lock-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-medical-file-49" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-medical-file-49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-treatment-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-treatment-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot (967)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot (967).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-customer-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-customer-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-uchiha-eyes-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-uchiha-eyes-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot (964)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot (964).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot (911)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot (911).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-appointment-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-appointment-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-person-47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-person-47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot (967)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot (967).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-checkmark-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-checkmark-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-appointment-67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-appointment-67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot (965)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot (965).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-appointment-40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-appointment-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-uchiha-eyes-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-uchiha-eyes-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-receptionist-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-receptionist-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-document-writer-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-document-writer-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-prescription-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-prescription-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-waste-50 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-waste-50 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-customer-301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-customer-301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-eye-unchecked-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-eye-unchecked-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-customer-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-customer-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-general-ocr-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-general-ocr-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot (1060)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot (1060).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

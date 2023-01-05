@@ -63,98 +63,6 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _14b7b5d9e8adbf85704d9a98acbe510a {
-            get {
-                object obj = ResourceManager.GetObject("14b7b5d9e8adbf85704d9a98acbe510a", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _14b7b5d9e8adbf85704d9a98acbe510a1 {
-            get {
-                object obj = ResourceManager.GetObject("14b7b5d9e8adbf85704d9a98acbe510a1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _17f384a84a84dffbac4bcddcae743edb {
-            get {
-                object obj = ResourceManager.GetObject("17f384a84a84dffbac4bcddcae743edb", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _17f384a84a84dffbac4bcddcae743edb1 {
-            get {
-                object obj = ResourceManager.GetObject("17f384a84a84dffbac4bcddcae743edb1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _26766199_2011_i607_007_P_m004_c20_ophthalmology_flat_set {
-            get {
-                object obj = ResourceManager.GetObject("26766199_2011.i607.007.P.m004.c20.ophthalmology flat set", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _28158550_oculist_3 {
-            get {
-                object obj = ResourceManager.GetObject("28158550_oculist_3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap abstract_geometric_medical_cross_shape_medicine_and_science_concept_background_medicine_medical_health_cross_healthcare_decoration_for_flyers_poster_web_banner_and_card_illustration_vector {
-            get {
-                object obj = ResourceManager.GetObject("abstract-geometric-medical-cross-shape-medicine-and-science-concept-background-me" +
-                        "dicine-medical-health-cross-healthcare-decoration-for-flyers-poster-web-banner-a" +
-                        "nd-card-illustration-vector", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Cute_eyeball_character_cartoon_illustration_set {
-            get {
-                object obj = ResourceManager.GetObject("Cute eyeball character cartoon illustration set", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_add_user_male_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-add-user-male-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_appointment_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-appointment-40", resourceCulture);
@@ -185,19 +93,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_appointment_501 {
+        internal static System.Drawing.Bitmap icons8_appointment_64 {
             get {
-                object obj = ResourceManager.GetObject("icons8-appointment-501", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_appointment_60 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-appointment-60", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-appointment-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,46 +123,6 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_checkmark_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-checkmark-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_clock_25 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-clock-25", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_close_24 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-close-24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_close_48 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-close-48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_customer_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-customer-30", resourceCulture);
@@ -275,9 +133,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_doctor_47 {
+        internal static System.Drawing.Bitmap icons8_customer_301 {
             get {
-                object obj = ResourceManager.GetObject("icons8-doctor-47", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-customer-301", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -285,9 +143,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_document_writer_45 {
+        internal static System.Drawing.Bitmap icons8_customer_64 {
             get {
-                object obj = ResourceManager.GetObject("icons8-document-writer-45", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-customer-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -305,26 +163,6 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_envelope_25 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-envelope-25", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_eye_glasses_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-eye-glasses-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_eye_unchecked_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eye-unchecked-50", resourceCulture);
@@ -335,49 +173,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_front_desk_25 {
+        internal static System.Drawing.Bitmap icons8_general_ocr_50 {
             get {
-                object obj = ResourceManager.GetObject("icons8-front-desk-25", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_front_desk_48 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-front-desk-48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_hand_with_a_pill_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-hand-with-a-pill-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_hand_with_a_pill_50__1_ {
-            get {
-                object obj = ResourceManager.GetObject("icons8-hand-with-a-pill-50 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_information_48 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-information-48", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-general-ocr-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -388,46 +186,6 @@ namespace Glimpses_Clinic.Properties {
         internal static System.Drawing.Bitmap icons8_lock_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-lock-30", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_log_out_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-log-out-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_login_50__1_ {
-            get {
-                object obj = ResourceManager.GetObject("icons8-login-50 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_medical_file_49 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-medical-file-49", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_name_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-name-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -455,39 +213,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_phone_25 {
+        internal static System.Drawing.Bitmap icons8_prescription_50 {
             get {
-                object obj = ResourceManager.GetObject("icons8-phone-25", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_purchase_order_23 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-purchase-order-23", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_purchase_order_47 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-purchase-order-47", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_receptionist_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-receptionist-50", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-prescription-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -505,39 +233,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_search_49 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-search-49", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_treatment_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-treatment-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_uchiha_eyes_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-uchiha-eyes-48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_uchiha_eyes_481 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-uchiha-eyes-481", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -555,16 +253,6 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_waste_50__1_ {
-            get {
-                object obj = ResourceManager.GetObject("icons8-waste-50 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_waste_50__2_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-waste-50 (2)", resourceCulture);
@@ -575,40 +263,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_whatsapp_25 {
+        internal static System.Drawing.Bitmap Screenshot__1060_ {
             get {
-                object obj = ResourceManager.GetObject("icons8-whatsapp-25", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_xbox_x_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-xbox-x-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngtree_blue_hospital_medical_western_medicine_poster_background_backgroundmedical_backgrounddoctor_backgroundhospital_image_63770 {
-            get {
-                object obj = ResourceManager.GetObject("pngtree-blue-hospital-medical-western-medicine-poster-background-backgroundmedica" +
-                        "l-backgrounddoctor-backgroundhospital-image_63770", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngtree_simple_wind_medical_background_cross_image_66658 {
-            get {
-                object obj = ResourceManager.GetObject("pngtree-simple-wind-medical-background-cross-image_66658", resourceCulture);
+                object obj = ResourceManager.GetObject("Screenshot (1060)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -636,29 +293,9 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Screenshot__964_1 {
-            get {
-                object obj = ResourceManager.GetObject("Screenshot (964)1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Screenshot__965_ {
             get {
                 object obj = ResourceManager.GetObject("Screenshot (965)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Screenshot__965_1 {
-            get {
-                object obj = ResourceManager.GetObject("Screenshot (965)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

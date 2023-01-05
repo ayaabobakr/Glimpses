@@ -302,7 +302,7 @@ namespace Glimpses_Clinic.Forms
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Glimpses_Clinic.Properties.Resources.Screenshot__964_1;
+            this.pictureBox2.Image = global::Glimpses_Clinic.Properties.Resources.Screenshot__964_;
             this.pictureBox2.Location = new System.Drawing.Point(368, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(137, 129);
@@ -312,7 +312,7 @@ namespace Glimpses_Clinic.Forms
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources.Screenshot__965_1;
+            this.pictureBox1.Image = global::Glimpses_Clinic.Properties.Resources.Screenshot__965_;
             this.pictureBox1.Location = new System.Drawing.Point(710, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(141, 129);
@@ -325,7 +325,6 @@ namespace Glimpses_Clinic.Forms
             this.submitbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.submitbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_purchase_order_47;
             this.submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.submitbtn.Location = new System.Drawing.Point(886, 418);
             this.submitbtn.Name = "submitbtn";
