@@ -125,7 +125,7 @@ namespace Glimpses_Clinic
 
         private void patbtn_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Normal;
             OpenChildPanel(new Forms.Patients(), sender);
         }
 

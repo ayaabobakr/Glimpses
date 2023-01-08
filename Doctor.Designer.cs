@@ -218,6 +218,7 @@ namespace Glimpses_Clinic
             this.closebtn.Dock = System.Windows.Forms.DockStyle.Left;
             this.closebtn.FlatAppearance.BorderSize = 0;
             this.closebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closebtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_close_48;
             this.closebtn.Location = new System.Drawing.Point(0, 0);
             this.closebtn.Name = "closebtn";
             this.closebtn.Size = new System.Drawing.Size(71, 103);

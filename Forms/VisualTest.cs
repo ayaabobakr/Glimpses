@@ -46,19 +46,6 @@ namespace Glimpses_Clinic.Forms
         private void Order_Load(object sender, EventArgs e)
         {
             LoadTheme();
-            SqlConnection con = new SqlConnection(conStr);
-            con.Open();
-            string strCmd = "select NationalID from Patient t1 where not exists(select 1 from VFT t2 where t2.NationalID = t1.NationalID)";
-            SqlCommand cmd = new SqlCommand(strCmd, con);
-            SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            nIDcbox.DataSource = ds.Tables[0];
-            nIDcbox.ValueMember = "NationalID";
-            nIDcbox.Enabled = true;
-            this.nIDcbox.SelectedIndex = -1;
-            cmd.ExecuteNonQuery();
-            con.Close();
         }
 
 
@@ -66,13 +53,6 @@ namespace Glimpses_Clinic.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             Utilities.error(this, errorProvider);
-
-            if (nIDcbox.SelectedItem == null)
-            {
-                nIDcbox.Focus();
-                errorProvider.SetError(nIDcbox, "Must Select!");
-                return;
-            }
 
 
             if ((SPH_L_dist.Text == string.Empty) || (SPH_L_near.Text == string.Empty) ||
@@ -212,10 +192,9 @@ namespace Glimpses_Clinic.Forms
                     "@IPD_dist,@IPD_near)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
-                EyeReport er = new EyeReport();
 
                 cmd.Parameters.Add("@nationalID", SqlDbType.VarChar);
-                cmd.Parameters["@nationalID"].Value = nIDcbox.SelectedValue.ToString();
+                cmd.Parameters["@nationalID"].Value = EyeReport.NID;
 
                 cmd.Parameters.Add("@SPH_R_dist", SqlDbType.Float);
                 cmd.Parameters["@SPH_R_dist"].Value = SPH_R_dist.Text;

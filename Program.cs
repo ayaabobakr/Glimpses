@@ -16,7 +16,7 @@ namespace Glimpses_Clinic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Doctor());
+            Application.Run(new Receptionist());
         }
     }
 }

@@ -102,11 +102,12 @@ namespace Glimpses_Clinic.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            NID = nIDcbox.SelectedValue.ToString();
             VisualTest vform = new VisualTest();
             vform.Show();
         }
 
-
+        public static string NID;
         ErrorProvider errorProvider = new ErrorProvider();
         private void registerbtn_Click(object sender, EventArgs e)
         {
@@ -190,9 +191,9 @@ namespace Glimpses_Clinic.Forms
                     SqlCommand cmd = new SqlCommand(insert, sqlcon);
 
                     cmd.Parameters.Add("@ID", SqlDbType.VarChar);
-                    cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString(); 
+                    cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
-                    cmd.Parameters.Add("@diagnosis", SqlDbType.VarChar);
+                cmd.Parameters.Add("@diagnosis", SqlDbType.VarChar);
                     cmd.Parameters["@diagnosis"].Value = diagnosistext.Text;
 
                     if (muscabnormal.Checked)
@@ -331,6 +332,7 @@ namespace Glimpses_Clinic.Forms
         {
             if (prescb.Checked)
             {
+                NID = nIDcbox.SelectedValue.ToString();
                 Prescription pr = new Prescription();
                 pr.Show();
 

@@ -64,9 +64,6 @@ namespace Glimpses_Clinic.Forms
             this.symptomstext = new System.Windows.Forms.RichTextBox();
             this.diseasetext = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.nIDcbox = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Submitbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -482,45 +479,6 @@ namespace Glimpses_Clinic.Forms
             this.label3.TabIndex = 156;
             this.label3.Text = "Probable Disease";
             // 
-            // nIDcbox
-            // 
-            this.nIDcbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nIDcbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.nIDcbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.nIDcbox.BackColor = System.Drawing.Color.White;
-            this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nIDcbox.FormattingEnabled = true;
-            this.nIDcbox.Location = new System.Drawing.Point(452, 12);
-            this.nIDcbox.Name = "nIDcbox";
-            this.nIDcbox.Size = new System.Drawing.Size(189, 28);
-            this.nIDcbox.TabIndex = 159;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(306, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 19);
-            this.label4.TabIndex = 158;
-            this.label4.Text = "National ID";
-            // 
-            // Submitbtn
-            // 
-            this.Submitbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Submitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Submitbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Submitbtn.Location = new System.Drawing.Point(664, 9);
-            this.Submitbtn.Name = "Submitbtn";
-            this.Submitbtn.Size = new System.Drawing.Size(109, 33);
-            this.Submitbtn.TabIndex = 160;
-            this.Submitbtn.Text = "View";
-            this.Submitbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Submitbtn.UseVisualStyleBackColor = true;
-            this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.surgno);
@@ -557,9 +515,6 @@ namespace Glimpses_Clinic.Forms
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Submitbtn);
-            this.Controls.Add(this.nIDcbox);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.diseasetext);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.symptomstext);
@@ -642,9 +597,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.RichTextBox symptomstext;
         private System.Windows.Forms.RichTextBox diseasetext;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox nIDcbox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button Submitbtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

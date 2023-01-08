@@ -55,8 +55,6 @@ namespace Glimpses_Clinic.Forms
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.submitbtn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nIDcbox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -335,36 +333,12 @@ namespace Glimpses_Clinic.Forms
             this.submitbtn.UseVisualStyleBackColor = true;
             this.submitbtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(268, 418);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 27);
-            this.label4.TabIndex = 125;
-            this.label4.Text = "National ID";
-            // 
-            // nIDcbox
-            // 
-            this.nIDcbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.nIDcbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.nIDcbox.BackColor = System.Drawing.Color.White;
-            this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nIDcbox.FormattingEnabled = true;
-            this.nIDcbox.Location = new System.Drawing.Point(428, 418);
-            this.nIDcbox.Name = "nIDcbox";
-            this.nIDcbox.Size = new System.Drawing.Size(220, 31);
-            this.nIDcbox.TabIndex = 126;
-            // 
             // VisualTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1165, 530);
-            this.Controls.Add(this.nIDcbox);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
@@ -430,7 +404,5 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox nIDcbox;
     }
 }

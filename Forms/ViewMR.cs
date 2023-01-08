@@ -32,32 +32,13 @@ namespace Glimpses_Clinic.Forms
                     l.ForeColor = ThemeColor.SecondaryColor;
                 }
             }
-            Submitbtn.BackColor = ThemeColor.PrimaryColor;
-            Submitbtn.ForeColor = Color.White;
-            Submitbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
         }
 
         private void ViewMR_Load(object sender, EventArgs e)
         {
             LoadTheme();
             surgerytext.Visible = false;
-            SqlConnection con = new SqlConnection(conStr);
-            con.Open();
-            string strCmd = "select NationalID from Patient";
-            SqlCommand cmd = new SqlCommand(strCmd, con);
-            SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            nIDcbox.DataSource = ds.Tables[0];
-            nIDcbox.ValueMember = "NationalID";
-            nIDcbox.Enabled = true;
-            this.nIDcbox.SelectedIndex = -1;
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
 
-        private void Submitbtn_Click(object sender, EventArgs e)
-        {
             string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
@@ -66,7 +47,7 @@ namespace Glimpses_Clinic.Forms
                 "[Glasses],[Contacts],[Screentime],[Sinus],[Diabetes],[Pressure],[Redness],[Tearing],[Eyepain],[Burning]" +
                 ",[Discharge],[Soreness],[Itching],[Dryness],[Flashes] From MR where NationalID = @id;";
             SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@id", nIDcbox.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@id", Patients.nID);
 
             SqlDataReader da = cmd.ExecuteReader();
             while (da.Read())
@@ -145,7 +126,7 @@ namespace Glimpses_Clinic.Forms
                 {
                     pain.Checked = true;
                 }
-                
+
                 if (da.GetBoolean(16) == true)
                 {
                     burning.Checked = true;
@@ -179,8 +160,8 @@ namespace Glimpses_Clinic.Forms
             }
             conn.Close();
 
-
         }
+
     }
     }
 

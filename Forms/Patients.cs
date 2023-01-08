@@ -25,9 +25,6 @@ namespace Glimpses_Clinic.Forms
         private void LoadTheme()
         {
             label1.ForeColor = ThemeColor.SecondaryColor;
-            viewMRbtn.BackColor = ThemeColor.PrimaryColor;
-            viewMRbtn.ForeColor = Color.White;
-            viewMRbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
             deletebtn.BackColor = ThemeColor.PrimaryColor;
             deletebtn.ForeColor = Color.White;
             deletebtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
@@ -65,12 +62,6 @@ namespace Glimpses_Clinic.Forms
             conn.Close();
         }
 
-        private void viewMRbtn_Click(object sender, EventArgs e)
-        {
-            ViewMR p = new ViewMR();
-            p.Show();
-            
-        }
 
         private void deletebtn_Click(object sender, EventArgs e)
         {
@@ -178,6 +169,19 @@ namespace Glimpses_Clinic.Forms
                 rd.Close();
                 cmd.Dispose();
                 conn.Close();
+            }
+        }
+
+        public static string nID;
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem item = listView1.SelectedItems[0];
+                nID = item.SubItems[0].Text;
+                ViewMR p = new ViewMR();
+                p.Show();
+                
             }
         }
     }

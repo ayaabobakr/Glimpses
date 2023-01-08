@@ -51,7 +51,7 @@ namespace Glimpses_Clinic.Forms
         private void registerbtn_Click(object sender, EventArgs e)
         {
 
-            Utilities.error(this, errorProvider);
+            Utilities.error(panel1, errorProvider);
             if (nametext.Text == string.Empty)
             {
                 nametext.Focus();
@@ -73,7 +73,7 @@ namespace Glimpses_Clinic.Forms
                 return;
             }
 
-            if (!System.Text.RegularExpressions.Regex.IsMatch(idtext.Text, "(2|3)[0-9][1-9][0-1][1-9][0-3][1-9](01|02|03|04|11|12|13|14|15|16|17|18|19|21|22|23|24|25|26|27|28|29|31|32|33|34|35|88)"))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(idtext.Text, "^([1-9]{1})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})[0-9]{3}([0-9]{1})[0-9]{1}$"))
             {
                 idtext.Focus();
                 errorProvider.SetError(idtext, "Invalid NationalID");
@@ -115,7 +115,7 @@ namespace Glimpses_Clinic.Forms
                 return;
             }
 
-            if (!System.Text.RegularExpressions.Regex.IsMatch(photext.Text, "^(01)[0-2][0-9]{8}"))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(photext.Text, "^(01|01)[0-2,5]{1}[0-9]{8}"))
             {
                 photext.Focus();
                 errorProvider.SetError(photext, "Invalid phone number");

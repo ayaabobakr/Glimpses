@@ -229,7 +229,7 @@ namespace Glimpses_Clinic.Forms
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(250, 29);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Visual Aculty(VA)";
+            this.label1.Text = "Visual Acuity(VA)";
             // 
             // intraR
             // 

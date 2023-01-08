@@ -47,19 +47,6 @@ namespace Glimpses_Clinic.Forms
         private void Prescribe_Load(object sender, EventArgs e)
         {
             LoadTheme();
-            SqlConnection con = new SqlConnection(conStr);
-            con.Open();
-            string strCmd = "select NationalID from Patient";
-            SqlCommand cmd = new SqlCommand(strCmd, con);
-            SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            nIDcbox.DataSource = ds.Tables[0];
-            nIDcbox.ValueMember = "NationalID";
-            nIDcbox.Enabled = true;
-            this.nIDcbox.SelectedIndex = -1;
-            cmd.ExecuteNonQuery();
-            con.Close();
 
         }
 
@@ -68,12 +55,6 @@ namespace Glimpses_Clinic.Forms
         private void Submitbtn_Click(object sender, EventArgs e)
         {
             Utilities.error(this, errorProvider);
-            if (nIDcbox.SelectedItem == null)
-            {
-                nIDcbox.Focus();
-                errorProvider.SetError(nIDcbox, "Must Select!");
-                return;
-            }
 
             if (comboBox1.SelectedItem == null)
             {
@@ -96,18 +77,6 @@ namespace Glimpses_Clinic.Forms
                 return;
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
                 string insert = "INSERT INTO Prescription (NationalID, Date, Prescription, Medicine, Per" +
@@ -117,7 +86,7 @@ namespace Glimpses_Clinic.Forms
                 EyeReport er = new EyeReport();
 
                 cmd.Parameters.Add("@NationalID", SqlDbType.VarChar);
-                cmd.Parameters["@NationalID"].Value = nIDcbox.SelectedValue.ToString();
+                cmd.Parameters["@NationalID"].Value = EyeReport.NID;
 
                 DateTime thisDay = DateTime.Today;
                 cmd.Parameters.Add("@Date", SqlDbType.Date);

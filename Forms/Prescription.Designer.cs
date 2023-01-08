@@ -36,8 +36,6 @@ namespace Glimpses_Clinic.Forms
             this.weekrb = new System.Windows.Forms.RadioButton();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.nIDcbox = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Submitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -122,29 +120,6 @@ namespace Glimpses_Clinic.Forms
             this.label5.TabIndex = 62;
             this.label5.Text = "times per";
             // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(33, 154);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 19);
-            this.label8.TabIndex = 125;
-            this.label8.Text = "National ID";
-            // 
-            // nIDcbox
-            // 
-            this.nIDcbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.nIDcbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.nIDcbox.BackColor = System.Drawing.Color.White;
-            this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nIDcbox.FormattingEnabled = true;
-            this.nIDcbox.Location = new System.Drawing.Point(148, 148);
-            this.nIDcbox.Name = "nIDcbox";
-            this.nIDcbox.Size = new System.Drawing.Size(220, 31);
-            this.nIDcbox.TabIndex = 126;
-            // 
             // comboBox1
             // 
             this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -207,8 +182,6 @@ namespace Glimpses_Clinic.Forms
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(782, 574);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.nIDcbox);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox13);
@@ -237,8 +210,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Submitbtn;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox nIDcbox;
         private System.Windows.Forms.ComboBox comboBox1;
     }
 }

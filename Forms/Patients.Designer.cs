@@ -42,7 +42,6 @@ namespace Glimpses_Clinic.Forms
             this.c8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.deletebtn = new System.Windows.Forms.Button();
-            this.viewMRbtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -85,6 +84,7 @@ namespace Glimpses_Clinic.Forms
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // c1
             // 
@@ -130,7 +130,6 @@ namespace Glimpses_Clinic.Forms
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.deletebtn);
-            this.panel1.Controls.Add(this.viewMRbtn);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -144,7 +143,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.deletebtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deletebtn.Location = new System.Drawing.Point(365, 15);
+            this.deletebtn.Location = new System.Drawing.Point(1116, 14);
             this.deletebtn.Margin = new System.Windows.Forms.Padding(4);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(115, 35);
@@ -152,20 +151,6 @@ namespace Glimpses_Clinic.Forms
             this.deletebtn.Text = "Delete";
             this.deletebtn.UseVisualStyleBackColor = true;
             this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
-            // 
-            // viewMRbtn
-            // 
-            this.viewMRbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.viewMRbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.viewMRbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewMRbtn.Location = new System.Drawing.Point(959, 15);
-            this.viewMRbtn.Margin = new System.Windows.Forms.Padding(4);
-            this.viewMRbtn.Name = "viewMRbtn";
-            this.viewMRbtn.Size = new System.Drawing.Size(272, 35);
-            this.viewMRbtn.TabIndex = 40;
-            this.viewMRbtn.Text = "View Medical Record";
-            this.viewMRbtn.UseVisualStyleBackColor = true;
-            this.viewMRbtn.Click += new System.EventHandler(this.viewMRbtn_Click);
             // 
             // textBox1
             // 
@@ -220,7 +205,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button viewMRbtn;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader c1;
