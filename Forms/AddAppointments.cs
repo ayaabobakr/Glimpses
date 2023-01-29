@@ -36,6 +36,7 @@ namespace Glimpses_Clinic.Forms
             label1.ForeColor = ThemeColor.SecondaryColor;
             label2.ForeColor = ThemeColor.SecondaryColor;
             label3.ForeColor = ThemeColor.SecondaryColor;
+            patname.ForeColor = ThemeColor.SecondaryColor;
         }
 
         private void AddAppointments_Load(object sender, EventArgs e)
@@ -270,6 +271,13 @@ namespace Glimpses_Clinic.Forms
             button2.Visible = true;
             button230.Visible = true;
 
+            button1.Enabled = true;
+            button130.Enabled = true;
+            button12.Enabled = true;
+            button1230.Enabled = true;
+            button2.Enabled = true;
+            button230.Enabled = true;
+
             theDate = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
@@ -287,6 +295,25 @@ namespace Glimpses_Clinic.Forms
                 reader.Dispose();
                 sqlcon.Close();
 
+            }
+        }
+
+        private void nIDcbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (nIDcbox.SelectedItem != null)
+            {
+                SqlConnection con = new SqlConnection(conStr);
+                con.Open();
+                string strCmd = "select name from Patient where nationalid=@id;";
+                SqlCommand cmd = new SqlCommand(strCmd, con);
+                cmd.Parameters.AddWithValue("@id", nIDcbox.SelectedValue.ToString());
+                SqlDataReader da = cmd.ExecuteReader();
+
+                while (da.Read())
+                {
+                    patname.Text = da.GetValue(0).ToString();
+                }
+                con.Close();
             }
         }
     }

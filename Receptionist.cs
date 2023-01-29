@@ -49,7 +49,7 @@ namespace Glimpses_Clinic
                     current = (Button)btnSender;
                     current.BackColor = color;
                     current.ForeColor = Color.White;
-                    current.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    current.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panel3.BackColor = color;
                     panel2.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                     ThemeColor.PrimaryColor = color;
@@ -68,7 +68,7 @@ namespace Glimpses_Clinic
                 {
                     previous.BackColor = Color.FromArgb(37, 40, 65);
                     previous.ForeColor = Color.Gainsboro;
-                    previous.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previous.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
@@ -121,9 +121,5 @@ namespace Glimpses_Clinic
             OpenChildPanel(new Forms.Register(), sender);
         }
 
-        private void Receptionist_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

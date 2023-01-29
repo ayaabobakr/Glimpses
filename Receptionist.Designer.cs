@@ -66,7 +66,7 @@ namespace Glimpses_Clinic
             this.registerbtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.registerbtn.FlatAppearance.BorderSize = 0;
             this.registerbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registerbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerbtn.ForeColor = System.Drawing.Color.Gainsboro;
             this.registerbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_document_writer_50;
             this.registerbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -86,7 +86,7 @@ namespace Glimpses_Clinic
             this.appointbtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.appointbtn.FlatAppearance.BorderSize = 0;
             this.appointbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.appointbtn.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appointbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appointbtn.ForeColor = System.Drawing.Color.Gainsboro;
             this.appointbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_appointment_67;
             this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,7 +205,6 @@ namespace Glimpses_Clinic
             this.Name = "Receptionist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Receptionist";
-            this.Load += new System.EventHandler(this.Receptionist_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

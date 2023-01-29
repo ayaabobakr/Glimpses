@@ -30,6 +30,8 @@ namespace Glimpses_Clinic.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prescription));
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dayrb = new System.Windows.Forms.RadioButton();
@@ -37,8 +39,23 @@ namespace Glimpses_Clinic.Forms
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Datelabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.printbtn = new System.Windows.Forms.Button();
             this.Submitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // label1
             // 
@@ -47,7 +64,7 @@ namespace Glimpses_Clinic.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(208, 68);
+            this.label1.Location = new System.Drawing.Point(212, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(344, 29);
             this.label1.TabIndex = 0;
@@ -60,7 +77,7 @@ namespace Glimpses_Clinic.Forms
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(33, 209);
+            this.label4.Location = new System.Drawing.Point(33, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 19);
             this.label4.TabIndex = 3;
@@ -73,7 +90,7 @@ namespace Glimpses_Clinic.Forms
             this.dayrb.BackColor = System.Drawing.Color.Transparent;
             this.dayrb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayrb.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dayrb.Location = new System.Drawing.Point(523, 210);
+            this.dayrb.Location = new System.Drawing.Point(522, 263);
             this.dayrb.Name = "dayrb";
             this.dayrb.Size = new System.Drawing.Size(62, 23);
             this.dayrb.TabIndex = 6;
@@ -88,7 +105,7 @@ namespace Glimpses_Clinic.Forms
             this.weekrb.BackColor = System.Drawing.Color.Transparent;
             this.weekrb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weekrb.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.weekrb.Location = new System.Drawing.Point(648, 210);
+            this.weekrb.Location = new System.Drawing.Point(647, 263);
             this.weekrb.Name = "weekrb";
             this.weekrb.Size = new System.Drawing.Size(76, 23);
             this.weekrb.TabIndex = 7;
@@ -100,7 +117,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(37, 273);
+            this.textBox13.Location = new System.Drawing.Point(37, 322);
             this.textBox13.MaxLength = 100;
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
@@ -114,7 +131,7 @@ namespace Glimpses_Clinic.Forms
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(389, 210);
+            this.label5.Location = new System.Drawing.Point(388, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 19);
             this.label5.TabIndex = 62;
@@ -154,10 +171,77 @@ namespace Glimpses_Clinic.Forms
             "Olopatadine",
             "Liquifilm tears",
             "Sno tears"});
-            this.comboBox1.Location = new System.Drawing.Point(148, 206);
+            this.comboBox1.Location = new System.Drawing.Point(141, 255);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(220, 31);
             this.comboBox1.TabIndex = 127;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.Location = new System.Drawing.Point(12, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 19);
+            this.label2.TabIndex = 129;
+            this.label2.Text = "01225511459";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label3.Location = new System.Drawing.Point(11, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(276, 19);
+            this.label3.TabIndex = 130;
+            this.label3.Text = "مركز الغزالي ، المحور المركزي ، الشيخ زايد";
+            // 
+            // Datelabel
+            // 
+            this.Datelabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Datelabel.AutoSize = true;
+            this.Datelabel.BackColor = System.Drawing.Color.Transparent;
+            this.Datelabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelabel.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Datelabel.Location = new System.Drawing.Point(519, 50);
+            this.Datelabel.Name = "Datelabel";
+            this.Datelabel.Size = new System.Drawing.Size(0, 19);
+            this.Datelabel.TabIndex = 131;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label6.Location = new System.Drawing.Point(12, 117);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(225, 19);
+            this.label6.TabIndex = 132;
+            this.label6.Text = "Dr.Mohamed Bahaa Samy";
+            // 
+            // printbtn
+            // 
+            this.printbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.printbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.printbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_print_25;
+            this.printbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.printbtn.Location = new System.Drawing.Point(469, 531);
+            this.printbtn.Name = "printbtn";
+            this.printbtn.Size = new System.Drawing.Size(116, 62);
+            this.printbtn.TabIndex = 128;
+            this.printbtn.Text = "Print";
+            this.printbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printbtn.UseVisualStyleBackColor = true;
+            this.printbtn.Click += new System.EventHandler(this.printbtn_Click);
             // 
             // Submitbtn
             // 
@@ -166,7 +250,7 @@ namespace Glimpses_Clinic.Forms
             this.Submitbtn.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Submitbtn.Image = global::Glimpses_Clinic.Properties.Resources.icons8_checkmark_25;
             this.Submitbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Submitbtn.Location = new System.Drawing.Point(608, 469);
+            this.Submitbtn.Location = new System.Drawing.Point(608, 531);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(116, 62);
             this.Submitbtn.TabIndex = 73;
@@ -180,7 +264,12 @@ namespace Glimpses_Clinic.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(782, 574);
+            this.ClientSize = new System.Drawing.Size(782, 636);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Datelabel);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.printbtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.label5);
@@ -202,7 +291,8 @@ namespace Glimpses_Clinic.Forms
         }
 
         #endregion
-
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton dayrb;
@@ -211,5 +301,10 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Submitbtn;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button printbtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Datelabel;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -76,7 +76,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(373, 485);
+            this.label2.Location = new System.Drawing.Point(373, 465);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 24);
             this.label2.TabIndex = 153;
@@ -87,7 +87,7 @@ namespace Glimpses_Clinic.Forms
             this.allergies.BackColor = System.Drawing.Color.White;
             this.allergies.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.allergies.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.allergies.Location = new System.Drawing.Point(29, 522);
+            this.allergies.Location = new System.Drawing.Point(29, 502);
             this.allergies.Name = "allergies";
             this.allergies.ReadOnly = true;
             this.allergies.Size = new System.Drawing.Size(263, 188);
@@ -98,7 +98,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 485);
+            this.label1.Location = new System.Drawing.Point(24, 465);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 24);
             this.label1.TabIndex = 151;
@@ -145,7 +145,7 @@ namespace Glimpses_Clinic.Forms
             this.screentext.BackColor = System.Drawing.Color.White;
             this.screentext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.screentext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.screentext.Location = new System.Drawing.Point(1236, 660);
+            this.screentext.Location = new System.Drawing.Point(1236, 616);
             this.screentext.MaxLength = 2;
             this.screentext.Name = "screentext";
             this.screentext.ReadOnly = true;
@@ -259,7 +259,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(830, 660);
+            this.label20.Location = new System.Drawing.Point(830, 616);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(336, 24);
             this.label20.TabIndex = 122;
@@ -450,7 +450,7 @@ namespace Glimpses_Clinic.Forms
             this.symptomstext.BackColor = System.Drawing.Color.White;
             this.symptomstext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.symptomstext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.symptomstext.Location = new System.Drawing.Point(377, 529);
+            this.symptomstext.Location = new System.Drawing.Point(377, 509);
             this.symptomstext.Name = "symptomstext";
             this.symptomstext.ReadOnly = true;
             this.symptomstext.Size = new System.Drawing.Size(336, 66);
@@ -462,7 +462,7 @@ namespace Glimpses_Clinic.Forms
             this.diseasetext.BackColor = System.Drawing.Color.White;
             this.diseasetext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.diseasetext.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diseasetext.Location = new System.Drawing.Point(377, 660);
+            this.diseasetext.Location = new System.Drawing.Point(377, 640);
             this.diseasetext.Name = "diseasetext";
             this.diseasetext.ReadOnly = true;
             this.diseasetext.Size = new System.Drawing.Size(336, 50);
@@ -473,7 +473,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(373, 616);
+            this.label3.Location = new System.Drawing.Point(373, 596);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 24);
             this.label3.TabIndex = 156;

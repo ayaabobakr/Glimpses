@@ -172,16 +172,28 @@ namespace Glimpses_Clinic.Forms
             }
         }
 
+        private Form activateForm;
         public static string nID;
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count > 0)
             {
+                if (activateForm != null)
+                {
+                    activateForm.Close();
+                }
                 ListViewItem item = listView1.SelectedItems[0];
                 nID = item.SubItems[0].Text;
-                ViewMR p = new ViewMR();
-                p.Show();
-                
+                ViewMR childForm = new ViewMR();
+                activateForm = childForm;
+                childForm.TopLevel = false;
+                childForm.FormBorderStyle = FormBorderStyle.None;
+                childForm.Dock = DockStyle.Top;
+                this.panel3.Controls.Add(childForm);
+                this.panel3.Tag = childForm;
+                childForm.BringToFront();
+                childForm.Show();
+
             }
         }
     }

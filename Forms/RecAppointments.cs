@@ -42,7 +42,7 @@ namespace Glimpses_Clinic.Forms
             listView1.ForeColor = ThemeColor.SecondaryColor;
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
-            string sql = "Select a.ID, a.NationalID, p.Name, a.Date, a.Time  From Appointment a Inner Join Patient p ON a.NationalID = p.NationalID order by a.Date, a.Time;;";
+            string sql = "Select a.ID, a.NationalID, p.Name, a.Date, a.Time  From Appointment a Inner Join Patient p ON a.NationalID = p.NationalID where a.Date>GETDATE() order by a.Date, a.Time desc;";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader rd;
             rd = cmd.ExecuteReader();
@@ -114,6 +114,7 @@ namespace Glimpses_Clinic.Forms
 
             }
         }
+
 
     }
 }

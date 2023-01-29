@@ -49,7 +49,7 @@ namespace Glimpses_Clinic
                     current = (Button)btnSender;
                     current.BackColor = color;
                     current.ForeColor = Color.White;
-                    current.Font = new System.Drawing.Font("Microsoft YaHei", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    current.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panel3.BackColor = color;
                     panel2.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                     ThemeColor.PrimaryColor = color;
@@ -125,7 +125,7 @@ namespace Glimpses_Clinic
 
         private void patbtn_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            this.WindowState = FormWindowState.Maximized;
             OpenChildPanel(new Forms.Patients(), sender);
         }
 

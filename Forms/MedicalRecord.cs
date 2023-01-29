@@ -355,5 +355,25 @@ namespace Glimpses_Clinic.Forms
             label18.Visible = false;
         }
 
+        private void nIDcbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (nIDcbox.SelectedItem != null)
+            {
+                SqlConnection con = new SqlConnection(conStr);
+                con.Open();
+                string strCmd = "select name from Patient where nationalid=@id;";
+                SqlCommand cmd = new SqlCommand(strCmd, con);
+                cmd.Parameters.AddWithValue("@id", nIDcbox.SelectedValue.ToString());
+                SqlDataReader da = cmd.ExecuteReader();
+
+                while (da.Read())
+                {
+                    patname.Text = da.GetValue(0).ToString();
+                }
+                con.Close();
+            }
+        }
     }
 }
+
+        

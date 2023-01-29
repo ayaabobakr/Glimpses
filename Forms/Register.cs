@@ -73,7 +73,7 @@ namespace Glimpses_Clinic.Forms
                 return;
             }
 
-            if (!System.Text.RegularExpressions.Regex.IsMatch(idtext.Text, "^([1-9]{1})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})[0-9]{3}([0-9]{1})[0-9]{1}$"))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(idtext.Text, "^([2-3]{1})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})[0-9]{3}([0-9]{1})[0-9]{1}$"))
             {
                 idtext.Focus();
                 errorProvider.SetError(idtext, "Invalid NationalID");

@@ -20,6 +20,7 @@ namespace Glimpses_Clinic.Forms
             InitializeComponent();
         }
 
+        private string per ="";
         private void LoadTheme()
         {
             foreach (Control labels in this.Controls)
@@ -40,6 +41,9 @@ namespace Glimpses_Clinic.Forms
                 Submitbtn.BackColor = ThemeColor.PrimaryColor;
                 Submitbtn.ForeColor = Color.White;
                 Submitbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                printbtn.BackColor = ThemeColor.PrimaryColor;
+                printbtn.ForeColor = Color.White;
+                printbtn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
             }
         }
 
@@ -47,6 +51,8 @@ namespace Glimpses_Clinic.Forms
         private void Prescribe_Load(object sender, EventArgs e)
         {
             LoadTheme();
+            DateTime thisDay = DateTime.Today;
+            Datelabel.Text= thisDay.ToString();
 
         }
 
@@ -54,6 +60,7 @@ namespace Glimpses_Clinic.Forms
         ErrorProvider errorProvider = new ErrorProvider();
         private void Submitbtn_Click(object sender, EventArgs e)
         {
+
             Utilities.error(this, errorProvider);
 
             if (comboBox1.SelectedItem == null)
@@ -113,6 +120,24 @@ namespace Glimpses_Clinic.Forms
             }
             MessageBox.Show("Prescription Saved!");
             this.Close();
+        }
+
+        private void printbtn_Click(object sender, EventArgs e)
+        {
+            
+            Print p = new Print();
+            
+            p.Take = comboBox1.SelectedItem.ToString();
+            p.Additional = textBox13.Text;
+            if (weekrb.Checked)
+                per = "Week";
+            else
+            {
+                per = "Day";
+            }
+            p.Per = per;
+            p.Show();
+
         }
     }
 }

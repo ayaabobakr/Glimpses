@@ -27,7 +27,8 @@ namespace Glimpses_Clinic.Forms
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
             string sql = "Select P.NationalID, P.Name, P.Gender, P.DateOfBirth, A.Date, A.Time " +
-                "From Patient as P, Appointment AS A where A.NationalID=P.NationalID order by A.Date, A.Time;";
+                "From Patient as P, Appointment AS A where A.NationalID=P.NationalID and A.Date>GETDATE() " +
+                "order by A.Date, A.Time desc;";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader rd;
             rd = cmd.ExecuteReader();

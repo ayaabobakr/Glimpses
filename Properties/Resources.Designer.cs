@@ -93,6 +93,26 @@ namespace Glimpses_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_appointment_58 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-appointment-58", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_appointment_60__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-appointment-60 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_appointment_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-appointment-64", resourceCulture);
@@ -226,6 +246,16 @@ namespace Glimpses_Clinic.Properties {
         internal static System.Drawing.Bitmap icons8_prescription_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-prescription-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_print_25 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-print-25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

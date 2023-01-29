@@ -42,6 +42,7 @@ namespace Glimpses_Clinic.Forms
             this.button12 = new System.Windows.Forms.Button();
             this.nIDcbox = new System.Windows.Forms.ComboBox();
             this.checkbtn = new System.Windows.Forms.Button();
+            this.patname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -51,7 +52,7 @@ namespace Glimpses_Clinic.Forms
             this.monthCalendar1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.monthCalendar1.Location = new System.Drawing.Point(108, 215);
             this.monthCalendar1.MaxSelectionCount = 1;
-            this.monthCalendar1.MinDate = new System.DateTime(2022, 11, 26, 0, 0, 0, 0);
+            this.monthCalendar1.MinDate = new System.DateTime(2023, 1, 29, 0, 0, 0, 0);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             this.monthCalendar1.TitleBackColor = System.Drawing.Color.Red;
@@ -204,6 +205,7 @@ namespace Glimpses_Clinic.Forms
             this.nIDcbox.Name = "nIDcbox";
             this.nIDcbox.Size = new System.Drawing.Size(220, 31);
             this.nIDcbox.TabIndex = 125;
+            this.nIDcbox.SelectedIndexChanged += new System.EventHandler(this.nIDcbox_SelectedIndexChanged);
             // 
             // checkbtn
             // 
@@ -221,12 +223,23 @@ namespace Glimpses_Clinic.Forms
             this.checkbtn.UseVisualStyleBackColor = false;
             this.checkbtn.Click += new System.EventHandler(this.checkbtn_Click);
             // 
+            // patname
+            // 
+            this.patname.AutoSize = true;
+            this.patname.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.patname.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.patname.Location = new System.Drawing.Point(477, 59);
+            this.patname.Name = "patname";
+            this.patname.Size = new System.Drawing.Size(0, 19);
+            this.patname.TabIndex = 171;
+            // 
             // AddAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(956, 632);
+            this.Controls.Add(this.patname);
             this.Controls.Add(this.nIDcbox);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button1230);
@@ -264,5 +277,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.ComboBox nIDcbox;
         private System.Windows.Forms.Button checkbtn;
+        private System.Windows.Forms.Label patname;
     }
 }

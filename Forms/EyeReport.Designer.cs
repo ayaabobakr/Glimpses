@@ -83,6 +83,7 @@ namespace Glimpses_Clinic.Forms
             this.label8 = new System.Windows.Forms.Label();
             this.nIDcbox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.patname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -672,6 +673,7 @@ namespace Glimpses_Clinic.Forms
             this.nIDcbox.Name = "nIDcbox";
             this.nIDcbox.Size = new System.Drawing.Size(220, 31);
             this.nIDcbox.TabIndex = 124;
+            this.nIDcbox.SelectedIndexChanged += new System.EventHandler(this.nIDcbox_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -685,12 +687,23 @@ namespace Glimpses_Clinic.Forms
             this.panel1.Size = new System.Drawing.Size(658, 162);
             this.panel1.TabIndex = 125;
             // 
+            // patname
+            // 
+            this.patname.AutoSize = true;
+            this.patname.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.patname.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.patname.Location = new System.Drawing.Point(424, 51);
+            this.patname.Name = "patname";
+            this.patname.Size = new System.Drawing.Size(0, 19);
+            this.patname.TabIndex = 171;
+            // 
             // EyeReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1523, 829);
+            this.Controls.Add(this.patname);
             this.Controls.Add(this.intraL);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.panel1);
@@ -805,5 +818,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox nIDcbox;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label patname;
     }
 }

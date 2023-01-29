@@ -81,6 +81,7 @@ namespace Glimpses_Clinic.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.surgyes = new System.Windows.Forms.RadioButton();
             this.surgno = new System.Windows.Forms.RadioButton();
+            this.patname = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -492,17 +493,18 @@ namespace Glimpses_Clinic.Forms
             this.nIDcbox.BackColor = System.Drawing.Color.White;
             this.nIDcbox.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nIDcbox.FormattingEnabled = true;
-            this.nIDcbox.Location = new System.Drawing.Point(456, 23);
+            this.nIDcbox.Location = new System.Drawing.Point(387, 12);
             this.nIDcbox.Name = "nIDcbox";
             this.nIDcbox.Size = new System.Drawing.Size(189, 28);
             this.nIDcbox.TabIndex = 166;
+            this.nIDcbox.SelectedIndexChanged += new System.EventHandler(this.nIDcbox_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(333, 27);
+            this.label4.Location = new System.Drawing.Point(264, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 19);
             this.label4.TabIndex = 165;
@@ -589,12 +591,24 @@ namespace Glimpses_Clinic.Forms
             this.surgno.UseVisualStyleBackColor = true;
             this.surgno.CheckedChanged += new System.EventHandler(this.surgno_CheckedChanged_1);
             // 
+            // patname
+            // 
+            this.patname.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patname.AutoSize = true;
+            this.patname.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.patname.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.patname.Location = new System.Drawing.Point(582, 16);
+            this.patname.Name = "patname";
+            this.patname.Size = new System.Drawing.Size(0, 19);
+            this.patname.TabIndex = 170;
+            // 
             // MedicalRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1534, 734);
+            this.Controls.Add(this.patname);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.screentext);
             this.Controls.Add(this.psymptext);
@@ -708,5 +722,6 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton surgyes;
         private System.Windows.Forms.RadioButton surgno;
+        private System.Windows.Forms.Label patname;
     }
 }
