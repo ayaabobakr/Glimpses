@@ -16,7 +16,7 @@ namespace Glimpses_Clinic.Forms
     public partial class Patients : Form
     {
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
-
+        //string conStr = "Data Source=mssql-132348-0.cloudclusters.net,19983;Initial Catalog=Glimpses;User ID=admin;Password=#Sahar2023";
         public Patients()
         {
             InitializeComponent();

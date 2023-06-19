@@ -20,6 +20,7 @@ namespace Glimpses_Clinic.Forms
             InitializeComponent();
         }
 
+        //string conStr = "Data Source=mssql-132348-0.cloudclusters.net,19983;Initial Catalog=Glimpses;User ID=admin;Password=#Sahar2023";
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
         private void LoadTheme()
         {
