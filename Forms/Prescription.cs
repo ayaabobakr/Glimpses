@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Glimpses_Clinic.Forms
 {
     public partial class Prescription : Form
     {
+        int counter = File.Exists("counter.txt") ? int.Parse(File.ReadAllText("counter.txt")) : 0;
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
         public Prescription()
         {
@@ -83,14 +85,19 @@ namespace Glimpses_Clinic.Forms
                 errorProvider.SetError(textBox13, "Can't be empty");
                 return;
             }
+            counter++;
 
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-                string insert = "INSERT INTO Prescription (NationalID, Date, Prescription, Medicine, Per" +
-                    ") values (@NationalID, @Date, @Prescription, @Medicine, @Per)";
+                string insert = "INSERT INTO Prescription (Pres_ID,NationalID, Date, Prescription, Medicine, Per" +
+                    ") values (@idd,@NationalID, @Date, @Prescription, @Medicine, @Per)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
                 EyeReport er = new EyeReport();
+                cmd.Parameters.Add("@idd", SqlDbType.Int);
+                cmd.Parameters["@idd"].Value = counter;
 
                 cmd.Parameters.Add("@NationalID", SqlDbType.VarChar);
                 cmd.Parameters["@NationalID"].Value = EyeReport.NID;

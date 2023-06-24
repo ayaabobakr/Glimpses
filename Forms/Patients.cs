@@ -16,7 +16,7 @@ namespace Glimpses_Clinic.Forms
     public partial class Patients : Form
     {
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
-        //string conStr = "Data Source=mssql-132348-0.cloudclusters.net,19983;Initial Catalog=Glimpses;User ID=admin;Password=#Sahar2023";
+        //string conStr = "Data Source=LAPTOP-5DS7586S;Initial Catalog=EyeClinic;Integrated Security=True;";
         public Patients()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace Glimpses_Clinic.Forms
             listView1.ForeColor = ThemeColor.SecondaryColor;
             SqlConnection conn = new SqlConnection(conStr);
             conn.Open();
-            string sql = "Select * From Patient";
+            string sql = "Select NationalID, Name, Address, Phone, Email, DateOfBirth, Gender From Patient";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader rd;
             rd = cmd.ExecuteReader();

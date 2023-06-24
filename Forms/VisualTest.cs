@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,10 @@ namespace Glimpses_Clinic.Forms
 {
     public partial class VisualTest : Form
     {
+        int counter = File.Exists("counter.txt") ? int.Parse(File.ReadAllText("counter.txt")) : 0;
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
+        //string conStr = "Data Source=LAPTOP-5DS7586S;Initial Catalog=EyeClinic;Integrated Security=True;";
+
         public VisualTest()
         {
             InitializeComponent();
@@ -183,15 +187,21 @@ namespace Glimpses_Clinic.Forms
 
 
 
+            counter++;
 
-            string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
+            //string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-                string insert = "INSERT INTO VFT (NationalID, SPH_R_dist, SPH_R_near, CYL_R_dist, CYL_R_near, AXIS_R_dist, AXIS_R_near, SPH_L_dist, SPH_L_near,CYL_L_dist,CYL_L_near,AXIS_L_dist,AXIS_L_near," +
-                    "IPD_dist,IPD_near) values (@nationalID, @SPH_R_dist, @SPH_R_near, @CYL_R_dist, @CYL_R_near, @AXIS_R_dist, @AXIS_R_near, @SPH_L_dist, @SPH_L_near,@CYL_L_dist,@CYL_L_near,@AXIS_L_dist,@AXIS_L_near," +
+                string insert = "INSERT INTO VFT (VFT_ID,NationalID, SPH_R_dist, SPH_R_near, CYL_R_dist, CYL_R_near, AXIS_R_dist, AXIS_R_near, SPH_L_dist, SPH_L_near,CYL_L_dist,CYL_L_near,AXIS_L_dist,AXIS_L_near," +
+                    "IPD_dist,IPD_near) values (@vft,@nationalID, @SPH_R_dist, @SPH_R_near, @CYL_R_dist, @CYL_R_near, @AXIS_R_dist, @AXIS_R_near, @SPH_L_dist, @SPH_L_near,@CYL_L_dist,@CYL_L_near,@AXIS_L_dist,@AXIS_L_near," +
                     "@IPD_dist,@IPD_near)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
+
+                cmd.Parameters.Add("@vft", SqlDbType.Int);
+                cmd.Parameters["@vft"].Value = counter;
 
                 cmd.Parameters.Add("@nationalID", SqlDbType.VarChar);
                 cmd.Parameters["@nationalID"].Value = EyeReport.NID;

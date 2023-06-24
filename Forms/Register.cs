@@ -20,7 +20,7 @@ namespace Glimpses_Clinic.Forms
             InitializeComponent();
         }
 
-        //string conStr = "Data Source=mssql-132348-0.cloudclusters.net,19983;Initial Catalog=Glimpses;User ID=admin;Password=#Sahar2023";
+        //string conStr = "Data Source=LAPTOP-5DS7586S;Initial Catalog=EyeClinic;Integrated Security=True;";
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
         private void LoadTheme()
         {
@@ -125,8 +125,8 @@ namespace Glimpses_Clinic.Forms
 
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-                string insert = "INSERT INTO Patient (NationalID, Name, Address, Phone, Email, DateOfBirth, Gender) values (@ID, @name," +
-                    "@address, @phone, @email, @dob, @gender)";
+                string insert = "INSERT INTO Patient (NationalID, Name, Address, Phone, Email, DateOfBirth, Gender, Username, Password) values (@ID, @name," +
+                    "@address, @phone, @email, @dob, @gender, @uname, @pw)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar);
@@ -149,6 +149,12 @@ namespace Glimpses_Clinic.Forms
 
                 cmd.Parameters.Add("@gender", SqlDbType.VarChar);
                 cmd.Parameters["@gender"].Value = gendercombo.Text;
+
+                cmd.Parameters.Add("@uname", SqlDbType.VarChar);
+                cmd.Parameters["@uname"].Value = usernametext.Text;
+
+                cmd.Parameters.Add("@pw", SqlDbType.VarChar);
+                cmd.Parameters["@pw"].Value = passwordtext.Text;
                 cmd.ExecuteNonQuery();
                 sqlcon.Close();
 

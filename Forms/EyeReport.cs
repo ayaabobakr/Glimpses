@@ -10,12 +10,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
+using System.IO;
 
 namespace Glimpses_Clinic.Forms
 {
     public partial class EyeReport : Form
     {
+        int counter = File.Exists("counter.txt") ? int.Parse(File.ReadAllText("counter.txt")) : 0;
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
+        //string conStr = "Data Source=LAPTOP-5DS7586S;Initial Catalog=EyeClinic;Integrated Security=True;";
 
         public EyeReport()
         {
@@ -180,16 +183,20 @@ namespace Glimpses_Clinic.Forms
             }
 
 
+            counter++;
 
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
                 {
-                    string insert = "INSERT INTO EyeReport (NationalID, Diagnosis, Muscle, IntraocularR, IntraocularL, Glasses, Contacts, SoftR, SoftL, Toric, " +
-                        "Prescription, Surgery, Followup, Without_Near_R, Without_Near_L, Without_Distance_R, Without_Distance_L, With_Near_R, With_Near_L, With_Distance_R, With_Distance_L) values (@ID, @diagnosis, @muscle, @intrR, " +
+                    string insert = "INSERT INTO EyeReport (ReportID,NationalID, Diagnosis, Muscle, IntraocularR, IntraocularL, Glasses, Contacts, SoftR, SoftL, Toric, " +
+                        "Prescription, Surgery, Followup, Without_Near_R, Without_Near_L, Without_Distance_R, Without_Distance_L, With_Near_R, With_Near_L, With_Distance_R, With_Distance_L) values (@idd,@ID, @diagnosis, @muscle, @intrR, " +
                         "@intrL, @glasses, @contacts, @softr, @softl, @toric, @presc, @surgery, @followup, @Without_Near_R, @Without_Near_L, @Without_Distance_R, @Without_Distance_L, " +
                        "@With_Near_R, @With_Near_L, @With_Distance_R, @With_Distance_L)";
                     sqlcon.Open();
                     SqlCommand cmd = new SqlCommand(insert, sqlcon);
-
+                    cmd.Parameters.Add("@idd", SqlDbType.Int);
+                    cmd.Parameters["@idd"].Value = counter;
                     cmd.Parameters.Add("@ID", SqlDbType.VarChar);
                     cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
@@ -398,6 +405,17 @@ namespace Glimpses_Clinic.Forms
                     patname.Text = da.GetValue(0).ToString();
                 }
                 con.Close();
+            }
+        }
+
+        private void glassescb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (glassescb.Checked)
+            {
+                NID = nIDcbox.SelectedValue.ToString();
+                Glasses g = new Glasses();
+                g.Show();
+
             }
         }
     }

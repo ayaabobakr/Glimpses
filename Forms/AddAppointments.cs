@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +14,10 @@ using System.Windows.Forms;
 
 namespace Glimpses_Clinic.Forms
 {
+
     public partial class AddAppointments : Form
     {
+        int counter = File.Exists("counter.txt") ? int.Parse(File.ReadAllText("counter.txt")) : 0;
         string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
         public AddAppointments()
         {
@@ -68,11 +71,18 @@ namespace Glimpses_Clinic.Forms
         public static string theDate;
         private void button12_Click(object sender, EventArgs e)
         {
+            counter++;
+
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                string insert = "INSERT INTO Appointment values (@idd,@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                cmd.Parameters.Add("@idd", SqlDbType.Int);
+                cmd.Parameters["@idd"].Value = counter;
+
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar);
                 cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
@@ -123,12 +133,17 @@ namespace Glimpses_Clinic.Forms
         }
         private void button1230_Click(object sender, EventArgs e)
         {
+            counter++;
+
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-
-                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                string insert = "INSERT INTO Appointment values (@idd,@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                cmd.Parameters.Add("@idd", SqlDbType.Int);
+                cmd.Parameters["@idd"].Value = counter;
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar);
                 cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
@@ -152,12 +167,18 @@ namespace Glimpses_Clinic.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            counter++;
+
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-
-                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                string insert = "INSERT INTO Appointment values (@idd,@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                cmd.Parameters.Add("@idd", SqlDbType.Int);
+                cmd.Parameters["@idd"].Value = counter;
+
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar);
                 cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
@@ -180,12 +201,18 @@ namespace Glimpses_Clinic.Forms
 
         private void button130_Click(object sender, EventArgs e)
         {
+            counter++;
+
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-
-                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                string insert = "INSERT INTO Appointment values (@idd,@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                cmd.Parameters.Add("@idd", SqlDbType.Int);
+                cmd.Parameters["@idd"].Value = counter;
+
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar);
                 cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
@@ -208,12 +235,18 @@ namespace Glimpses_Clinic.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            counter++;
+
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-
-                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                string insert = "INSERT INTO Appointment values (@idd,@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                cmd.Parameters.Add("@idd", SqlDbType.Int);
+                cmd.Parameters["@idd"].Value = counter;
+
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar);
                 cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 
@@ -236,12 +269,18 @@ namespace Glimpses_Clinic.Forms
 
         private void button230_Click(object sender, EventArgs e)
         {
+            counter++;
+
+            // Write the updated counter value back to the file
+            File.WriteAllText("counter.txt", counter.ToString());
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
-
-                string insert = "INSERT INTO Appointment values (@ID, @Date, @Time, @Bill)";
+                string insert = "INSERT INTO Appointment values (@idd,@ID, @Date, @Time, @Bill)";
                 sqlcon.Open();
                 SqlCommand cmd = new SqlCommand(insert, sqlcon);
+                cmd.Parameters.Add("@idd", SqlDbType.Int);
+                cmd.Parameters["@idd"].Value = counter;
+
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar);
                 cmd.Parameters["@ID"].Value = nIDcbox.SelectedValue.ToString();
 

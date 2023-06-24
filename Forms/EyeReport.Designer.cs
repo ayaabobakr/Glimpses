@@ -342,6 +342,7 @@ namespace Glimpses_Clinic.Forms
             this.glassescb.TabIndex = 91;
             this.glassescb.Text = "Glasses";
             this.glassescb.UseVisualStyleBackColor = true;
+            this.glassescb.CheckedChanged += new System.EventHandler(this.glassescb_CheckedChanged);
             // 
             // contbox
             // 

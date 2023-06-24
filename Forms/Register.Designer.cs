@@ -49,6 +49,10 @@ namespace Glimpses_Clinic.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.MRbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.passwordtext = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.Label();
+            this.usernametext = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +60,10 @@ namespace Glimpses_Clinic.Forms
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.passwordtext);
+            this.panel1.Controls.Add(this.password);
+            this.panel1.Controls.Add(this.usernametext);
+            this.panel1.Controls.Add(this.username);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.DOB);
             this.panel1.Controls.Add(this.registerbtn);
@@ -117,7 +125,7 @@ namespace Glimpses_Clinic.Forms
             // 
             this.photext.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.photext.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.photext.Location = new System.Drawing.Point(449, 469);
+            this.photext.Location = new System.Drawing.Point(447, 419);
             this.photext.MaxLength = 12;
             this.photext.Name = "photext";
             this.photext.Size = new System.Drawing.Size(196, 27);
@@ -129,7 +137,7 @@ namespace Glimpses_Clinic.Forms
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(339, 469);
+            this.label15.Location = new System.Drawing.Point(339, 419);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(71, 26);
             this.label15.TabIndex = 46;
@@ -139,11 +147,11 @@ namespace Glimpses_Clinic.Forms
             // 
             this.addresstext.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addresstext.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.addresstext.Location = new System.Drawing.Point(123, 453);
+            this.addresstext.Location = new System.Drawing.Point(120, 419);
             this.addresstext.MaxLength = 100;
             this.addresstext.Multiline = true;
             this.addresstext.Name = "addresstext";
-            this.addresstext.Size = new System.Drawing.Size(192, 78);
+            this.addresstext.Size = new System.Drawing.Size(192, 33);
             this.addresstext.TabIndex = 45;
             // 
             // label14
@@ -152,7 +160,7 @@ namespace Glimpses_Clinic.Forms
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(11, 469);
+            this.label14.Location = new System.Drawing.Point(11, 419);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(89, 26);
             this.label14.TabIndex = 44;
@@ -286,6 +294,51 @@ namespace Glimpses_Clinic.Forms
             this.pictureBox1.TabIndex = 63;
             this.pictureBox1.TabStop = false;
             // 
+            // passwordtext
+            // 
+            this.passwordtext.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.passwordtext.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
+            this.passwordtext.Location = new System.Drawing.Point(447, 494);
+            this.passwordtext.MaxLength = 12;
+            this.passwordtext.Name = "passwordtext";
+            this.passwordtext.Size = new System.Drawing.Size(196, 27);
+            this.passwordtext.TabIndex = 65;
+            // 
+            // password
+            // 
+            this.password.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.password.AutoSize = true;
+            this.password.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.password.Location = new System.Drawing.Point(339, 494);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(102, 26);
+            this.password.TabIndex = 64;
+            this.password.Text = "Password";
+            // 
+            // usernametext
+            // 
+            this.usernametext.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.usernametext.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
+            this.usernametext.Location = new System.Drawing.Point(125, 487);
+            this.usernametext.MaxLength = 100;
+            this.usernametext.Multiline = true;
+            this.usernametext.Name = "usernametext";
+            this.usernametext.Size = new System.Drawing.Size(192, 33);
+            this.usernametext.TabIndex = 63;
+            // 
+            // username
+            // 
+            this.username.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.username.Location = new System.Drawing.Point(11, 494);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(108, 26);
+            this.username.TabIndex = 62;
+            this.username.Text = "Username";
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -327,5 +380,9 @@ namespace Glimpses_Clinic.Forms
         private System.Windows.Forms.TextBox idtext;
         private System.Windows.Forms.Button MRbtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox passwordtext;
+        private System.Windows.Forms.Label password;
+        private System.Windows.Forms.TextBox usernametext;
+        private System.Windows.Forms.Label username;
     }
 }
