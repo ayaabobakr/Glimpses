@@ -80,6 +80,7 @@
     <Compile Include="Forms\Print.Designer.cs">
       <DependentUpon>Print.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Prob.cs" />
     <Compile Include="Forms\ViewRecept.cs">
       <SubType>Form</SubType>
     </Compile>

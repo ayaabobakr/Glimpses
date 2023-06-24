@@ -393,6 +393,7 @@ namespace Glimpses_Clinic.Forms
         {
             if (nIDcbox.SelectedItem != null)
             {
+                Prob p = new Prob();
                 SqlConnection con = new SqlConnection(conStr);
                 con.Open();
                 string strCmd = "select name from Patient where nationalid=@id;";
@@ -402,7 +403,8 @@ namespace Glimpses_Clinic.Forms
 
                 while (da.Read())
                 {
-                    patname.Text = da.GetValue(0).ToString();
+                    patname.Text = p.prob(nIDcbox.SelectedValue.ToString());
+                   // patname.Text = da.GetValue(0).ToString();
                 }
                 con.Close();
             }
